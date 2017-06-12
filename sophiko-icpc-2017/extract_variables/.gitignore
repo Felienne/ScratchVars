@@ -1,0 +1,4 @@
+**/*.pyc
+extractors/php/composer.lock
+extractors/php/vendor
+*.log
