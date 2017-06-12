@@ -1,3 +1,8 @@
+#large input files
+
+data_plus_pandas_files/input
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
