@@ -1,10 +1,9 @@
-
-
 \documentclass[conference]{IEEEtran}
 
 \usepackage{graphicx}
 
 \newcommand{\todo}[1]{ \textbf{#1} }
+\newcommand{\quotes}[1]{\textit{``#1''}}
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
@@ -12,60 +11,21 @@
 
 \begin{document}
 
-\title{Variable names and use in Scratch}
+\title{How do scratch users name variables and functions? an analysis in scale}
 
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Michael Shell}
-\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
-Georgia Institute of Technology\\
-Atlanta, Georgia 30332--0250\\
-Email: http://www.michaelshell.org/contact.html}
+\author{\IEEEauthorblockN{Author1}
+\IEEEauthorblockA{Uni1\\
+Address1\\
+Email: email1.com}
 \and
-\IEEEauthorblockN{Homer Simpson}
-\IEEEauthorblockA{Twentieth Century Fox\\
-Springfield, USA\\
-Email: homer@thesimpsons.com}
-\and
-\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
-\IEEEauthorblockA{Starfleet Academy\\
-San Francisco, California 96678--2391\\
-Telephone: (800) 555--1212\\
-Fax: (888) 555--1212}}
-
-% conference papers do not typically use \thanks and this command
-% is locked out in conference mode. If really needed, such as for
-% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
-% after \documentclass
-
-% for over three affiliations, or if they all won't fit within the width
-% of the page, use this alternative format:
-% 
-%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
-%Homer Simpson\IEEEauthorrefmark{2},
-%James Kirk\IEEEauthorrefmark{3}, 
-%Montgomery Scott\IEEEauthorrefmark{3} and
-%Eldon Tyrell\IEEEauthorrefmark{4}}
-%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
-%Georgia Institute of Technology,
-%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
-%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
-%Email: homer@thesimpsons.com}
-%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
-%Telephone: (800) 555--1212, Fax: (888) 555--1212}
-%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
-
-
-
-
-% use for special paper notices
-%\IEEEspecialpapernotice{(Invited Paper)}
-
-
-
-
+\IEEEauthorblockN{Author2}
+\IEEEauthorblockA{Uni2\\
+	Address2\\
+	Email: email2.com}}
 % make the title area
 \maketitle
 
@@ -75,54 +35,85 @@ Fax: (888) 555--1212}}
 The abstract goes here.
 \end{abstract}
 
-% no keywords
-
-
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
-%
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
 
 
 \section{Introduction}
-\todo{Do we want to do just variables or also functions and signals?}
+The naming of identifiers in software code is considered, by several researchers, as one important aspect of its quality. Previous studies have shown a correlation between the proper naming of identifiers and the readability and comprehension of the code. Comprehension is linked to maintainability tasks and efficient performance of developers while performing them. As one scientist once said \quotes{the code should be considered for human and less occasionally for a computer to execute}.
 
-\section{Results - replication ICPC}
+In computer science and programming education, there seems a focus on the programming concepts and the syntax of the languages. Programming courses give less attention to naming variables and identifiers. One of the most common examples in many programming languages is the use of \quotes{foo} and \quotes{bar} naming for variables and functions. These two identifiers have meaningless names, and to some extent, they represent a refusal to name, which give the learner the conception that the name is less important, or irrelevant, to the programming task. 
 
-\subsection{Distribution of lengths}
+Recent studies have focused on the analysis of naming in software code repositories. In this paper, we give attention to novice programmers with the Scratch visual language. 
+When it comes to novice programmer and learners, it is more important for the software community to understand conceptions in naming that are prevalent. These users will be the future developers, and at some point, they need to follow an implicit or explicit guideline of naming and collaborating in larger software repositories. 
+To this end, we have analyzed 240,000 scratch projects. Scratch is a block-based visual language that was developed by MIT with the aim of helping young people learn the basic concepts of programming and collaboration. Scratch has recently become very popular among school-age children and introduced as part of the curriculum in some countries as a means to teach programming. Analyzing scratch programs will give researchers and software engineering community a perspective on naming from learners making their first step in programming and might turn to be the future programmers. In this paper we aim at answering the following research questions: \\
+\begin{description}
+	\item[\textbf{RQ1}] How do scratch users name variables and procedures?
+	\item[\textbf{(a)}] The length distribution of variable and function identifiers across projects.
+	\item[\textbf{(b)}] The usage of single-letter variables.
+	\item[\textbf{RQ2}] How do Scratch users use language-dependent features in naming identifiers? In particular, to what extent are the following usage patterns popular within scratch projects?
+	\item[\textbf{(a)}] Using spaces within identifiers
+	\item[\textbf{(b)}] Using numeric digits as identifiers
+	\item[\textbf{(c)}] Using the parameter in the middle name for procedures] 
+	
+\end{description}
+
+\todo{More questions: analysis of the peak value of 5, what is the most recurrent name? Is it expected or justified?}
+\todo{More questions: variable length based on category of the scratch program: game animation, ....}
+\todo{More questions: variable length in relation to Dr. Scratch CT}
+ 
+\section{Background and motivation}
+Naming identifiers in software code have been studied extensively in the past decades. in practice, identifiers are a major part of software code as one study found that within the Eclipse code, which has 2 MLoC, 33\% of the tokens and 72\% of characters are dedicated to identifiers. For a human to read that code, it is crucial to understand what the identifier means, and then can deduce what the code does. With no surprise, several studies have confirmed the link between good identifier naming and code's readability and comprehension. The comprehension is not a target in its own; the true reason is that better comprehension lets the developers perform maintenance tasks more effectively and efficiently.
+But what is a good naming approach? It is out of this paper's scope to explore the various recommendations of good identifier naming. However, it is worth to mention that there are different perspectives on what a good name is. Some researchers emphasize the usage of actual and complete words from a dictionary, or known abbreviations, which reflect the context of the program's purpose. Others argue that consistency in naming style is the most important. The usage of single-letter identifiers attracts much attention in research. For programmers, it is tempting to choose single-letter identifiers for quicker code writing that involves less mental load on the choice of a name. Additionally, single-letter named variables such as \quotes{i} or \quotes{j} have become almost a standard choice for index values when coding loops. Research has shown however that shorter identifier names are longer to comprehend, and the length of a variable should reflect its scope. 
+
+Despite the agreement on the importance of identifier names, and efforts to introduce naming guidelines and additional tools to help the programmer choose better names, developers find giving appropriate names to identifiers as a difficult task. In the end, it is the decision of the individual writing the code, and many factors may contribute to that decision. One area to consider here is the computer science and in particular programming education. There seems to be a great focus on the programming concepts, while less to zero attention is given to beautifying the code. For example, the usage of the identifier names \quotes{foo} and \quotes{bar} is prevalent in code examples. These names have no real meaning, and the student cannot link them to what the code does.  
+
+We are inspired by the work done by \todo{ref} where they explored the single-letter naming for multiple software repositories from different programming languages. It is important for the software community to understand the patterns in which software developers apply naming to identifiers. We argue that this understanding can improve the quality of the guidelines and introduce research-supported tools that meet the needs of the programmers. For this sake, we believe it is even more important to focus on the novice programmers, students, and learners. For these future developers, the usage of a particular naming pattern in this level forms a (mis)conception that could move along with them to other programming languages and future careers. The work was done by \todo{add ref} excludes the visual languages which have recently become a favorable choice for elementary and high schools as an introduction to programming, for example, Scratch and Alice. These block-based languages allow the user to create and assign their identifiers for variables and blocks. By studying these identifiers, we can understand better how novice programmers apply standard and language-specific naming, and how it compares to other textual based languages previously explored in the literature. 
+
+\section{Scratch related concepts}
+In this section, we highlight some of the basic concepts of Scratch. This paper is by no means about scratch programming. However, clarifying some Scratch concepts is necessary for the paper self-explanation. Scratch is \todo{Complete}. 
+
+\section{Research design and dataset}
+\subsection{Overall design}
+\todo{here we need to tell someth about replications, see the paper by Shull et al on importance of replications in software engineering.}
+\subsection{Dataset}
+\subsection{Data analysis}
+To augment the visual comparison of the variable name data derived from Scratch as well as the programming languages considered by Beniamini et al.~\cite{Beniamini}, we conduct statistical analysis. 
+
+Understanding differences in variable name lengths requires comparison of multiple distributions, traditionally performed as a two-step process consisting of (1) testing a global null hypothesis, that can be intuitively formulated as ``all distributions are the same'', using ANOVA or its non-parametric counterpart, the Kruskal-Wallis test, and (2) performing multiple pairwise comparisons of different distributions, testing specific subhypotheses such as ``distributions 2 and 4 are the same''. 
+However, it has been observed that such a two-step approach can result in inconsistencies when either the global null hypothesis is rejected but none of the pairwise subhypotheses is rejected or vice versa~\cite{Gabriel}. 
+Moreover, it has been suggested that the Wilcoxon-Mann-Whitney test, commonly used for subhypothesis testing, is not robust to unequal population variances, especially in the unequal sample size case~\cite{Zimmerman:Zumbo}
+Therefore, one-step approaches have been sought.
+We opt for one such approach, the $\widetilde{\mathbf{T}}$-procedure of Konietschke et al.~\cite{Konietschke:Hothorn:Brunner}. 
+This procedure is robust against unequal population variances, respects transitivity, and has been successfully applied in empirical software engineering~\cite{VasilescuSGM14,VasilescuCS14,YuWYW16}.
+In particular, we use the Tukey (all-pairs) contrasts to compare all distributions pairwise.
+
+Furthermore, to understand differences and similarities between the distributions of single-letter variable names in different languages we represent each programming language as a 26-dimensional vector with the dimensions corresponding to `a', ..., `z', and apply hierarchical clustering. \todo{why hierarchical?}
+ \section{Results}
 
 Figure \ref{fig:distribution_of_lengths} shows the distribution of lengths in the corpus.
 
-\begin{figure}
-  \begin{center}
-  \includegraphics[width=\columnwidth]{fig/distribution_of_lengths}
-  \caption{Total occurrence of variables of different lengths}
-  \label{fig:distribution_of_lengths}
-  \end{center}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{fig/distribution_of_lengths}
+		\caption{Total occurrence of variables of different lengths}
+		\label{fig:distribution_of_lengths}
+	\end{center}
 \end{figure} 
 
 \todo{we could sample some 5 letter identifiers here to see what they usually look like since they are an interesting peak?}
 
 \todo{in the ICPC paper the diagram goes to 20 and then just has 20+ we could do that too?}
-
 \subsection{One letters}
 
 Figure \ref{fig:one_letter_occurrence} shows the distribution of variables of one letter in the corpus.
 
-\begin{figure}
-  \begin{center}
-  \includegraphics[width=\columnwidth]{fig/one_letter_occurrence}
-  \caption{Total occurrence of variables of one letter}
-  \label{fig:one_letter_occurrence}
-  \end{center}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{fig/one_letter_occurrence}
+		\caption{Total occurrence of variables of one letter}
+		\label{fig:one_letter_occurrence}
+	\end{center}
 \end{figure} 
 
 Scratch is not a typed language, variables can contain strings or numbers without declarations or casting. However, we can infer the types by attempting to cast them to a float or an int. As such we did obtain types, allowing us to compare to the ICPC paper.
@@ -132,32 +123,32 @@ Figure \ref{fig:one_letter_type} shows the distribution of variables of one lett
 \todo{here we can reflect on the differences with "real" languages and the prevalence of ints.}
 
 \begin{figure}
-  \begin{center}
-  \includegraphics[width=\columnwidth]{fig/one_letter_type}
-  \caption{Inferred types for variables of one letter}
-  \label{fig:one_letter_type}
-  \end{center}
+	\begin{center}
+		\includegraphics[width=\columnwidth]{fig/one_letter_type}
+		\caption{Inferred types for variables of one letter}
+		\label{fig:one_letter_type}
+	\end{center}
 \end{figure} 
 
-
-
-\section{Results - Scratch specific}
 \subsection{Use of spaces in variable names}
 
 Contrary to most textual programming languages, Scratch allows users to use spaces in variable names. This is quite commonly used, about 30.000 projects use one or more variables with a space in it, versus 60.000 that use only space-free variable names. Figure \ref{fig:number_of_spaces} shows the distribution of spaces in variable names. We have found that many introductory Scratch programming materials demonstrate the use of space free variables, and that children---and adults---that already have programming experience deem the use of spaces in variables as non-natural, even though arguable `number of apples' is more natural that `nApples'.
 
 \begin{figure}
-  \begin{center}
-  \includegraphics[width=\columnwidth]{fig/number_of_spaces}
-  \caption{Number of spaces in variable names}
-  \label{fig:number_of_spaces}
-  \end{center}
+	\begin{center}
+		\includegraphics[width=\columnwidth]{fig/number_of_spaces}
+		\caption{Number of spaces in variable names}
+		\label{fig:number_of_spaces}
+	\end{center}
 \end{figure} 
 
 \subsection{Use of non-letter variable names}
 In addition to spaces in variable names, Scratch even allows the use of numbers and even floating point numbers as variables. We found 718 projects with integer variable names and 19 with floating point names. While their use is rare, we manually examined some projects and numbers are used in interesting and clever ways.
 
 \todo{here we can show the tic tac toe example}
+
+ \section{Discussion}
+ \section{Conclusions}
 
 \section{Conclusion}
 The conclusion goes here.
@@ -193,23 +184,13 @@ The authors would like to thank...
 % http://mirror.ctan.org/biblio/bibtex/contrib/doc/
 % The IEEEtran BibTeX style support page is at:
 % http://www.michaelshell.org/tex/ieeetran/bibtex/
-%\bibliographystyle{IEEEtran}
+\bibliographystyle{IEEEtran}
 % argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
+\bibliography{paper}
 %
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\end{thebibliography}
-
-
-
 
 % that's all folks
 \end{document}
