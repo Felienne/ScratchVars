@@ -105,6 +105,12 @@ icpc2017characters$scratch <- scratchaz$count
 nameless <- subset(icpc2017characters, select=-c(ch)) 
 row.names(nameless) <- icpc2017characters$ch
 
+chisq.test(t(nameless))
+
+#	Pearson's Chi-squared test
+#
+#data:  t(nameless)
+#X-squared = 585210, df = 250, p-value < 2.2e-16
 
 forLambdaLower <- t(subset(icpc2017characters, select=c(Clower,JSlower,Javalower,PHPlower,perllower,scratch)))
 colnames(forLambdaLower) <- icpc2017characters$ch
