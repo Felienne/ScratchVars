@@ -138,7 +138,7 @@ matplotlib.style.use('ggplot')
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-df = pd.read_csv(dir_path+'/input/code.csv', names = list(range(0,23)), nrows = 1000)
+df = pd.read_csv(dir_path+'/input/code.csv', names = list(range(0,23)))#, nrows = 1000)
 
 datablocks = ['readVariable','contentsOfList:','lineCountOfList:','setVar:to:','list:contains:','showList:','hideVariable:','showVariable:','changeVar:by:','hideList:', 'getLine:ofList:', 'append:toList:', 'deleteLine:ofList:', 'setLine:ofList:to:', 'insert:at:ofList:']
 
