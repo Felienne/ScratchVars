@@ -71,19 +71,37 @@ for (i in 1:length(names)){
   cat(paste("\"",names[[i]][1],"\" -> ",sep=""), paste("\"",names[[i]][2],"\"",sep=""), "\n")
 }
 
-#("C", "JS") 
-#("C", "perl") 
-#("Java", "JS") 
-#("Java", "perl") 
-#("Java", "PHP") 
-#("JS", "perl") 
-#("Java", "C") 
-#("PHP", "C") 
-#("scratch", "C") 
-#("scratch", "Java") 
-#("PHP", "JS") 
-#("scratch", "JS") 
-#("PHP", "perl") 
-#("scratch", "perl") 
-#("scratch", "PHP") 
+#digraph G {
+#"C" ->  "JS" 
+#"C" ->  "perl" 
+#"Java" ->  "JS" 
+#"Java" ->  "perl" 
+#"Java" ->  "PHP" 
+#"JS" ->  "perl" 
+#"Java" ->  "C" 
+#"PHP" ->  "C" 
+#"scratch" ->  "C" 
+#"scratch" ->  "Java" 
+#"PHP" ->  "JS" 
+#"scratch" ->  "JS" 
+#"PHP" ->  "perl" 
+#"scratch" ->  "perl" 
+#"scratch" ->  "PHP" 
+#}
 
+#dropping transitive dependencies
+#digraph G {
+#"C" ->  "JS" 
+#"Java" ->  "PHP" 
+#"JS" ->  "perl" 
+#"PHP" ->  "C" 
+#"scratch" ->  "Java" 
+#}
+
+icpc2017characters <- read.csv(paste(root,"sophiko-icpc-2017/extract_variables/result-files/char-use.dat",sep=""),header=TRUE)
+
+library(rapport)
+lambda.test(icpc2017characters,1)
+
+forLambdaLower <- t(subset(icpc2017characters, select=c(Clower,JSlower,Javalower,PHPlower,perllower)))
+colnames(forLambdaLower) <- icpc2017characters$ch
