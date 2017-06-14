@@ -1,6 +1,7 @@
 \documentclass[conference]{IEEEtran}
 
 \usepackage{graphicx}
+\usepackage{url}
 
 \newcommand{\todo}[1]{ \textbf{#1} }
 \newcommand{\quotes}[1]{\textit{``#1''}}
@@ -11,8 +12,7 @@
 
 \begin{document}
 
-\title{How do scratch users name variables and functions? an analysis in scale}
-
+\title{How do Scratch Users Name Variables and Functions? }
 
 % author names and affiliations
 % use a multiple column layout for up to three different
@@ -46,12 +46,12 @@ In computer science and programming education, there seems a focus on the progra
 
 Recent studies have focused on the analysis of naming in software code repositories. In this paper, we give attention to novice programmers with the Scratch visual language. 
 When it comes to novice programmer and learners, it is more important for the software community to understand conceptions in naming that are prevalent. These users will be the future developers, and at some point, they need to follow an implicit or explicit guideline of naming and collaborating in larger software repositories. 
-To this end, we have analyzed 240,000 scratch projects. Scratch is a block-based visual language that was developed by MIT with the aim of helping young people learn the basic concepts of programming and collaboration. Scratch has recently become very popular among school-age children and introduced as part of the curriculum in some countries as a means to teach programming. Analyzing scratch programs will give researchers and software engineering community a perspective on naming from learners making their first step in programming and might turn to be the future programmers. In this paper we aim at answering the following research questions: \\
+To this end, we have analyzed 240,000 Scratch projects. Scratch is a block-based visual language that was developed by MIT with the aim of helping young people learn the basic concepts of programming and collaboration. Scratch has recently become very popular among school-age children and introduced as part of the curriculum in some countries as a means to teach programming. Analyzing Scratch programs will give researchers and software engineering community a perspective on naming from learners making their first step in programming and might turn to be the future programmers. In this paper we aim at answering the following research questions: \\
 \begin{description}
-	\item[\textbf{RQ1}] How do scratch users name variables and procedures?
+	\item[\textbf{RQ1}] How do Scratch users name variables and procedures?
 	\item[\textbf{(a)}] The length distribution of variable and function identifiers across projects.
 	\item[\textbf{(b)}] The usage of single-letter variables.
-	\item[\textbf{RQ2}] How do Scratch users use language-dependent features in naming identifiers? In particular, to what extent are the following usage patterns popular within scratch projects?
+	\item[\textbf{RQ2}] How do Scratch users use language-dependent features in naming identifiers? In particular, to what extent are the following usage patterns popular within Scratch projects?
 	\item[\textbf{(a)}] Using spaces within identifiers
 	\item[\textbf{(b)}] Using numeric digits as identifiers
 	\item[\textbf{(c)}] Using the parameter in the middle name for procedures] 
@@ -59,7 +59,7 @@ To this end, we have analyzed 240,000 scratch projects. Scratch is a block-based
 \end{description}
 
 \todo{More questions: analysis of the peak value of 5, what is the most recurrent name? Is it expected or justified?}
-\todo{More questions: variable length based on category of the scratch program: game animation, ....}
+\todo{More questions: variable length based on category of the Scratch program: game animation, ....}
 \todo{More questions: variable length in relation to Dr. Scratch CT}
  
 \section{Background and motivation}
@@ -70,13 +70,62 @@ Despite the agreement on the importance of identifier names, and efforts to intr
 
 We are inspired by the work done by \todo{ref} where they explored the single-letter naming for multiple software repositories from different programming languages. It is important for the software community to understand the patterns in which software developers apply naming to identifiers. We argue that this understanding can improve the quality of the guidelines and introduce research-supported tools that meet the needs of the programmers. For this sake, we believe it is even more important to focus on the novice programmers, students, and learners. For these future developers, the usage of a particular naming pattern in this level forms a (mis)conception that could move along with them to other programming languages and future careers. The work was done by \todo{add ref} excludes the visual languages which have recently become a favorable choice for elementary and high schools as an introduction to programming, for example, Scratch and Alice. These block-based languages allow the user to create and assign their identifiers for variables and blocks. By studying these identifiers, we can understand better how novice programmers apply standard and language-specific naming, and how it compares to other textual based languages previously explored in the literature. 
 
-\section{Scratch related concepts}
-In this section, we highlight some of the basic concepts of Scratch. This paper is by no means about scratch programming. However, clarifying some Scratch concepts is necessary for the paper self-explanation. Scratch is \todo{Complete}. 
+\section{Relevant Scratch Concepts}
+\label{sec:scratch}
+This paper is by no means an introduction into Scratch programming, we refer the reader to \cite{brennan_creative_2014} for an extensive overview. To make this paper self-contained, however, we explain a number of relevant concepts in this section. 
+
+Scratch is a block-based programming language aimed at children, developed by MIT. Scratch can be used to create games and interactive animations, and is available both as a stand-alone application and as a web application. Figure \ref{fig:ui} shows the Scratch user interface in the Chrome browser.
+
+\subsection{Sprites}
+Scratch code is organized by `sprites': two-dimensional pictures each having their own associated code. Scratch allows users to bring their sprites to life in various ways, for example by moving them in the plane, having them say or think words or sentences via text balloons, but also by having them make sounds, grow, shrink and switch costumes. The Scratch program in Figure \ref{fig:ui}\footnote{\url{https://scratch.mit.edu/projects/97086781/}} consists of one sprite, the cat, which is Scratch's default sprite and logo. The code in the sprite will cause the cat to jump up, say ``hello'', and come back down, when the green flag is clicked, and to make the `meow' sound when the space bar is pressed.
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=\columnwidth]{fig/ui.png}
+  \caption{The Scratch user interface consisting of the `cat' sprite on the left, the toolbox with available blocks in the category `motion' in the middle and the code associated with the sprite on the right. The upper right corner shows the actual location of the sprite.}
+  \label{fig:ui}
+  \end{center}
+\end{figure} 
+
+\subsection{Events}
+Scratch is \emph{event-driven}: all motions, sounds and changes in the looks of sprites are initiated by events. The canonical event is the `when Green Flag clicked', activated by clicking the green flag at the top of the user interface. In addition to the green flag, there are a number of other events possible, including key presses, mouse clicks and input from a computer's microphone or webcam. In the Scratch code in Figure \ref{fig:ui} there are two events: `when Green Flag clicked' and `when space key pressed'
+
+\subsection{Scripts}
+Source code within sprites is organized in scripts: a script always starts with an event, followed by a number of blocks. The Scratch code in Figure \ref{fig:ui} has two distinct scripts, one started by clicking on the green flag and one by pressing the space bar. It is possible for a single sprite to have multiple scripts initiated by the same event. In that case, all scripts will be executed simultaneously. 
+
+\subsection{Remixing}
+Scratch programs can be shared by their creators in the global Scratch repository\footnote{\url{https://scratch.mit.edu/explore/projects/all/}}. Shared Scratch programs can be `remixed' by other Scratch users, which means that a copy of this program is placed in the user's own project collection, and can be then further changed. The `remix tree' of projects is public, so users can track which users remix their programs, a bit similar forking in GitHub. Contrary to forking however, changes upstream cannot be integrated back into the original project. Because Scratch users can remix each others programs, maintainability of programs is important. A given Scratch program can be read and adapted by many children, there are projects on the Scratch home page which are remixed hundreds of times. \todo{maybe this part about importance should be move somewhere else? this section might be skipped.}
+
+\subsection{Variables}
+Like most textual languages, Scratch users can use variables. Variables have to be created with the Scratch user interface, as shown in Figure \ref{fig:ui-vars}. Variables are untyped. Ad you can see in \ref{fig:ui-vars} variable names in Scratch may contain spaces.
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=\columnwidth]{fig/ui-vars.png}
+  \caption{The Scratch user interface to create a variable}
+  \label{fig:ui-vars}
+  \end{center}
+\end{figure} 
+
+\subsection{Procedures}
+Scratch also allows users to create their own blocks, called procedures. They can have input parameters, and labels in between them. Functions are created with an interface similar to the one to create variables. Figure \ref{fig:functions} shows the definition and invocation of a procedure.
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=\columnwidth]{fig/functions.png}
+  \caption{Scratch code to define and invoke a procedure}
+  \label{fig:functions}
+  \end{center}
+\end{figure} 
+
 
 \section{Research design and dataset}
 \subsection{Overall design}
-\todo{here we need to tell someth about replications, see the paper by Shull et al on importance of replications in software engineering.}
+\todo{here we need to tell something about replications, see the paper by Shull et al on importance of replications in software engineering.}
+
 \subsection{Dataset}
+
+
 \subsection{Data analysis}
 To augment the visual comparison of the variable name data derived from Scratch as well as the programming languages considered by Beniamini et al.~\cite{Beniamini}, we conduct statistical analysis. 
 
@@ -113,6 +162,17 @@ Figure \ref{fig:one_letter_occurrence} shows the distribution of variables of on
 		\includegraphics[width=\columnwidth]{fig/one_letter_occurrence}
 		\caption{Total occurrence of variables of one letter}
 		\label{fig:one_letter_occurrence}
+	\end{center}
+\end{figure} 
+
+
+Figure \ref{fig:one_letter_occurrence_functions} shows the distribution of \emph{functions} of one letter in the corpus.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{fig/one_letter_occurrence_functions}
+		\caption{Total occurrence of functions of one letter}
+		\label{fig:one_letter_occurrence_functions}
 	\end{center}
 \end{figure} 
 

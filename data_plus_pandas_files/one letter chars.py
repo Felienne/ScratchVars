@@ -17,7 +17,7 @@ df = pd.read_csv('all_variables_with_arguments.csv')
 print df
 
 #filter our the variables with length 1 and type char
-df = df[((df['varlength']) == 1) & ((df['vartype']) == 'char') ]  
+df = df[(df['varlength']) == 1)  & (df['datatype']) == 'char') ]
 
 #count the number of unique projects in which a varname occurs
 
