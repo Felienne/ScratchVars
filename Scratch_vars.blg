@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
+This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Scratch_vars.aux
 The style file: IEEEtran.bst
@@ -8,49 +8,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: paper.bib
--- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 24 entries,
-            4087 wiz_defined-function locations,
-            1029 strings with 14457 characters,
-and the built_in function-call counts, 21118 in all, are:
-= -- 1716
-> -- 509
-< -- 180
-+ -- 268
-- -- 84
-* -- 1075
-:= -- 3190
-add.period$ -- 58
-call.type$ -- 24
-change.case$ -- 34
-chr.to.int$ -- 432
-cite$ -- 24
-duplicate$ -- 1428
-empty$ -- 1694
-format.name$ -- 112
-if$ -- 4910
+You've used 25 entries,
+            4039 wiz_defined-function locations,
+            1025 strings with 14577 characters,
+and the built_in function-call counts, 21877 in all, are:
+= -- 1780
+> -- 525
+< -- 188
++ -- 277
+- -- 86
+* -- 1114
+:= -- 3303
+add.period$ -- 60
+call.type$ -- 25
+change.case$ -- 35
+chr.to.int$ -- 453
+cite$ -- 25
+duplicate$ -- 1487
+empty$ -- 1771
+format.name$ -- 115
+if$ -- 5035
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 249
-newline$ -- 133
-num.names$ -- 37
-pop$ -- 582
+int.to.str$ -- 25
+missing$ -- 259
+newline$ -- 136
+num.names$ -- 38
+pop$ -- 608
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1610
+skip$ -- 1674
 stack$ -- 0
-substring$ -- 1036
-swap$ -- 1198
-text.length$ -- 36
+substring$ -- 1085
+swap$ -- 1245
+text.length$ -- 37
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 24
+type$ -- 25
 warning$ -- 0
-while$ -- 108
-width$ -- 26
-write$ -- 309
+while$ -- 113
+width$ -- 27
+write$ -- 318
