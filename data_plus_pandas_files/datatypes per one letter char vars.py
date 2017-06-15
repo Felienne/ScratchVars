@@ -11,30 +11,38 @@ import matplotlib
 import matplotlib.pyplot as plt
 import math
 
+def isLetter(c):
+  funcname = c['varname']
+  return funcname.isalpha()
 
-df = pd.read_csv('all_variables_with_arguments.csv')
+
+df = pd.read_csv('output/all_variables_with_arguments.csv')
 
 print df
 
 #filter our the variables with length 1 and type char
-df = df[((df['varlength']) == 1)]  
+df = df[((df['varlength']) == 1)  & (df['vartype'] == 'char') ]  
+
+#now add whether a name is a letter
+df['isLetter'] = df.apply(isLetter, axis=1)
+
+#and filter on it 
+df = df[(df['isLetter'] == True) ]
 
 #count the number of unique projects in which a varname occurs plus their datatype
 
-pivot = pd.pivot_table(df, values='projectid', index=['varname','datatype'], aggfunc=lambda x: len(x.unique()))
+pivot = pd.pivot_table(df, values='projectid', index=['varname'], columns=['datatype'], aggfunc=lambda x: len(x.unique()))
 
 print pivot
 
-pivot.to_csv('distributions of datatype of one letter chars.csv')
+pivot.to_csv('output/distributions of datatype of one letter chars.csv')
 
-#sorting does not work due to a key error WHYYYYY?!
-#pivotsorted = pivot.sort_values(by='varlength', ascending=False)
-#pivotsorted.to_csv('distributions of lengths_sorted.csv')
+pivot.plot(kind='bar', stacked=True)
 
 
 
 
-pivot.plot.bar(alpha=0.5)
+
 
 
 

@@ -40,17 +40,14 @@ df = df[(df['isLetter'] == True) ]
 
 
 pivot = pd.pivot_table(df, values='projectid', index='functionname', aggfunc=lambda x: len(x.unique()))
-#sorting does not work due to a key error WHYYYYY?!
-#pivot = pivot.sort_values(by='functionname', ascending=False)
+
 
 
 print pivot
 
+
+
 pivot.to_csv('output/distributions of one letter functions.csv')
-
-
-
-#pivotsorted.to_csv('distributions of lengths_sorted.csv')
 
 
 
