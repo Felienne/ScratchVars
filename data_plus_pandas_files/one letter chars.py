@@ -12,12 +12,12 @@ import matplotlib.pyplot as plt
 import math
 
 
-df = pd.read_csv('all_variables_with_arguments.csv')
+df = pd.read_csv('output/all_variables_with_arguments.csv')
 
 print df
 
 #filter our the variables with length 1 and type char
-df = df[(df['varlength']) == 1)  & (df['datatype']) == 'char') ]
+df = df[(df['varlength'] == 1)  & (df['vartype'] == 'char')]
 
 #count the number of unique projects in which a varname occurs
 
@@ -25,7 +25,7 @@ pivot = pd.pivot_table(df, values='projectid', index='varname', aggfunc=lambda x
 
 print pivot
 
-pivot.to_csv('distributions of one letter chars.csv')
+pivot.to_csv('output/distributions of one letter chars.csv')
 
 #sorting does not work due to a key error WHYYYYY?!
 #pivotsorted = pivot.sort_values(by='varlength', ascending=False)

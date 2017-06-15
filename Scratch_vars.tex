@@ -97,7 +97,7 @@ Source code within sprites is organized in scripts: a script always starts with 
 Scratch programs can be shared by their creators in the global Scratch repository\footnote{\url{https://scratch.mit.edu/explore/projects/all/}}. Shared Scratch programs can be `remixed' by other Scratch users, which means that a copy of this program is placed in the user's own project collection, and can be then further changed. The `remix tree' of projects is public, so users can track which users remix their programs, a bit similar forking in GitHub. Contrary to forking however, changes upstream cannot be integrated back into the original project. Because Scratch users can remix each others programs, maintainability of programs is important. A given Scratch program can be read and adapted by many children, there are projects on the Scratch home page which are remixed hundreds of times. \todo{maybe this part about importance should be move somewhere else? this section might be skipped.}
 
 \subsection{Variables}
-Like most textual languages, Scratch users can use variables. Variables have to be created with the Scratch user interface, as shown in Figure \ref{fig:ui-vars}. Variables are untyped. Ad you can see in \ref{fig:ui-vars} variable names in Scratch may contain spaces.
+Like most textual languages, Scratch users can use variables. Variables are untyped, but have to be `declared' through the Scratch user interface, shown in Figure \ref{fig:ui-vars}. This figure also shows that, contrary to most programming languages, variable names in Scratch may contain spaces.
 
 \begin{figure}
   \begin{center}
@@ -138,21 +138,26 @@ This procedure is robust against unequal population variances, respects transiti
 In particular, we use the Tukey (all-pairs) contrasts to compare all distributions pairwise.
 
 Furthermore, to understand differences and similarities between the distributions of single-letter variable names in different languages we represent each programming language as a 26-dimensional vector with the dimensions corresponding to `a', ..., `z', and apply hierarchical clustering. \todo{why hierarchical?}
+
+
  \section{Results}
+This section presents an overview of our analysis of variable and function name use in our previously published Scratch dataset \todo{ref ICER}. 
+
+Unless indicated otherwise, all graphs show the number of projects a certain type of variable is used in, rather then the number of occurrences of the variable. Some projects access and update variables hundreds of times, so we felt that counting use would skew the graphs towards bigger programs.
+\todo{maybe this paragraph fits with dataset more than with results? Not sure.}
 
 Figure \ref{fig:distribution_of_lengths} shows the distribution of lengths in the corpus.
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\columnwidth]{fig/distribution_of_lengths}
-		\caption{Total occurrence of variables of different lengths}
+		\caption{Number of projects using variables of different lengths}
 		\label{fig:distribution_of_lengths}
 	\end{center}
 \end{figure} 
 
-\todo{we could sample some 5 letter identifiers here to see what they usually look like since they are an interesting peak?}
+\todo{still need to add the 20+ bucket if we want to have that}
 
-\todo{in the ICPC paper the diagram goes to 20 and then just has 20+ we could do that too?}
 \subsection{One letters}
 
 Figure \ref{fig:one_letter_occurrence} shows the distribution of variables of one letter in the corpus.
@@ -160,11 +165,10 @@ Figure \ref{fig:one_letter_occurrence} shows the distribution of variables of on
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\columnwidth]{fig/one_letter_occurrence}
-		\caption{Total occurrence of variables of one letter}
+		\caption{Number of projects using variables of each of the one letter variables}
 		\label{fig:one_letter_occurrence}
 	\end{center}
 \end{figure} 
-
 
 Figure \ref{fig:one_letter_occurrence_functions} shows the distribution of \emph{functions} of one letter in the corpus.
 
@@ -176,11 +180,20 @@ Figure \ref{fig:one_letter_occurrence_functions} shows the distribution of \emph
 	\end{center}
 \end{figure} 
 
-Scratch is not a typed language, variables can contain strings or numbers without declarations or casting. However, we can infer the types by attempting to cast them to a float or an int. As such we did obtain types, allowing us to compare to the ICPC paper.
+The ICPC paper \todo{add proper reference and cite} also explored the types of one letter variables, by performing a questionnaire among \todo{summary of study here}.
 
+This gave us the idea to also explore types of one letter variables in the context of our dataset. While Scratch variables have no types, we can deduce their use from our dataset, by exploring what assignments are made to variables and deducing the types from those. For example, the two variables in Figure \ref{fig:types} represent a string and an integer respectively. With this process we can compare our results to the types of \todo{ICPC paper}. 
 Figure \ref{fig:one_letter_type} shows the distribution of variables of one letter in the corpus.
 
-\todo{here we can reflect on the differences with "real" languages and the prevalence of ints.}
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=5cm]{fig/types}
+		\caption{Two variables, one of type string and one of type integer}
+		\label{fig:types}
+	\end{center}
+\end{figure} 
+
+\todo{here we need to write some reflection on the results. Alaaeddin....? :-) Comparing the results with the other languages and between functions and variables.}
 
 \begin{figure}
 	\begin{center}
@@ -189,6 +202,11 @@ Figure \ref{fig:one_letter_type} shows the distribution of variables of one lett
 		\label{fig:one_letter_type}
 	\end{center}
 \end{figure} 
+
+
+\section{Scratch specific contructs}
+
+
 
 \subsection{Use of spaces in variable names}
 

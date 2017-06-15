@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import math
 
 
-df = pd.read_csv('all_variables_with_arguments.csv')
+df = pd.read_csv('output/all_variables_with_arguments.csv')
 
 print df
 
@@ -20,18 +20,22 @@ print df
 
 pivot = pd.pivot_table(df, values='projectid', index='varlength', aggfunc=lambda x: len(x.unique()))
 
-print pivot
 
-pivot.to_csv('distributions of lengths.csv')
+pivot.to_csv('output/distributions of lengths.csv')
 
-#sorting does not work due to a key error WHYYYYY?!
-#pivotsorted = pivot.sort_values(by='varlength', ascending=False)
-#pivotsorted.to_csv('distributions of lengths_sorted.csv')
+dfpivot = pd.read_csv('output/distributions of lengths.csv')
+print dfpivot
 
 
+#sorting only works when first saving... otherwise we get a key error
 
+dfpivot = dfpivot.sort_values(by='varlength', ascending=True)
+dfpivot.to_csv('distributions of lengths_sorted.csv')
 
-pivot.plot.bar(alpha=0.5)
+#plot only under 20
+dfpivot = dfpivot[dfpivot['varlength'] <= 21]
+dfpivot.plot.bar(alpha=0.5)
+dfpivot.ylabel(list(range(1,20)))
 
 
 
