@@ -142,7 +142,15 @@ Scratch also allows users to create their own blocks, called procedures. They ca
 
 \section{Research design and dataset}
 \subsection{Overall design}
-\todo{here we need to tell something about replications, see the paper by Shull et al on importance of replications in software engineering.}
+As our goal is to compare the naming practices among the Scratch-developers with those of the developers in the mainstream programming languages we start by partially replicating the recent work of Beniamini et al. on the use of single-letter variables in Java, C, PHP, Perl and JavaScript~\cite{Beniamini}. 
+In terms of the classification of Shull et al.~\cite{Shull2008} we perform a dependent replication of the studies summarized in Figures 1 and 2 of the original work by Beniamini et al.~\cite{Beniamini}.  
+ Inherently, the programming language is the only factor we vary when compared to the original study.
+However, as Scratch programs are not available on GitHub that has been used in the study of Beniamini et al., \todo{Felienne, is this true?} we also had to change the source of the data.
+
+Next, we perform a conceptual replication of the study of the single-letter variable types of Beniamini et al.~\cite{Beniamini}. 
+While the original study has conducted a survey 
+
+Finally, to augment this study we also investigate the ways Scratch developers can benefit from Scratch-specific naming practices such as spaces in variable names, digits as variables and use of textual labels in between parameters.
 
 \subsection{Dataset}
 For this paper we use the dataset created by Aivaloglou and Hermans~\cite{Aivaloglou2016HowKC}, consisting of 250.000 Scratch projects scraped from the Scratch website in March 2016. From this dataset, we have selected the projects that use variables or functions, together this are 73.473 projects (29\%) of Aivaloglou and Hermans's original dataset. Variable use is more common that procedure use. In total 69.045 projects (27.6\%) use variables, while 17.605 use procedures (7.0\%). We used Python to process the original dataset and generate the graphs in this paper. The code we used is available at \url{https://github.com/Felienne/ScratchVars}.
@@ -167,7 +175,8 @@ This section presents an overview of our analysis of variable and function name 
 Unless indicated otherwise, all graphs show the number of projects a certain type of variable is used in, rather then the number of occurrences of the variable. Some projects access and update variables hundreds of times, so we felt that counting use would skew the graphs towards bigger programs.
 \todo{maybe this paragraph fits with dataset more than with results? Not sure.}
 
-Figure \ref{fig:distribution_of_lengths} shows the distribution of lengths in the corpus.
+Figure \ref{fig:distribution_of_lengths} shows the distribution of lengths in the corpus. 
+The original study of Beniamini et al. has concluded that the single-letter variable names ``are approximately as common as other short lengths except in PHP'' and that  ``in C, Java, and Perl they make up 9–20\% of the names.'' 
 
 \begin{figure}[h]
 	\begin{center}
@@ -201,9 +210,9 @@ Figure \ref{fig:one_letter_occurrence_functions} shows the distribution of \emph
 	\end{center}
 \end{figure} 
 
-The ICPC paper \todo{add proper reference and cite} also explored the types of one letter variables, by performing a questionnaire among \todo{summary of study here}.
+Beniamini et al.~\cite{Beniamini} also explored the types of one letter variables, by performing a questionnaire among \todo{summary of study here}.
 
-This gave us the idea to also explore types of one letter variables in the context of our dataset. While Scratch variables have no types, we can deduce their use from our dataset, by exploring what assignments are made to variables and deducing the types from those. For example, the two variables in Figure \ref{fig:types} represent a string and an integer respectively. With this process we can compare our results to the types of \todo{ICPC paper}. 
+This gave us the idea to also explore types of one letter variables in the context of our dataset. While Scratch variables have no types, we can deduce their use from our dataset, by exploring what assignments are made to variables and deducing the types from those. For example, the two variables in Figure \ref{fig:types} represent a string and an integer respectively. With this process we can compare our results to the types of Beniamini et al.~\cite{Beniamini}. 
 Figure \ref{fig:one_letter_type} shows the distribution of variables of one letter in the corpus.
 
 \begin{figure}
