@@ -40,7 +40,7 @@ The abstract goes here.
 
 
 \section{Introduction}
-The naming of identifiers in the source code has been extensively studied~\cite{AmanASK15,AnquetilL98,AvidanF17,Beniamini,ButlerWYS10,CaprileT00,HofmeisterSH17,LawrieMFB07,LunguK13,ScannielloR13,TakangGM96,TramontanaRS14}.
+The naming of identifiers in the source code has been extensively studied (see, e.g., recent studies of this subject \cite{AmanASK15,AvidanF17,Beniamini,ButlerWYS10,HofmeisterSH17,LunguK13,ScannielloR13,TramontanaRS14}).
 Still, the impact of the variable name choice on code readability and maintainability is controversial, as witnessed, e.g., by recent studies of Beniamini et al.~\cite{Beniamini} and Hofmeister et al.~\cite{HofmeisterSH17} reaching contradictory conclusions.
 %Comprehension is linked to maintainability tasks and efficient performance of developers while performing them. \todo{AS says: we need either a citation to support this claim or rephrase} As one scientist once said \quotes{the code should be considered for human and less occasionally for a computer to execute}.\todo{AS asks: who has said this? This is a common adagio but I have no idea who is the author.}
 %
@@ -55,17 +55,16 @@ When it comes to novice programmer and learners, it is more important for the so
 These users are the future developers, and at some point, they need to follow an implicit or explicit guideline of naming and collaborating in larger software repositories. 
 To this end, we have analyzed 240,000 Scratch projects. 
 Scratch is a block-based visual language that was developed by MIT with the aim of helping young people learn the basic concepts of programming and collaboration.
-Scratch has recently become very popular among school-age children and introduced as part of the curriculum in some countries as a means to teach programming. Analyzing Scratch programs will give researchers and software engineering community a perspective on naming from learners making their first step in programming and might turn to be the future programmers. In this paper we aim at answering the following research questions: \\
-\begin{description}
-	\item[\textbf{RQ1}] How do Scratch users name variables and procedures?
-	\item[\textbf{(a)}] The length distribution of variable and function identifiers across projects.
-	\item[\textbf{(b)}] The usage of single-letter variables.
-	\item[\textbf{RQ2}] How do Scratch users use language-dependent features in naming identifiers? In particular, to what extent are the following usage patterns popular within Scratch projects?
-	\item[\textbf{(a)}] Using spaces within identifiers
-	\item[\textbf{(b)}] Using numeric digits as identifiers
-	\item[\textbf{(c)}] Using the parameter in the middle name for procedures] 
-	
-\end{description}
+Scratch has recently become very popular among school-age children and even in introduced as part of the school curriculum as a means to teach programming~\cite{SaezLopez}.
+Analyzing Scratch programs will give researchers and software engineering community a perspective on naming from learners making their first step in programming and might turn to be the future programmers. In this paper we therefore aim at understanding \emph{how do Scratch users name variables and procedures? }
+
+To answer this question we first replicate two studies from a recent paper by Beniamini et al.~\cite{Beniamini}.
+We start by investigating the distribution of the lengths of variable and function names across Scratch projects. 
+Next, we focus on popularity of single-letter names such as $i$ and $x$ as variable and function names.
+
+To augment the previous study of Beniamini et al.~\cite{Beniamini} we focus on Scratch-specific features in naming identifiers.
+In particular, we aim at understanding to what extent spaces within identifiers (e.g., variable \emph{max i}), digits as identifiers (e.g., variable 6) and parameters inserted the middle of the procedure name (\todo{Give an example}).
+Those features are missing from the main-stream programming languages: if they will prove to be popular among the Scratch developers, one could advocate that they should be integrated in the main-stream programming languages as well.
 
 \todo{More questions: analysis of the peak value of 5, what is the most recurrent name? Is it expected or justified?}
 \todo{More questions: variable length based on category of the Scratch program: game animation, ....}
