@@ -27,13 +27,6 @@ print pivot
 
 pivot.to_csv('output/distributions of one letter chars.csv')
 
-#sorting does not work due to a key error WHYYYYY?!
-#pivotsorted = pivot.sort_values(by='varlength', ascending=False)
-#pivotsorted.to_csv('distributions of lengths_sorted.csv')
-
-
-
-
 pivot.plot.bar(alpha=0.5)
 
 

@@ -12,9 +12,9 @@ import matplotlib.pyplot as plt
 import math
 
 
-df = pd.read_csv('all_variables_with_arguments.csv')
+df = pd.read_csv('output/all_variables_with_arguments.csv')
 
-print df
+df = df[(df['number_of_spaces'] > 0) & (df['number_of_spaces'] < 7)]
 
 
 #count the number of unique projects in which a length occures
@@ -23,11 +23,12 @@ pivot = pd.pivot_table(df, values='projectid', index='number_of_spaces', aggfunc
 
 print pivot
 
-pivot.to_csv('distributions of spaces.csv')
+pivot.to_csv('output/distributions of spaces.csv')
 
-#sorting does not work due to a key error WHYYYYY?!
-#pivotsorted = pivot.sort_values(by='varlength', ascending=False)
-#pivotsorted.to_csv('distributions of lengths_sorted.csv')
+
+
+pivot.plot.bar(alpha=0.5)
+
 
 
 

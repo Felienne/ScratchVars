@@ -1,0 +1,1797 @@
+textArguments,projectid
+at,648
+ to,579
+ Speed:,559
+Tone:,493
+y:,483
+ y:,419
+ x:,367
+to,323
+ at,314
+int.,291
+ ),289
+ speed,253
+ ,250
+from,248
+ size,243
+ Hold:,237
+ Tone:,235
+ speed:,227
+and,227
+ and,217
+in,215
+by,208
+ hold,202
+ of,199
+ with,179
+on,176
+"""""",158
+ color,154
+ size:,145
+ secs,145
+ B:,145
+y,141
+ |Speed:,141
+then,139
+with,138
+ add,136
+ mod,134
+ |,133
+ to:,132
+apply,131
+for,131
+ Spawn,131
+User,131
+Costume,130
+ tileID=,130
+ceiling,130
+ range:,130
+tone,129
+step,129
+using,129
+ home,127
+angle,126
+ padding,126
+time,122
+ set,121
+*,119
+ Costume:,117
+ effect,116
+ list,114
+max,112
+ step,112
+ tone,100
+Y:,98
+),95
+starting,95
+ level,93
+frames,93
+ type,91
+ h,91
+ width,87
+ in,87
+ if,86
+ radius,86
+ Y:,85
+speed,85
+ font,82
+ for,81
+\\\\%,80
+wait,80
+ ID,78
+ tmp,76
+power,76
+At,76
+last,76
+ With,76
+replacing,76
+typ,75
+orig,75
+ G:,74
+R:,73
+ max,73
+ (0,72
+ a,72
+percent,71
+ 1),71
+t,71
+G:,70
+ life,70
+ lava,70
+prev,70
+typ:,69
+xy:,69
+ hp:,69
+ siz:,69
+says,69
+ cls:,69
+ agr:,69
+ignore,69
+base,69
+amount,69
+c#:,69
+ spd:,69
+ X:,68
+ times,68
+ len,68
+ upper,68
+is,68
+hell,68
+count,68
+add,68
+ y,67
+of,66
+ seconds,63
+ In,62
+ delay,59
+ Sound,56
+ Ghost,55
+ Size:,54
+Size:,53
+resolution:,52
+Speed:,52
+ Damage,52
+x:,52
+ by,51
+ x,51
+offset,50
+ use,49
+ not,49
+Y,49
+To,48
+ z:,48
+ (fast),45
+tone:,45
+ ?????????,41
+size,41
+ letter,39
+into,38
+ lowercase,38
+ ??????,37
+ .,36
+ centered:,36
+??????,35
+ steps,35
+damage,35
+steps,34
+ Cloud,33
+ \\\\%,33
+do,32
+?????????,32
+ out,31
+y1:,31
+ x2:,30
+ y2:,30
+ X,30
+ into,29
+ Z:,29
+->,29
+ frames,28
+ string,28
+Delay:,28
+ Round,28
+Wait,27
+ Duration,27
+ List,27
+ Shade:,27
+ Symbol:,27
+ Seconds:,26
+ (,26
+ origZ:,25
+ objectZ:,25
+ penColor:,25
+iStart:,25
+ data1:,25
+objectY:,25
+origY:,25
+prevX:,25
+ direction,25
+ destZ:,25
+ destY:,25
+ destX:,25
+ penSize:,25
+ Zdistance:,25
+ Y,25
+|,25
+ penShade:,25
+Color:,25
+ tanCangleY:,25
+ Come,25
+ rotZ:,25
+ timeSlice:,25
+ rotY:,25
+ rotX:,25
+MouseY:,25
+ repeat:,25
+ r:,25
+ prevZ:,25
+ prevY:,25
+ A:,25
+hover:,24
+depth:,24
+secs,24
+letter,24
+ element:,24
+ data2:,24
+ the,23
+ ????????????,23
+ ???,23
+goal,23
+s,22
+ Spacing:,22
+ is,22
+ w,22
+2,21
+ Text:,21
+ twentieths,21
+ Angle:,20
+ list:,20
+speed:,20
+within,20
+g,20
+ box,20
+ Pressure:,20
+score,20
+degrees,20
+ pressed,19
+ change,19
+ ??????????????????,19
+x,19
+combo,19
+#,19
+ touching,19
+ from,19
+start:,18
+ Size,18
+ tone:,18
+ z,18
+ Digits,18
+ name,18
+ separator,18
+seconds,18
+ end:,18
+ position,18
+ distance,18
+ dir,18
+ decoded:,17
+ (Do,17
+ range,17
+ +,17
+until,17
+dist,17
+ blip,17
+ this,17
+go,16
+ length,16
+ characters,16
+ say,16
+ then,16
+ go,16
+angryly,16
+ clones:,16
+ between,16
+ direction:,16
+ pen,16
+ remove,15
+ rotate,15
+ screen,15
+^,15
+ arg1:,15
+dir,15
+ space,15
+sides,15
+slot,15
+???,15
+ \\\\%t,15
+ around,15
+ \\\\%p,15
+ reward,15
+ ??,15
+ *,14
+ lowercase?,14
+ smooth?,14
+ available,14
+ To,14
+ planet,14
+ behind,14
+ of:,14
+ Radius:,14
+ number,14
+ together,14
+ wait,14
+as,14
+ (inclusive),14
+smooth?,14
+ correct,14
+rings,14
+ self,14
+every,14
+given,14
+ sec,14
+ Colour:,13
+ (X:,13
+ RGBA,13
+length,13
+ Speed,13
+ Color,13
+ words,13
+1,13
+ refresh,13
+scale,13
+ Coordinates:,13
+ :,13
+ Color:,13
+ hold:,12
+ width:,12
+ numbers,12
+ scale,12
+ Center:,12
+ hexadecimal,12
+Delay,12
+ Vector:,12
+layers,12
+petals,12
+-2,12
+Hold,12
+ ghost,12
+ DS,12
+ ds,11
+Y::,11
+DELAY,11
+ \\\\@,11
+ At,11
+ items,11
+ai:,11
+times,11
+ text,11
+distance,11
+between,11
+ delimiter,11
+ Fly,10
+ Gold,10
+doors,10
+ HP,10
+ dps,10
+4,10
+Mob,10
+radius:,10
+ Space,10
+particles,10
+ ;,10
+ Interval,10
+leaves,9
+name:,9
+march,9
+px,9
+-,9
+recover:,9
+ code,9
+grid,9
+yVel:,9
+veces,9
+ new,9
+ ang,9
+ spacing,9
+to:,9
+ velocity,9
+ march,9
+ b,9
+In,9
+ w\\/o,9
+With,9
+ starting,9
+ R1,8
+from:,8
+ gravity,8
+ borders:,8
+ R2,8
+ R3,8
+ RGB,8
+ costumes,8
+ ?,8
+\\/,8
+ Pen,8
+ an,8
+ cloud,8
+ until,8
+ leg,8
+ pos,8
+ sun,8
+ logo,8
+ S,8
+ point,8
+ line,8
+ xr,8
+ radix,8
+want,8
+ uppercase?,8
+wave,8
+ steep,8
+ moon,8
+ nighttime,8
+ cloudvar,8
+3,8
+costume,7
+ End,7
+ count,7
+start,7
+ step:,7
+ =,7
+ blue:,7
+costumes,7
+ movement,7
+ damage,7
+ Times,7
+multiplier,7
+X,7
+gap,7
+ R,7
+ ???????????????,7
+ -,7
+ G,7
+ height,7
+ green:,7
+0,7
+red:,7
+ or,7
+Times,7
+ Letter,7
+ costume,7
+ radius:,6
+ speed=,6
+ score,6
+ shade:,6
+ shadow,6
+ skipping,6
+ s:,6
+contains,6
+ cycles=,6
+ sound,6
+:,6
+ thickness,6
+ Pensize,6
+ icon,6
+6,6
+5,6
+(2),6
+End,6
+ yr,6
+From,6
+ y=,6
+ level:,6
+ x=,6
+ finish,6
+On,6
+Speed,6
+ P:,6
+X:,6
+ dy=,6
+ lock,6
+ lock=,6
+ dx=,6
+ B,6
+ var,6
+ using,6
+7,6
+ type=,6
+abs(gravity)=,6
+ direction=,6
+ track=,6
+},6
+Time:,6
+ all,6
+spin,6
+ angle=,6
+ RGBA:,6
+ Vy=,6
+ Scale,5
+ Effects,5
+Size?,5
+ fade,5
+Starting,5
+ Blue,5
+ WrapX,5
+ extra,5
+ end,5
+\\\\@,5
+ PSize,5
+ t,5
+spin:,5
+ (Run,5
+throw,5
+ start,5
+ player,5
+ Every,5
+cent.,5
+squares,5
+ mouse,5
+ first?,5
+????????????,5
+ clickable:,5
+ Colour,5
++,5
+ intensity,5
+radius,5
+ hr?,5
+scl,5
+ Centered,5
+ Length??,5
+type,5
+set,5
+ gst,5
+size:,5
+spc,5
+Direction,5
+ ui,5
+ away,5
+ modifier:,5
+clones,5
+ allign,5
+ segoe,5
+ rgba,5
+ sec(s),5
+ Forever:,5
+h,5
+ repeating,5
+delay,5
+ Shade,5
+ GUI,5
+costume:,5
+ variable,4
+pixels,4
+ Y2:,4
+ as,4
+end,4
+ gravity:,4
+ value,4
+Enable,4
+G,4
+worth,4
+ real,4
+yScr,4
+Go,4
+ twitch:,4
+ b:,4
+ Go!!,4
+ slope?,4
+Red,4
+Required,4
+Right,4
+high;,4
+ Z,4
+ move?,4
+ Length:,4
+s:,4
+ left,4
+ yScrPlat,4
+ letters,4
+ angle,4
+ angle:,4
+ resolution:,4
+50,4
+ color(1-200):,4
+ levels,4
+ xScrPlat,4
+ color:,4
+=,4
+setscroll,4
+ wrap,4
+face,4
+ Rrecomeded,4
+ long,4
+??????????,4
+ longueur,4
+ loved,4
+????????????????????????,4
+ column,4
+ when,4
+ Flavor,4
+ walljump,4
+"""speed:""",4
+ offset,4
+meters,4
+colour:,4
+ platMin\\/Max,4
+among,4
+ Transparency,4
+ brightness,4
+ output,4
+ ox,4
+ bright,4
+ data,4
+ degrees:,4
+ swing,4
+letters,4
+ physics?,4
+ shade,4
+len,4
+ percent,4
+ ;;,4
+ pensize:,4
+ setY,4
+bottom,4
+ distance:,4
+ opacity:,4
+ slow:,4
+ Text,4
+ Each,4
+(3),4
+ bashvarlist,4
+ decimal,4
+ Green,4
+ jump,3
+ kern,3
+ slot,3
+ petals,3
+ without,3
+ siz,3
+ rotation,3
+ row:,3
+ TEXT:,3
+ startang:,3
+ len:,3
+ y-offset,3
+ pitch:,3
+ adding,3
+ letterspace,3
+ x-offset,3
+ stars,3
+ Coordinate:,3
+ square,3
+rotation:,3
+ letter),3
+rocks,3
+ side,3
+tiles,3
+ s,3
+ vel,3
+ Horizontal,3
+ (list,3
+ orientationBranche,3
+tank,3
+ set:,3
+ (1)\\/fade,3
+ turns,3
+ Lava,3
+ opacity,3
+ throw,3
+ Data???,3
+ no,3
+ Degrees:,3
+ ramp,3
+ Seconds.,3
+ token,3
+sum,3
+ Say,3
+w\\/,3
+ sensing,3
+ occupied,3
+ momentum,3
+without,3
+ Y1:,3
+ quality,3
+ stops,3
+ pen:,3
+ tilt:,3
+ maximum,3
+ style,3
+ style?),3
+ variable?),3
+ter,3
+ par,3
+ that,3
+ (in,3
+ (cloud,3
+ refresh),3
+ up,3
+ ID:,3
+ overwrite?,3
+ otherwise,3
+ mode,3
+ Fish,3
+ roll:,3
+percent:,3
+??????????????????,3
+ first,3
+Move,3
+ Bounzy,3
+category,3
+char,3
+pen,3
+For,3
+ at:,3
+ front,3
+ C:,3
+ gap,3
+ -bit,3
+ ghost:,3
+ going,3
+player,3
+ de,3
+Beacons,3
+laser,3
+k,3
+or,3
+ degrees,3
+Size,3
+X2:,3
+ binary,3
+minutes,3
+ dur,3
+Y1:,3
+ down,3
+ bounds,3
+ Bands,3
+ endang:,3
+ ending?,3
+ false,3
+ Angle,3
+Type,3
+ factor,3
+at:,3
+b:,3
+ button,3
+buttons,3
+Start,3
+ case-sensitive?,3
+maj\\/min:,3
+ clear,3
+if,3
+ ang:,3
+80,3
+ charset,3
+random,3
+ Cloned,3
+ghost:,3
+ coordinates,3
+(no,3
+height:,3
+ costume:,3
+ index,3
+r,3
+ col,3
+ interaction,3
+ coins,3
+ high,3
+ italic,3
+-facing,3
+ amp:,3
+????????,3
+lines,2
+ state:,2
+ #,2
+ Alzter,2
+except,2
+ And,2
+arms:,2
+ saturation,2
+and:,2
+angs:,2
+dashed\\/regular,2
+factor:,2
+an,2
+ stem,2
+bottom-left:,2
+ Engine,2
+text:,2
+ rows:,2
+m,2
+ AppLayers,2
+activity,2
+follow,2
+ stun,2
+found,2
+frame,2
+main,2
+ Animate,2
+toCLVar,2
+cam.POS,2
+color:,2
+a:,2
+degree,2
+color,2
+where,2
+val,2
+ sides,2
+vertical,2
+ sprite,2
+condition,2
+decay:,2
+contain,2
+de,2
+d2,2
+ Fisheye:,2
+ ????????????????????????,2
+ Font:,2
+ second,2
+guns,2
+collected,2
+clone?,2
+en,2
+y??????,2
+ smooth,2
+ (Add,2
+toList,2
+ sound:,2
+enemyType:,2
+zoom,2
+dash\\/regular,2
+can,2
+tilt::,2
+relative,2
+Walk,2
+maze,2
+sei,2
+??,2
+ writer,2
+ Centered?,2
+pressed,2
+score*10,2
+sec,2
+ (y-vel),2
+position:,2
+pos,2
+move,2
+players,2
+????????????????????????????????????,2
+ while,2
+???????????????????????????????????????,2
+Amount,2
+ wall,2
+side,2
+Brightness:,2
+ x-vel,2
+;,2
+rows,2
+pushin,2
+(max,2
+"""s""",2
+ ~,2
+ },2
+ |Speed;,2
+repeat,2
+ {,2
+reset?,2
+ Clear:,2
+rbg,2
+returns,2
+right,2
+.,2
+ y-vel,2
+rad,2
+rotated,2
+ x\\/y:,2
+ w??hrend,2
+Cat,2
+Color,2
+sun,2
+Unless,2
+ Direction:,2
+Wait:,2
+ (X,2
+ tilt,2
+ tile,2
+(Credit,2
+numberofinuts,2
+number,2
+ Slide,2
+nonshade,2
+XBasGauche,2
+Y),2
+ text.,2
+target:,2
+nodes,2
+ target,2
+ timeout:,2
+ timer:,2
+ Camera,2
+ Direction,2
+Content:,2
+ Button,2
+How,2
+orig:,2
+Level:,2
+ turning:,2
+options,2
+ turn,2
+ try,2
+Repeat,2
+stars,2
+step:,2
+onto,2
+ roll,2
+ 1=Use,2
+ Delay,2
+ Delay:,2
+g:,2
+ there,2
+ on,2
+ about,2
+ \\/,2
+ number.,2
+ costumename,2
+ nodelete?,2
+ grid,2
+ grow\\/shrink-inator:,2
+ nach,2
+ moving,2
+ move,2
+ off:,2
+ mouse:,2
+ h\\/s,2
+ Rot,2
+ columns,2
+ colstt:,2
+ min\\/max:,2
+ hardness:,2
+ cols:,2
+ off,2
+ friction,2
+ degree,2
+ pass,2
+ filling,2
+ Whirl:,2
+ per,2
+ Hold;,2
+ Save,2
+ decay,2
+ I,2
+ pattern:,2
+ Postion,2
+ current,2
+ dashed\\/regular,2
+ YBasGauche,2
+ orig,2
+ Yspeed,2
+ framerate,2
+ On,2
+ only,2
+ on:,2
+ alpha,2
+ colors,2
+ als,2
+ Move,2
+ increments,2
+ camera,2
+ Long,2
+ be,2
+ length:,2
+ because,2
+ calc,2
+ leng,2
+ inv,2
+ amplitude:,2
+ c:,2
+ Mosaic:,2
+ last,2
+ block,2
+ bounds:,2
+ break?,2
+ itemincode,2
+ breakup,2
+ backdrop:,2
+ back,2
+ lightness,2
+ character,2
+ merid,2
+ memory,2
+ me,2
+ angles:,2
+ angs:,2
+ collision,2
+ col:,2
+ O,2
+ matrix,2
+ map,2
+ animation,2
+ answer,2
+ lum,2
+ as_shadow,2
+ location,2
+ list2:,2
+ az:,2
+ Variable,2
+ by:,2
+ Tone;,2
+ face,2
+ Secs.,2
+ repeats,2
+ enemyCount:,2
+ pole,2
+ pos.,2
+ pos:,2
+ delete?,2
+ position:,2
+ far,2
+ divided,2
+ power,2
+ HSL,2
+ faint,2
+" ""cant""",2
+ Point,2
+ factors:,2
+ facing,2
+ rank,2
+ Steps,2
+ fact:,2
+ Pixelate:,2
+ factor:,2
+ rad:,2
+ pull,2
+ factors,2
+ dirn:,2
+ TaskBarActiveApps,2
+ disk,2
+ Thiness,2
+ Sound?,2
+ filled?,2
+ Seconds,2
+ fill,2
+ degrees.,2
+ right,2
+ point:,2
+ Sound:,2
+ ripped,2
+get_unit?,1
+ drop-y:,1
+ closed,1
+ PY:,1
+futures,1
+ ?????????),1
+ c1,1
+ c2,1
+ dist:,1
+ c3,1
+g-petals,1
+ ????????????),1
+ clone,1
+Z:,1
+ close,1
+jfx,1
+leaf,1
+ clothing,1
+knob,1
+ display?,1
+ c,1
+led.y:,1
+left,1
+amp:,1
+ coler,1
+forever,1
+ ?????????????????????,1
+ bytes,1
+ duizend,1
+flowers,1
+ clearLast,1
+ ??????2,1
+ clear?,1
+ >,1
+\\/sz,1
+ cdown,1
+ category:,1
+_,1
+joku,1
+ drama,1
+\\\\@max,1
+ drawing?,1
+increase,1
+info:,1
+inside,1
+ draw,1
+ <--,1
+ Attack,1
+how,1
+ ???(a^b),1
+ ????????,1
+height,1
+ <,1
+ circleness,1
+ done,1
+acceleration,1
+key,1
+ R:,1
+ chance,1
+fast?,1
+ dots,1
+ drain,1
+heigth,1
+ ????,1
+ center?,1
+horizontal,1
+a,1
+ Player,1
+ disappear,1
+ cut,1
+ dashes:,1
+ dans,1
+cost,1
+ d??finition,1
+ d:,1
+ d,1
+ ???x??????,1
+cval,1
+ ???HP??????,1
+ dir:,1
+ delay.,1
+ custom,1
+ curve,1
+brightness:,1
+brightness,1
+data,1
+ delete,1
+data:,1
+comments,1
+ ???y?????????????????????,1
+ ARTIFICIAL,1
+ Position,1
+ define,1
+center?,1
+change,1
+ Point?:,1
+catch,1
+character,1
+characters,1
+ Point3D,1
+checked?,1
+c??t??s,1
+clear?,1
+ deccelerate,1
+ decays:,1
+coin,1
+col:,1
+ decays,1
+ ANGLE*,1
+let:,1
+big,1
+ crash,1
+down,1
+back,1
+axis,1
+avec,1
+dust,1
+editsize?,1
+effect,1
+ console,1
+ completion,1
+ Playernames,1
+error,1
+event,1
+ Alignment:,1
+ A,1
+ digits,1
+ dimensions,1
+ Amount,1
+ colored,1
+durante,1
+ contents,1
+decays:,1
+backwards,1
+bfc,1
+ delta,1
+deep,1
+ couleur,1
+ ??????y,1
+beat:,1
+del,1
+deltas,1
+ ??????x,1
+ ??????????????????????????????,1
+direction:,1
+ Accuracy,1
+ copier,1
+ convert:,1
+distance:,1
+divided,1
+ ?????????????????????(c\\/b,1
+ roep,1
+ banco,1
+ broadcast,1
+ (MTT),1
+ Way,1
+target_col,1
+ Walls,1
+texture,1
+that,1
+ User:,1
+through,1
+ Type,1
+tile,1
+ Second,1
+time(s),1
+levens,1
+ TollVastags??g,1
+tmp,1
+ (Fire,1
+ Temp2,1
+ (Alphys),1
+tone?,1
+touching,1
+towards,1
+trail,1
+trans,1
+tama??o,1
+tall,1
+ Wrap,1
+switch,1
+ Yh,1
+ Y\\/N,1
+ Y=,1
+ (delete,1
+ SEND,1
+speeds:,1
+spikes,1
+ Y-Position,1
+ Y-Cam,1
+squared,1
+ SPEACH:,1
+ XYZ:,1
+ XD,1
+ (before):,1
+ (after):,1
+stem,1
+ (\\\\%):,1
+ XB,1
+style:,1
+ X2:,1
+ X-Cam,1
+triangles,1
+turn,1
+ (ANIMU,1
+when,1
+width,1
+ (1=yes,1
+ Steal,1
+ Start,1
+ Sphere,1
+wtih,1
+ (*30),1
+x-coordinate,1
+ &,1
+xscale:,1
+ $\\/\\\\%,1
+ #explain,1
+ #AllWeb,1
+ #:,1
+ Sep:,1
+ Seperator,1
+yes\\/no,1
+yfact:,1
+yob,1
+zijde,1
+zoom:,1
+which,1
+ Stories,1
+ (A:,1
+ String,1
+ Target,1
+type:,1
+typed,1
+units.,1
+ (??????),1
+up:,1
+update,1
+ (999,1
+v,1
+v:,1
+ Tampon,1
+valid?,1
+value,1
+value:,1
+ Table,1
+vel.,1
+ TRASH),1
+vertical:,1
+verticale,1
+ Sync),1
+ (1\\/3),1
+ Z-Cam,1
+sided,1
+side:,1
+not,1
+ base,1
+Y123,1
+ 360-direction,1
+ 2:,1
+ok,1
+ 1:,1
+onder,1
+ backdrop),1
+ bO(,1
+ 1(,1
+ b(,1
+ 0(,1
+passi,1
+password,1
+ axis,1
+ assigned,1
+ ascending,1
+pixel,1
+ Reduce,1
+play,1
+ args:,1
+notes,1
+non-error,1
+points,1
+no,1
+location,1
+mag,1
+ bound,1
+ bounce,1
+ border?,1
+ bool,1
+meat(s),1
+ RPG,1
+mily,1
+mins,1
+ big,1
+mobs,1
+money,1
+monster,1
+ bfc,1
+moveCat,1
+moving,1
+multiple,1
+ Radius,1
+ before,1
+new,1
+ arg2:,1
+ Reflect,1
+ Z-Rot,1
+ a(x-A)(x-B),1
+ )???????????????????????????,1
+ a(,1
+saltos,1
+sarting,1
+say,1
+ )???????????????,1
+ Rotation,1
+ Rotation:,1
+ );,1
+ Row:,1
+ \\\\%?????????,1
+secondes,1
+ \\\\%-width,1
+ (r2),1
+secs:,1
+ \\/\\/size:,1
+sensor,1
+sets,1
+ SE:,1
+shade:,1
+si,1
+rule,1
+ above,1
+ appedage,1
+rotate,1
+preserve,1
+ animate,1
+ )}???????????????(?????????,1
+proceed,1
+ps,1
+ angulo,1
+ angular,1
+ angles,1
+ Regulator,1
+ready,1
+ alpha:,1
+ alors,1
+ all?,1
+ )long:,1
+ aim:,1
+ )color:,1
+ ResponseIfCorrect:,1
+rgba,1
+ add:,1
+right:,1
+ accent,1
+ duration,1
+Switch,1
+Y-Rot,1
+ turning,1
+ no.,1
+ Degrees,1
+ touche,1
+ nearest,1
+ toward\x7f;,1
+ name),1
+ trigP:,1
+ trigR:,1
+ trigY:,1
+ true,1
+ Data,1
+ LOT,1
+ twist,1
+ monster,1
+ D_i_a_v_l_o,1
+ model,1
+ u\\/d,1
+ mod),1
+ une,1
+ Length,1
+ mins,1
+ up:,1
+ non-refresh,1
+ notes,1
+ y:%n,1
+ theorem),1
+ talking,1
+ Element,1
+ Inbetween,1
+ origin,1
+ Input,1
+ texture,1
+ than,1
+ operation:,1
+ Effect,1
+ then...,1
+ onto,1
+ Description:,1
+ through,1
+ thyme,1
+ Dot,1
+ till,1
+ Integer,1
+ time,1
+ time:,1
+ octave,1
+ num:,1
+ nowored,1
+ min,1
+ DROID?,1
+ usemod,1
+ lightdir:,1
+ lives,1
+ Current,1
+ Level,1
+ x-scale:,1
+ line\\/s,1
+ x2,1
+ Crit,1
+ Costume,1
+ x:%n,1
+ lineN,1
+ xfact,1
+ user,1
+ light,1
+ xv,1
+ xy:,1
+ Line,1
+ y-coordinate,1
+ y-drop:,1
+ Line\\/s,1
+ y-scale:,1
+ letter:,1
+ y2,1
+ log,1
+ Custom:,1
+ loops:,1
+ D:,1
+ miljard,1
+ message,1
+ value:,1
+ maxRef.,1
+ max.dots,1
+ vers,1
+ vertical:,1
+ vider,1
+ view,1
+ vitesse,1
+ voice,1
+ volume:,1
+ DEGREES*,1
+ make,1
+ waiting,1
+ majfact,1
+ magnitude,1
+ water,1
+ m\\/s??????,1
+ where,1
+ whole,1
+ takes,1
+ taille,1
+ p(,1
+ shdw,1
+ rand,1
+ ranbow),1
+ Got,1
+ radio,1
+ r,1
+ quickly,1
+ sfx,1
+ put,1
+ pulsos,1
+ shape,1
+ shift:,1
+ size(,1
+ ship,1
+ shout,1
+ shown?:,1
+ progress,1
+ HEX:,1
+ sides:,1
+ simi-strings,1
+ sine:,1
+ sinion,1
+ sinon,1
+ recolt,1
+ recursion,1
+ Go,1
+ repeat,1
+ rot:,1
+ GPA,1
+ GOTO:,1
+ ring-size:,1
+ right:,1
+ rotation:,1
+ rotdlf,1
+ required:,1
+ required,1
+ sad?,1
+ reps,1
+ saturation:,1
+ repeat?,1
+ scale:,1
+ scaled,1
+ scl,1
+ scolling,1
+ Ghost:,1
+ For,1
+ scrolling,1
+ sebess??g:,1
+ Fade:,1
+ Facing,1
+ sz,1
+ strength:,1
+ pitch,1
+ pie,1
+ startness,1
+ phosphorus,1
+ stay,1
+ petal,1
+ pensize,1
+ How,1
+ pen?,1
+ str,1
+ Else,1
+ size\\\\%,1
+ string.,1
+ structure,1
+ structure:,1
+ style:,1
+ sum,1
+ particles,1
+ supporting,1
+ sure,1
+ sustained,1
+ parallax:,1
+ start:,1
+ pixelrender?,1
+ place,1
+ stamp,1
+ sizedlf,1
+ pour,1
+ Hexadecimal,1
+ slow,1
+ so,1
+ points:,1
+ points,1
+ sound?,1
+ FWT,1
+ pointing,1
+ spare,1
+ Ex,1
+ Everything!!!!!!,1
+ pointer,1
+ speeds,1
+ speeds:,1
+ spin?,1
+ split,1
+ point(,1
+ place(s),1
+ squares,1
+ Console,1
+ length!,1
+Y-?,1
+New,1
+ P.o.V.,1
+Int:,1
+Into,1
+Laser(s),1
+ food,1
+Maximum,1
+ P2,1
+ fly,1
+ flipped?,1
+Mr\\/Ms,1
+Note:,1
+I:,1
+Now,1
+Number:,1
+Offset,1
+Ok?,1
+P,1
+People,1
+Petals,1
+Pitch:,1
+Position,1
+Protocol,1
+ID,1
+ for:,1
+ yaw,1
+Ellipses,1
+D??lka:,1
+ Of,1
+Damage,1
+Degrees,1
+ get_normal_vector?,1
+ g-leaves,1
+Dir,1
+ g,1
+Dog,1
+Draw,1
+ Offset,1
+Hossz,1
+Fall,1
+ frames:,1
+ frame:,1
+Gap,1
+Get,1
+ forward:,1
+Gravity:,1
+Green,1
+Height,1
+ format,1
+Question,1
+ Bounze,1
+Record,1
+ export,1
+The,1
+Then,1
+Time,1
+Times=,1
+ Block,1
+ Binary,1
+Veces,1
+Vrai,1
+ Between:,1
+ extras:,1
+ envoyer,1
+ fill_col,1
+WxH:,1
+X-Position,1
+ ending,1
+ encryption,1
+X=,1
+ PX:,1
+XHaut,1
+ eat,1
+ each,1
+Y+,1
+Text,1
+Target,1
+TURRET,1
+TO,1
+Repeat?,1
+ feelinga,1
+Rule,1
+Says,1
+Score:,1
+Set,1
+Si,1
+Side,1
+Sides,1
+ feather,1
+ Bounce,1
+Space,1
+Spd.,1
+Speaker,1
+ Bold:,1
+Sphere,1
+ fade?,1
+Step(s),1
+Steps,1
+Stop,1
+ rot,1
+Creator:,1
+ CW?,1
+CoolTalk,1
+ item,1
+ iterations,1
+(ArcTan2),1
+(Bullet),1
+(Buttons),1
+(Enemy),1
+(Lip,1
+(Pythagorean,1
+(Walls),1
+(X),1
+(Y),1
+ it?,1
+ input,1
+(sprite,1
+(v2),1
+)(color,1
+)???(,1
+*|,1
+ intervals,1
+-1,1
+ interface,1
+-2:,1
+ Clear,1
+ iterations:,1
+(0,1
+&,1
+#OfBars:,1
+ yaw:,1
+ Matrice,1
+ yscale:,1
+ yv,1
+ z1,1
+ z2,1
+ Matrice;,1
+ zob,1
+ zoom,1
+ zoom:,1
+ zscale:,1
+ leaves,1
+ Max,1
+ lado,1
+ l\\/r:,1
+ l\\/r,1
+!,1
+ Code,1
+ kotch,1
+ its,1
+ Closed?,1
+ instantly,1
+.contains(,1
+ gold,1
+???true??????????????????????????????,1
+ hight:,1
+ hight,1
+ hieght:,1
+ hide:,1
+???????????????,1
+ hide,1
+ height:,1
+????????????????????????(????????????,1
+???????????????????????????,1
+ health,1
+Accel.,1
+.substring(,1
+ happy,1
+And,1
+Answers:,1
+ Caught,1
+At:,1
+ hangtime,1
+Brightness,1
+ O(,1
+Clones,1
+Cntry:,1
+???(???),1
+???(???,1
+ Number,1
+ horizontal:,1
+0=no),1
+ included,1
+10,1
+15,1
+1\\/0,1
+ Change:,1
+ NewActiveWiresSim,1
+ immune,1
+ News,1
+ idx:,1
+ id:,1
+ hypo2:,1
+ hypo1:,1
+90\\/-90,1
+ hue:,1
+:upper,1
+ Noise,1
+<--,1
+ hostile,1
+>space<,1
+?,1
+ Sides,1
