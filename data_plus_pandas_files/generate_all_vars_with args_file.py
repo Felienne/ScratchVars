@@ -55,8 +55,9 @@ def varname(c):
   else:
     return c[8]
 
-def lowervarname(c):
-  return str(varname(c)).lower()
+def getvarname(c):
+  return str(varname(c))
+  #return str(varname(c)).lower()
 
 def firstCharisLetter(c):
   varname = c['varname']
@@ -148,9 +149,8 @@ s = df[(df[7] == datablocks[0]) | (df[7] == datablocks[1])  | (df[7] == databloc
 # not sure why, something with bool types but the line below does not work :()
 #s = df[(df[7] == x for x in datablocks) ]
 
-
 # get the correct variable names (not always in column 8 for some blocks it is further)
-s['varname'] = s.apply(lowervarname, axis=1)
+s['varname'] = s.apply(getvarname, axis=1)
 
 # also obtain the argument to analyze the datatype
 s['argument'] = s.apply(argument, axis=1)

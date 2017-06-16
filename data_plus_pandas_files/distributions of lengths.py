@@ -11,26 +11,36 @@ import matplotlib
 import matplotlib.pyplot as plt
 import math
 
+def getPercentage(c):
+  occurrences = float(c['projectid'])
+  total = 2023753
+  return occurrences/total
+
+
+
 
 df = pd.read_csv('output/all_variables_with_arguments.csv')
+
 
 print df
 
 #count the number of unique projects in which a length occures
 
-pivot = pd.pivot_table(df, values='projectid', index='varlength', aggfunc=lambda x: len(x.unique()))
+pivot = pd.pivot_table(df, values='projectid', index='varlength', aggfunc='count')
+pivot['percentage'] = pivot.apply(getPercentage, axis=1)
+
+pivot.to_csv('output/distributions of lengths_percentage.csv')
+
+dfpivot = pd.read_csv('output/distributions of lengths_percentage.csv')
 
 
-pivot.to_csv('output/distributions of lengths.csv')
-
-dfpivot = pd.read_csv('output/distributions of lengths.csv')
 print dfpivot
 
 
 #sorting only works when first saving... otherwise we get a key error
 
 dfpivot = dfpivot.sort_values(by='varlength', ascending=True)
-dfpivot.to_csv('distributions of lengths_sorted.csv')
+dfpivot.to_csv('distributions of lengths_sorted_percentage.csv')
 
 #plot only under 20
 dfpivot = dfpivot[dfpivot['varlength'] <= 21]
