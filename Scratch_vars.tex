@@ -157,6 +157,7 @@ Finally, to augment this study we also investigate the ways Scratch developers c
 For this paper we use the dataset created by Aivaloglou and Hermans~\cite{Aivaloglou2016HowKC}, consisting of 250.000 Scratch projects scraped from the Scratch website in March 2016. From this dataset, we have selected the projects that use variables or functions, together this are 73.473 projects (29\%) of Aivaloglou and Hermans's original dataset. Variable use is more common that procedure use. In total 69.045 projects (27.6\%) use variables, while 17.605 use procedures (7.0\%). We used Python to process the original dataset and generate the graphs in this paper. The code we used is available at \url{https://github.com/Felienne/ScratchVars}.
 
 \subsection{Data analysis}
+\label{sec:da}
 To augment the visual comparison of the variable name data derived from Scratch as well as the programming languages considered by Beniamini et al.~\cite{Beniamini}, we conduct statistical analysis. 
 
 Understanding differences in variable name lengths requires comparison of multiple distributions, traditionally performed as a two-step process consisting of (1) testing a global null hypothesis, that can be intuitively formulated as ``all distributions are the same'', using ANOVA or its non-parametric counterpart, the Kruskal-Wallis test, and (2) performing multiple pairwise comparisons of different distributions, testing specific subhypotheses such as ``distributions 2 and 4 are the same''. 
@@ -169,25 +170,34 @@ In particular, we use the Tukey (all-pairs) contrasts to compare all distributio
 
 Furthermore, to understand differences and similarities between the distributions of single-letter variable names in different languages we represent each programming language as a 26-dimensional vector with the dimensions corresponding to `a', ..., `z', and apply hierarchical clustering. \todo{why hierarchical?}
 
+\todo{where does this belong? and is this still true?}
+Unless indicated otherwise, all graphs show the number of projects a certain type of variable is used in, rather then the number of occurrences of the variable. Some projects access and update variables hundreds of times, so we felt that counting use would skew the graphs towards bigger programs.
+\todo{maybe this paragraph fits with dataset more than with results? Not sure.}
 
  \section{Results}
 This section presents an overview of our analysis of variable and function name use in our previously published Scratch dataset~\cite{Aivaloglou2016HowKC}. 
 
-Unless indicated otherwise, all graphs show the number of projects a certain type of variable is used in, rather then the number of occurrences of the variable. Some projects access and update variables hundreds of times, so we felt that counting use would skew the graphs towards bigger programs.
-\todo{maybe this paragraph fits with dataset more than with results? Not sure.}
+\subsection{Variable name length}
+The original study of Beniamini et al.~\cite{Beniamini} has concluded that the single-letter variable names ``are approximately as common as other short lengths except in PHP'' and that  ``in C, Java, and Perl they make up 9–20\% of the names.'' 
+Figure~\ref{fig:distribution_of_lengths} shows the distribution of lengths in the Scratch corpus. 
+Closer look at the data reveals that the single-letter variables constitute ca. 4.9\% of all the names used in the program, i.e., less than the 9-20\% observed by Beniamini et al.
 
-Figure \ref{fig:distribution_of_lengths} shows the distribution of lengths in the corpus. 
-The original study of Beniamini et al. has concluded that the single-letter variable names ``are approximately as common as other short lengths except in PHP'' and that  ``in C, Java, and Perl they make up 9–20\% of the names.'' 
-
-\begin{figure}[h]
+\begin{figure}[tb]
 	\begin{center}
 		\includegraphics[width=\columnwidth]{fig/distribution_of_lengths}
-		\caption{Number of projects using variables of different lengths}
+		\caption{Frequency of  variables with names of different lengths}
 		\label{fig:distribution_of_lengths}
 	\end{center}
 \end{figure} 
-
 \todo{still need to add the 20+ bucket if we want to have that}
+
+Since single-letter variables seem to be less common in Scratch than in the mainstream programming languages we wonder whether overall the variable names in Scratch tend to be longer than in other programming languages.
+To this end we apply the $\widetilde{\mathbf{T}}$-procedure described in Section~\ref{sec:da}. 
+Statistical analysis reveals that indeed, variable names in Scratch tend to be longer than in the mainstream languages.
+Moreover, variable names in Java tend to be longer than those in PHP, variable names in  PHP than those in C, variable names in C than those in JavaScript and finally variable names in JavaScript longer than those in Perl. 
+In all cases $p$-values have been too small to be computed precisely.
+
+We conclude that single-letter variable names are less common in Scratch than in other programming languages and that overall Scratch variables have longer names than variables in other programming languages.
 
 \subsection{Single-letter variable names}
 
