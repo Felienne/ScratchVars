@@ -178,6 +178,14 @@ F.~Dei{\ss}enb{\"o}ck and M.~Pizka, ``Concise and consistent naming [software
 K.~Brennan, C.~Balch, and M.~Chung, \emph{{CREATIVE} {COMPUTING}}.\hskip 1em
   plus 0.5em minus 0.4em\relax Harvard Graduate School of Education, 2014.
 
+\bibitem{Shull2008}
+\BIBentryALTinterwordspacing
+F.~J. Shull, J.~C. Carver, S.~Vegas, and N.~Juristo, ``The role of replications
+  in empirical software engineering,'' \emph{Empirical Software Engineering},
+  vol.~13, no.~2, pp. 211--218, 2008. [Online]. Available:
+  \url{http://dx.doi.org/10.1007/s10664-008-9060-1}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Gabriel}
 K.~R. Gabriel, ``{Simultaneous test procedures---some theory of multiple
   comparisons},'' \emph{The Annals Mathematical Statistics}, vol.~40, no.~1,

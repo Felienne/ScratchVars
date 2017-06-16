@@ -148,7 +148,8 @@ In terms of the classification of Shull et al.~\cite{Shull2008} we perform a dep
 However, as Scratch programs are not available on GitHub that has been used in the study of Beniamini et al., \todo{Felienne, is this true?} we also had to change the source of the data.
 
 Next, we perform a conceptual replication of the study of the single-letter variable types of Beniamini et al.~\cite{Beniamini}. 
-While the original study has conducted a survey 
+While the original study has conducted a survey to understand the type-related user perceptions (``what type would you consider for a variable called ...?'') we focus on the types as defined in the program. 
+\todo{Felienne, Alaaeddin, can we explain why would we prefer to analyze types as opposed to the survey? Time?}
 
 Finally, to augment this study we also investigate the ways Scratch developers can benefit from Scratch-specific naming practices such as spaces in variable names, digits as variables and use of textual labels in between parameters.
 
@@ -188,9 +189,27 @@ The original study of Beniamini et al. has concluded that the single-letter vari
 
 \todo{still need to add the 20+ bucket if we want to have that}
 
-\subsection{One letters}
+\subsection{Single-letter variable names}
 
-Figure \ref{fig:one_letter_occurrence} shows the distribution of variables of one letter in the corpus.
+ The authors have made the following observations about single-letter variable names:
+\begin{enumerate}
+\item The most commonly occurring single-letter variable name is $i$. The authors attribute this to $i$ being commonly used as a loop counter. Since Scratch supports loops, we expect $i$ to be commonly used in Scratch as well. \label{single-letter-vars:i}
+\item Apart from the popularity of $i$ the distribution is language-dependent. Since Scratch is quite different from the mainstream programming languages considered by Beniamini et al., we expect the distribution of the single-letter variable names to be different from the distributions in these languages. 
+Hence, we expect the \emph{similarity} between Scratch and the languages considered by Beniamini et al. to be lower than the \emph{similarity} between the languages considered by Beniamini et al. \todo{Felienne, Alaaeddin: do we agree with this hypothesis?} \label{single-letter-vars:similarity}
+\item Finally, they observe that the lower case letters are used more frequently than the upper case letters. Since this is also the case for regular text in most natural languages as well, we expect the Scratch programs to follow the same pattern. \label{single-letter-vars:upercase:lowercase}
+\end{enumerate}
+
+Figure \ref{fig:one_letter_occurrence} shows the distribution of variables of one letter in the corpus. 
+Inspecting the data we observe that similarly to the previous study $i$ is one of the most commonly occurring variables. 
+Hence, we conclude that Observation~\ref{single-letter-vars:i} above also holds for Scratch.
+\todo{Felienne, Alaaeddin: For Observation~\ref{single-letter-vars:similarity} I would like to hear your opinion on the hypothesis first, and then we need to separate upper case and lower case since similarity will depend on this separation. For Observation~\ref{single-letter-vars:upercase:lowercase} we clearly need to separate upper and lower case.}
+
+Furthermore, we observe that $x$ and $y$ are extremely popular in Scratch.
+This can be explained by observing that $x$ and $y$ are default variables in Scratch, representing the position of \todo{Felienne, of sprite? of what else?}
+
+\todo{Felienne, Alaaeddin: any other observations?}
+
+\todo{Felienne, please remove the ``project id'' legend as it is confusing}
 
 \begin{figure}[h]
 	\begin{center}
@@ -200,7 +219,8 @@ Figure \ref{fig:one_letter_occurrence} shows the distribution of variables of on
 	\end{center}
 \end{figure} 
 
-Figure \ref{fig:one_letter_occurrence_functions} shows the distribution of \emph{functions} of one letter in the corpus.
+Going beyond the study of Beniamini Figure \ref{fig:one_letter_occurrence_functions} shows the distribution of \emph{functions} of one letter in the corpus.
+By inspecting this figure we observe \todo{Alaaeddin, please continue here.}
 
 \begin{figure}[h]
 	\begin{center}
@@ -210,6 +230,7 @@ Figure \ref{fig:one_letter_occurrence_functions} shows the distribution of \emph
 	\end{center}
 \end{figure} 
 
+\subsection{Types}
 Beniamini et al.~\cite{Beniamini} also explored the types of one letter variables, by performing a questionnaire among \todo{summary of study here}.
 
 This gave us the idea to also explore types of one letter variables in the context of our dataset. While Scratch variables have no types, we can deduce their use from our dataset, by exploring what assignments are made to variables and deducing the types from those. For example, the two variables in Figure \ref{fig:types} represent a string and an integer respectively. With this process we can compare our results to the types of Beniamini et al.~\cite{Beniamini}. 
@@ -234,7 +255,7 @@ Figure \ref{fig:one_letter_type} shows the distribution of variables of one lett
 \end{figure} 
 
 
-\section{Scratch specific contructs}
+\section{Scratch specific constructs}
 
 
 
