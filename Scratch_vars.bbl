@@ -84,6 +84,12 @@ E.~S. Raymond, \emph{The New Hacker's Dictionary}.\hskip 1em plus 0.5em minus
   \url{https://books.google.be/books?id=g80P\_4v4QbIC}
 \BIBentrySTDinterwordspacing
 
+\bibitem{vanZyl}
+S.~van Zyl, E.~Mentz, and M.~Havenga, ``Lessons learned from teaching scratch
+  as an introduction to object-oriented programming in delphi,'' \emph{African
+  Journal of Research in Mathematics, Science and Technology Education},
+  vol.~20, no.~2, pp. 131--141, 2016.
+
 \bibitem{SaezLopez}
 J.-M. S\'{a}ez-L\'{o}pez, M.~Rom\'{a}n-Gonz\'{a}lez, and E.~V\'{a}zquez-Cano,
   ``Visual programming languages integrated across the curriculum in elementary
@@ -99,6 +105,21 @@ R.~Davis, Y.~Kafai, V.~Vasudevan, and E.~Lee, ``The education arcade: Crafting,
   remixing, and playing with controllers for scratch games,'' in
   \emph{International Conference on Interaction Design and Children}.\hskip 1em
   plus 0.5em minus 0.4em\relax ACM, 2013, pp. 439--442.
+
+\bibitem{Dann}
+\BIBentryALTinterwordspacing
+W.~Dann, D.~Cosgrove, D.~Slater, D.~Culyba, and S.~Cooper, ``Mediated transfer:
+  Alice 3 to java,'' in \emph{Proceedings of the 43rd ACM Technical Symposium
+  on Computer Science Education}, ser. SIGCSE '12.\hskip 1em plus 0.5em minus
+  0.4em\relax New York, NY, USA: ACM, 2012, pp. 141--146. [Online]. Available:
+  \url{http://doi.acm.org/10.1145/2157136.2157180}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Matsuzawa}
+Y.~Matsuzawa, T.~Ohata, M.~Sugiura, and S.~Sakai, ``Language migration in
+  non-cs introductory programming through mutual language translation
+  environment,'' in \emph{SIGCSE}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
+  2015, pp. 185--190.
 
 \bibitem{Aivaloglou2016HowKC}
 E.~Aivaloglou and F.~Hermans, ``How kids code and how we know: An exploratory
@@ -124,9 +145,39 @@ A.~A. Takang, P.~A. Grubb, and R.~D. Macredie, ``The effects of comments and
   identifier names on program comprehensibility: an experimental
   investigation,'' \emph{J. Prog. Lang.}, vol.~4, no.~3, pp. 143--167, 1996.
 
+\bibitem{Teasley}
+\BIBentryALTinterwordspacing
+B.~E. Teasley, ``The effects of naming style and expertise on program
+  comprehension,'' \emph{International Journal of Human-Computer Studies},
+  vol.~40, no.~5, pp. 757--770, 1994. [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S1071581984710366}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Deissenbock}
 F.~Dei{\ss}enb{\"o}ck and M.~Pizka, ``Concise and consistent naming [software
   system identifier naming],'' in \emph{IWPC}, May 2005, pp. 97--106.
+
+\bibitem{ArnaoudovaPAG13}
+V.~Arnaoudova, M.~D. Penta, G.~Antoniol, and Y.~Gu{\'{e}}h{\'{e}}neuc, ``A new
+  family of software anti-patterns: Linguistic anti-patterns,'' in \emph{CSMR},
+  A.~Cleve, F.~Ricca, and M.~Cerioli, Eds.\hskip 1em plus 0.5em minus
+  0.4em\relax {IEEE}, 2013, pp. 187--196.
+
+\bibitem{ArnaoudovaPA16}
+V.~Arnaoudova, M.~D. Penta, and G.~Antoniol, ``Linguistic antipatterns: what
+  they are and how developers perceive them,'' \emph{Empirical Software
+  Engineering}, vol.~21, no.~1, pp. 104--158, 2016.
+
+\bibitem{Glassman}
+E.~L. Glassman, L.~Fischer, J.~Scott, and R.~C. Miller, ``Foobaz: Variable name
+  feedback for student code at scale,'' in \emph{Annual ACM Symposium on User
+  Interface Software \& Technology}.\hskip 1em plus 0.5em minus 0.4em\relax
+  ACM, 2015, pp. 609--617.
+
+\bibitem{MoreonoRobles}
+J.~Moreno and G.~Robles, ``Automatic detection of bad programming habits in
+  scratch: A preliminary study,'' in \emph{Frontiers in Education Conference},
+  Oct 2014, pp. 1--4.
 
 \bibitem{brennan_creative_2014}
 K.~Brennan, C.~Balch, and M.~Chung, \emph{{CREATIVE} {COMPUTING}}.\hskip 1em

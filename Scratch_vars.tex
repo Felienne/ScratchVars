@@ -44,7 +44,7 @@ We augment this study by analyzing single-letter procedure names, as well as by 
 The results of our analysis show that Scratch users often use variable and procedure names between 4 and 10 characters in length. For the single letter variables, the most recurring names are x, y and i. While single letter procedures are less popular, the usage of letters is not linked with one character. \emph{I do not understand the meaning of the previous sentence}
 
 Concerning Scratch specific features, 20\% of projects have variables that include spaces in the name. The usage of textual string between parameters appears as not so common, however textual patterns used imply an inference from textual languages by using brackets for example. 
-Finally, when compared to the other programming languages, Scratch variable names tend to be longer than of the mainstream programming languages, and the usage of single uppercase letters seems to be very similar to the pattern found in Perl, while for the lowercase letters---to the pattern found in Java. 
+Finally, when compared to the other programming languages, Scratch variable names tend to be longer than of the mainstream programming languages, and the usage of single uppercase letters seems to be similar to the pattern found in Perl, while for the lowercase letters---to the pattern found in Java. 
 
 \emph{AS: I'm missing conclusion, some kind of take away message.}
 \end{abstract}
@@ -64,8 +64,8 @@ The names of these identifiers are meaningless, and to some extent, they represe
 %Recent studies have focused on the analysis of identifier naming in software code repositories, with a focus on single letter variables, since they are considered especially ambiguous. 
 
 In this paper, \textbf{we analyze the use of variable and procedure names in Scratch}. 
-Scratch is a block-based visual language that was developed by MIT with the aim of helping young people learn the basic concepts of programming and collaboration. 
-Scratch has recently become very popular among school-age children and even in introduced as part of the school curriculum as a means to teach programming~\cite{SaezLopez}.
+Scratch is a block-based visual language developed by MIT with the aim of helping young people learn the basic concepts of programming and collaboration. 
+Scratch has recently become very popular among school-age children and in several countries has been introduced as part of the school curriculum as a means to teach programming~\cite{vanZyl,SaezLopez}.
 Moreover, the overall popularity of Scratch is witnessed by Scratch being currently rated 19 in the TIOBE index\footnote{\url{https://www.tiobe.com/tiobe-index/}}, topping such languages as Lua, Scala and Groovy and since early 2014 exhibiting an increasing trend shown in Fig.~\ref{fig:tiobe}.
 \begin{figure}
   \begin{center}
@@ -88,7 +88,7 @@ Moreover, the overall popularity of Scratch is witnessed by Scratch being curren
 We believe that there are several reasons why understanding the naming practices in the Scratch community is important.
 First, it is important for the Scratch community itself as bad naming practices can easily propagate from one program to another through `remixing'~\cite{Hill:Monroy-Hernandez,Davis:Kafai:Vasudevan:Lee}, code sharing practice similar to GitHub forking.
 Second, it is important for researchers. Software engineering researchers can learn how to support novice programmers, taking their first steps in programming.
-Researchers on software engineering education can obtain insights in how to define naming guidelines for educational materials, and analyzing the differences between Scratch and textual languages can help in reasoning about the transition from block-based languages to textual ones. 
+Researchers on software engineering education can obtain insights in how to define naming guidelines for educational materials, and analyzing the differences between Scratch and textual languages can help in supporting the transition from visual languages to textual ones~\cite{Dann,Matsuzawa}. 
 
 We start by a \textbf{general discussion of naming practices} in Scratch and analyze the previously published collection of 250,000 Scratch projects~\cite{Aivaloglou2016HowKC}. 
 We replicate two studies from a recent paper by Beniamini et al.~\cite{Beniamini}.
@@ -117,37 +117,46 @@ Investigating the use of these Scratch specific naming patterns is interesting t
  The usage of textual string between parameters appears as not so common, however textual patterns used imply an inference from textual languages, e.g., by using brackets. 
 \end{framed}
 
-\section{Background and motivation}
-Naming identifiers in software code has been studied extensively in the past decades~\cite{AmanASK15,AnquetilL98,AvidanF17,Beniamini,ButlerWYS10,CaprileT00,HofmeisterSH17,LawrieMFB07,LunguK13,ScannielloR13,TakangGM96,TramontanaRS14}. 
+\section{Background}
+Naming identifiers in software code has been studied extensively in the past decades~\cite{AmanASK15,AnquetilL98,AvidanF17,Beniamini,ButlerWYS10,CaprileT00,HofmeisterSH17,LawrieMFB07,LunguK13,ScannielloR13,TakangGM96,Teasley,TramontanaRS14}. 
 In practice, identifiers constitute a major part of the source code: e.g., Dei{\ss}enb{\"o}ck and Pizka found that in Eclipse 3.0M7 which is tantamount to 2 MLoC, 33\% of the tokens and 72\% of characters correspond to identifiers~\cite{Deissenbock}. 
-\todo{AS falling asleep, sorry}
-For a human to read that code, it is crucial to understand what the identifier means, and then can deduce what the code does. 
-With no surprise, several studies have confirmed the link between good identifier naming and code's readability and comprehension. 
-The comprehension is not a target in its own; the true reason is that better comprehension lets the developers perform maintenance tasks more effectively and efficiently.
-But what is a good naming approach? 
-It is out of this paper's scope to explore the various recommendations of good identifier naming. 
-However, it is worth to mention that there are different perspectives on what a good name is. 
-Some researchers emphasize the usage of actual and complete words from a dictionary, or known abbreviations, which reflect the context of the program's purpose. 
-Others argue that consistency in naming style is the most important. 
-The usage of single-letter identifiers attracts much attention in research. 
-For programmers, it is tempting to choose single-letter identifiers for quicker code writing that involves less mental load on the choice of a name. 
-Additionally, single-letter named variables such as \quotes{i} or \quotes{j} have become almost a standard choice for index values when coding loops. 
-Research has shown however that shorter identifier names are longer to comprehend, and the length of a variable should reflect its scope. 
 
-Despite the agreement on the importance of identifier names, and efforts to introduce naming guidelines and additional tools to help the programmer choose better names, developers find giving appropriate names to identifiers as a difficult task. In the end, it is the decision of the individual writing the code, and many factors may contribute to that decision. One area to consider here is the computer science and in particular programming education. There seems to be a great focus on the programming concepts, while less to zero attention is given to beautifying the code. For example, the usage of the identifier names \quotes{foo} and \quotes{bar} is prevalent in code examples. These names have no real meaning, and the student cannot link them to what the code does.  
+For a human to read that code, it is crucial to understand what the identifier means, and deduce what the code does. 
+With no surprise, several studies have investigated the link between identifier naming and code readability/comprehension~\cite{AvidanF17,HofmeisterSH17,LawrieMFB07,TakangGM96,Teasley} or identifier naming and externally observable aspects of the software development process that are expected to be affected by comprehension such as change-proneness~\cite{AmanASK15}, quality~\cite{ButlerWYS10,LunguK13} and presence of faults~\cite{ScannielloR13,TramontanaRS14}. 
+%The comprehension is not a target in its own; the true reason is that better comprehension lets the developers perform maintenance tasks more effectively and efficiently.
+%But what is a good naming approach? 
+%It is out of this paper's scope to explore the various recommendations of good identifier naming. 
+%However, it is worth to mention that there are different perspectives on what a good name is. 
+%Some researchers emphasize the usage of actual and complete words from a dictionary, or known abbreviations, which reflect the context of the program's purpose. 
+%Others argue that consistency in naming style is the most important. 
+%The usage of single-letter identifiers attracts much attention in research. 
+%For programmers, it is tempting to choose single-letter identifiers for quicker code writing that involves less mental load on the choice of a name. 
+%Additionally, single-letter named variables such as \quotes{i} or \quotes{j} have become almost a standard choice for index values when coding loops. 
+%Research has shown however that shorter identifier names are longer to comprehend, and the length of a variable should reflect its scope. 
+%
+%Despite the agreement on the importance of identifier names, and efforts to introduce naming guidelines and additional tools to help the programmer choose better names, developers find giving appropriate names to identifiers as a difficult task. In the end, it is the decision of the individual writing the code, and many factors may contribute to that decision. One area to consider here is the computer science and in particular programming education. There seems to be a great focus on the programming concepts, while less to zero attention is given to beautifying the code. For example, the usage of the identifier names \quotes{foo} and \quotes{bar} is prevalent in code examples. These names have no real meaning, and the student cannot link them to what the code does.  
+%
+%We are inspired by the work done by Beniamini et al.~\cite{Beniamini} where they explored the single-letter naming for multiple software repositories from different programming languages. It is important for the software community to understand the patterns in which software developers apply naming to identifiers. We argue that this understanding can improve the quality of the guidelines and introduce research-supported tools that meet the needs of the programmers. For this sake, we believe it is even more important to focus on the novice programmers, students, and learners. For these future developers, the usage of a particular naming pattern in this level forms a (mis)conception that could move along with them to other programming languages and future careers. 
 
-We are inspired by the work done by Beniamini et al.~\cite{Beniamini} where they explored the single-letter naming for multiple software repositories from different programming languages. It is important for the software community to understand the patterns in which software developers apply naming to identifiers. We argue that this understanding can improve the quality of the guidelines and introduce research-supported tools that meet the needs of the programmers. For this sake, we believe it is even more important to focus on the novice programmers, students, and learners. For these future developers, the usage of a particular naming pattern in this level forms a (mis)conception that could move along with them to other programming languages and future careers. The work was done by \todo{add ref} excludes the visual languages which have recently become a favorable choice for elementary and high schools as an introduction to programming, for example, Scratch and Alice. These block-based languages allow the user to create and assign their identifiers for variables and blocks. By studying these identifiers, we can understand better how novice programmers apply standard and language-specific naming, and how it compares to other textual based languages previously explored in the literature. 
+Going beyond the discussion of whether variable names should be shorter or longer, Arnaoudova et al.~\cite{ArnaoudovaPAG13,ArnaoudovaPA16} have studied linguistic anti-patterns, ``recurring poor practices in the naming, documentation, and choice of identifiers in the implementation of an entity'' such as discrepancies between the behavior implied by the identifier (e.g., {\sc INCLUDE\_NAME\_DEFAULT} in the Cocoon Apache project) and the corresponding comment (``Configuration default exclude pattern''), or between the identifier and commonly applied guidelines (e.g., getter that does not only access fields). 
+In the educational setting Glassman et al. propose Foobaz, a tool giving semi-automatic feedback on student variable names based on the values the variable can take during the execution and limited input from the teacher~\cite{Glassman}.
+
+While visual languages such as Scratch, Sqeak and Alice recently become a favorable choice for elementary and high schools as an introduction to programming~\cite{Matsuzawa}, the lion's share of the previous work on identifier naming has focused on textual languages.
+Notable exception is the recent work of Moreno and Robles~\cite{MoreonoRobles}: Moreno and Robles have observed that students often keep names automatically generated by the Scratch environment rather than changing them. 
+van Zyl et al. have observed that one of the interviewed school teachers working with Scratch has taught the students to integrate variable types in their names, e.g., `S' for Strings~\cite{vanZyl}.
+% These block-based languages allow the user to create and assign their identifiers for variables and blocks. By studying these identifiers, we can understand better how novice programmers apply standard and language-specific naming, and how it compares to other textual based languages previously explored in the literature. 
 
 \section{Relevant Scratch Concepts}
 \label{sec:Scratch}
-This paper is not an introduction into Scratch programming. Interested readers are referred to \cite{brennan_creative_2014} for an extensive overview.  However to be able to understand the remainder of this paper, we introduce a number of core features in this section. 
+We briefly introduce several core features of Scratch required for understanding the reminder of the paper. 
+Interested readers are referred to \cite{brennan_creative_2014} for an extensive overview.  
 
-Scratch is a block-based programming language aimed at children, developed by MIT. Scratch can be used to create games and interactive animations, and is available both as a stand-alone application and as a web application. Figure \ref{fig:ui} shows the Scratch user interface in the Chrome browser.
+Scratch is a block-based programming language aimed at children, developed by MIT. Scratch can be used to create games and interactive animations, and is available both as a stand-alone application and as a web application. Fig.~\ref{fig:ui} shows the Scratch user interface in the Chrome browser.
 
-\subsection{Sprites}
+\subsubsection{Sprites}
 Scratch code is organized into `sprites': two-dimensional pictures that each have their own source code. Scratch allows users to bring their sprites to life in various ways, for example by moving them in the plane, having them say or think words or sentences via text balloons, but also by having them make sounds, grow, shrink and switch costumes. 
 
-The Scratch program in Figure \ref{fig:ui}\footnote{\url{https://Scratch.mit.edu/projects/97086781/}} consists of one sprite, the cat, which is Scratch's default sprite and logo. The code in the sprite will cause the cat to jump up, say ``hello'', and come back down, when the green flag is clicked, and to make the `meow' sound when the space bar is pressed.
+The Scratch program in Fig.~\ref{fig:ui} consists of one sprite, the cat, which is Scratch's default sprite and logo\footnote{\url{https://Scratch.mit.edu/projects/97086781/}}. The code in the sprite will cause the cat to jump up, say ``hello'', and come back down, when the green flag is clicked, and to make the `meow' sound when the space bar is pressed.
 
 \begin{figure}
   \begin{center}
@@ -160,14 +169,14 @@ The Scratch program in Figure \ref{fig:ui}\footnote{\url{https://Scratch.mit.edu
 %\subsection{Events}
 %Scratch is \emph{event-driven}: all motions, sounds and changes in the looks of sprites are initiated by events. The canonical event is the `when Green Flag clicked', activated by clicking the green flag at the top of the user interface. In addition to the green flag, there are a number of other events possible, including key presses, mouse clicks and input from a computer's microphone or webcam. In the Scratch code in Figure \ref{fig:ui} there are two events: `when Green Flag clicked' and `when space key pressed'
 
-\subsection{Scripts}
-Source code within sprites is organized in scripts: a script always starts with an event, followed by a number of blocks. The Scratch code in Figure \ref{fig:ui} has two distinct scripts, one started by clicking on the green flag and one by pressing the space bar. It is possible for a single sprite to have multiple scripts initiated by the same event. In that case, all scripts will be executed simultaneously. 
+\subsubsection{Scripts}
+Source code within sprites is organized in scripts: a script always starts with an event, followed by a number of blocks. The Scratch code in Fig.~\ref{fig:ui} has two distinct scripts, one started by clicking on the green flag and one by pressing the space bar. It is possible for a single sprite to have multiple scripts initiated by the same event. In that case, all scripts will be executed simultaneously. 
 
 %\subsection{Remixing}
 
 
-\subsection{Variables}
-Like most textual languages, Scratch users can use variables. Variables are untyped, but have to be `declared' through the Scratch user interface, shown in Figure \ref{fig:ui-vars}. This figure also shows that, contrary to most programming languages, variable names in Scratch may contain spaces.
+\subsubsection{Variables}
+Like most textual languages, Scratch users can use variables. Variables are untyped, but have to be `declared' through the Scratch user interface, shown in Fig.~\ref{fig:ui-vars}. This figure also shows that, contrary to most programming languages, variable names in Scratch may contain spaces.
 
 \begin{figure}
   \begin{center}
@@ -177,8 +186,8 @@ Like most textual languages, Scratch users can use variables. Variables are unty
   \end{center}
 \end{figure} 
 
-\subsection{Procedures} \label {sec:Scratch_func}
-Scratch also allows users to create their own blocks, called procedures. They can have input parameters, and labels in between them. Procedures are created with an interface similar to the one to create variables. Figure \ref{fig:procedures} shows the definition and invocation of a procedure.
+\subsubsection{Procedures} \label {sec:Scratch_func}
+Scratch also allows users to create their own blocks, called procedures. They can have input parameters, and labels in between them. Procedures are created with an interface similar to the one to create variables. Fig.~\ref{fig:procedures} shows the definition and invocation of a procedure.
 
 \begin{figure}
   \begin{center}
