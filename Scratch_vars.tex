@@ -43,7 +43,8 @@ We augment this study by analyzing single-letter procedure names, as well as by 
 
 The results of our analysis show that Scratch users often use variable and procedure names between 4 and 10 characters in length. For the single letter variables, the most recurring names are x, y and i. While single letter procedures are less popular, the usage of letters is not linked with one character. \emph{I do not understand the meaning of the previous sentence}
 
-Concerning Scratch specific features, 20\% of projects have variables that include spaces in the name. The usage of textual string between parameters appears as not so common, however textual patterns used imply an inference from textual languages by using brackets for example. Finally, when compared to the other programming languages, Scratch variable length distribution, and the usage of single-letter seems to be very similar to patterns found in Perl. \emph{are we sure? AS will need to check this for the upper case and lower case separated}
+Concerning Scratch specific features, 20\% of projects have variables that include spaces in the name. The usage of textual string between parameters appears as not so common, however textual patterns used imply an inference from textual languages by using brackets for example. 
+Finally, when compared to the other programming languages, Scratch variable names tend to be longer than of the mainstream programming languages, and the usage of single uppercase letters seems to be very similar to the pattern found in Perl, while for the lowercase letters---to the pattern found in Java. 
 
 \emph{AS: I'm missing conclusion, some kind of take away message.}
 \end{abstract}
@@ -62,7 +63,7 @@ The names of these identifiers are meaningless, and to some extent, they represe
 
 %Recent studies have focused on the analysis of identifier naming in software code repositories, with a focus on single letter variables, since they are considered especially ambiguous. 
 
-In this paper, we analyze the use of variable and procedure names in Scratch. 
+In this paper, \textbf{we analyze the use of variable and procedure names in Scratch}. 
 Scratch is a block-based visual language that was developed by MIT with the aim of helping young people learn the basic concepts of programming and collaboration. 
 Scratch has recently become very popular among school-age children and even in introduced as part of the school curriculum as a means to teach programming~\cite{SaezLopez}.
 Moreover, the overall popularity of Scratch is witnessed by Scratch being currently rated 19 in the TIOBE index\footnote{\url{https://www.tiobe.com/tiobe-index/}}, topping such languages as Lua, Scala and Groovy and since early 2014 exhibiting an increasing trend shown in Fig.~\ref{fig:tiobe}.
@@ -84,8 +85,6 @@ Moreover, the overall popularity of Scratch is witnessed by Scratch being curren
 %Remixing is common in the Scratch community (\todo{I think there are some papers on this}). 
 %Therefore bad naming habits in Scratch programs could actually harm understandability.
 
-
-In this paper we therefore aim at understanding \emph{how do Scratch users name variables and procedures? } 
 We believe that there are several reasons why understanding the naming practices in the Scratch community is important.
 First, it is important for the Scratch community itself as bad naming practices can easily propagate from one program to another through `remixing'~\cite{Hill:Monroy-Hernandez,Davis:Kafai:Vasudevan:Lee}, code sharing practice similar to GitHub forking.
 Second, it is important for researchers. Software engineering researchers can learn how to support novice programmers, taking their first steps in programming.
@@ -97,7 +96,11 @@ Similarly to Beniamini et al. we investigate the distribution of the lengths of 
 As opposed to Beniamini et al. that focused on variable naming in five mainstream programming languages we focus on Scratch.
 Furthermore, while we Beniamini et al. solely focused on the names of the variables we repeat their study for procedures as well.
 
-\begin{framed}We observe that single-letter variable names are less common in Scratch than in other programming languages and that overall Scratch variables have longer names than variables in other programming languages. Variable and procedure names range mostly between 4 and 10 characters. For the single letter variables, the most commonly used names are $x$, $y$ and $i$, procedures $a$ and $r$. When compared to the other programming languages, Scratch variable length distribution, and the usage of single-letter seems to be most similar to Perl. \textbf{!!!!!!!!!!!!!!!!!!!! double check !!!!!!!!!!!!!!!!!!!}
+\begin{framed}
+Variable and procedure names in Scratch range mostly between 4 and 10 characters. 
+For the single letter variables, the most commonly used names are $x$, $y$ and $i$, procedures---$a$ and $r$. 
+When compared to the other programming languages, we observe that single-letter variable names are less common in Scratch and that overall Scratch variables have longer names. 
+The usage of single uppercase letters is similar to the pattern found in Perl, for the lowercase---to the pattern found in Java.
 \end{framed}
 
 
@@ -109,7 +112,9 @@ This feature exists in some textual languages too (most notable in SmallTalk) bu
 Investigating the use of these Scratch specific naming patterns is interesting to understand their role in novice programming. If they are popular among Scratch developers, this might be because they ease novice programming, and that means one could even advocate that these features should be integrated in the mainstream programming languages, if only to ease the transition from block-based languages into textual languages.
 
 \begin{framed}
- Spaces in variable names, a feature relatively unique to Scratch are used in 20\% of projects have variables that include spaces in the name. The usage of textual string between parameters appears as not so common, however textual patterns used imply an inference from textual languages by using brackets for example. 
+ Spaces in variable names are common: 20\% of projects use this feature. 
+ Digits as identifiers are rarely used, and mostly represent constants or parts of the data structure.
+ The usage of textual string between parameters appears as not so common, however textual patterns used imply an inference from textual languages, e.g., by using brackets. 
 \end{framed}
 
 \section{Background and motivation}

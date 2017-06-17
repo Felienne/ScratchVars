@@ -97,9 +97,10 @@ for (i in 1:length(names)){
 #}
 
 icpc2017characters <- read.csv(paste(root,"sophiko-icpc-2017/extract_variables/result-files/char-use.dat",sep=""),header=TRUE)
-scratchcharacters <- read.csv(paste(root,"data_plus_pandas_files/output/distributions\ of\ one\ letter\ chars.csv",sep=""),header=TRUE)
-scratchaz <- subset(scratchcharacters, grepl("[a-z]",ch))
-icpc2017characters$scratch <- scratchaz$count 
+scratchcharacters <- read.csv(paste(root,"data_plus_pandas_files/output/distributions\ of\ one\ letter\ chars_upper\ and\ lower.csv",sep=""),header=TRUE)
+#scratchaz <- subset(scratchcharacters, grepl("[a-z]",ch))
+icpc2017characters$Scratchupper <- scratchcharacters$uppercase
+icpc2017characters$Scratchlower <- scratchcharacters$lowercase 
 nameless <- subset(icpc2017characters, select=-c(ch)) 
 row.names(nameless) <- icpc2017characters$ch
 
@@ -108,9 +109,10 @@ chisq.test(t(nameless))
 #	Pearson's Chi-squared test
 #
 #data:  t(nameless)
-#X-squared = 585210, df = 250, p-value < 2.2e-16
+#X-squared = 749847.8, df = 275, p-value < 2.2e-16
 
-forLambdaLower <- t(subset(icpc2017characters, select=c(Clower,JSlower,Javalower,PHPlower,perllower,scratch)))
+
+forLambdaLower <- t(subset(icpc2017characters, select=c(Clower,JSlower,Javalower,PHPlower,perllower,Scratchlower)))
 colnames(forLambdaLower) <- icpc2017characters$ch
 
 library(rapport)
@@ -118,20 +120,21 @@ lambda.test(icpc2017characters,1)
 
 library(lsa)
 cosine(as.matrix(nameless))
-#             Cupper    Clower   JSupper   JSlower Javaupper Javalower  PHPupper  PHPlower perlupper perllower   scratch
-#Cupper    1.0000000 0.3611283 0.8412634 0.7173503 0.6803331 0.3109723 0.2205311 0.5245342 0.6528813 0.1794458 0.5935334
-#Clower    0.3611283 1.0000000 0.4464655 0.7136214 0.2934833 0.9804554 0.9498817 0.9012264 0.1643316 0.5413309 0.5643843
-#JSupper   0.8412634 0.4464655 1.0000000 0.9125161 0.5582298 0.4534770 0.3424506 0.6697455 0.7221644 0.3074593 0.5813263
-#JSlower   0.7173503 0.7136214 0.9125161 1.0000000 0.5307265 0.7319082 0.6413899 0.8691923 0.6185908 0.4060138 0.6187956
-#Javaupper 0.6803331 0.2934833 0.5582298 0.5307265 1.0000000 0.2605340 0.1741584 0.3622637 0.4050535 0.1806594 0.3928552
-#Javalower 0.3109723 0.9804554 0.4534770 0.7319082 0.2605340 1.0000000 0.9761646 0.9206813 0.2097267 0.5616254 0.5933751
-#PHPupper  0.2205311 0.9498817 0.3424506 0.6413899 0.1741584 0.9761646 1.0000000 0.8569645 0.1249727 0.5502511 0.5558431
-#PHPlower  0.5245342 0.9012264 0.6697455 0.8691923 0.3622637 0.9206813 0.8569645 1.0000000 0.4505609 0.5243181 0.6492839
-#perlupper 0.6528813 0.1643316 0.7221644 0.6185908 0.4050535 0.2097267 0.1249727 0.4505609 1.0000000 0.3298945 0.6345022
-#perllower 0.1794458 0.5413309 0.3074593 0.4060138 0.1806594 0.5616254 0.5502511 0.5243181 0.3298945 1.0000000 0.3226850
-#scratch   0.5935334 0.5643843 0.5813263 0.6187956 0.3928552 0.5933751 0.5558431 0.6492839 0.6345022 0.3226850 1.0000000
-#scratch seems to be most similar to PHPlower and perlupper(?), followed by JSlower. 
-#in the euclidean world scratch is similar to perlupper
+#                Cupper    Clower   JSupper   JSlower Javaupper Javalower  PHPupper  PHPlower perlupper  perllower Scratchupper Scratchlower
+#Cupper       1.0000000 0.3611283 0.8412634 0.7173503 0.6803331 0.3109723 0.2205311 0.5245342 0.6528813 0.17944583   0.54529066    0.3956803
+#Clower       0.3611283 1.0000000 0.4464655 0.7136214 0.2934833 0.9804554 0.9498817 0.9012264 0.1643316 0.54133089   0.15098804    0.8121212
+#JSupper      0.8412634 0.4464655 1.0000000 0.9125161 0.5582298 0.4534770 0.3424506 0.6697455 0.7221644 0.30745926   0.43835905    0.4290080
+#JSlower      0.7173503 0.7136214 0.9125161 1.0000000 0.5307265 0.7319082 0.6413899 0.8691923 0.6185908 0.40601382   0.32851288    0.6159914
+#Javaupper    0.6803331 0.2934833 0.5582298 0.5307265 1.0000000 0.2605340 0.1741584 0.3622637 0.4050535 0.18065945   0.32026099    0.2806996
+#Javalower    0.3109723 0.9804554 0.4534770 0.7319082 0.2605340 1.0000000 0.9761646 0.9206813 0.2097267 0.56162536   0.16932736    0.8421509
+#PHPupper     0.2205311 0.9498817 0.3424506 0.6413899 0.1741584 0.9761646 1.0000000 0.8569645 0.1249727 0.55025114   0.13367539    0.8302615
+#PHPlower     0.5245342 0.9012264 0.6697455 0.8691923 0.3622637 0.9206813 0.8569645 1.0000000 0.4505609 0.52431810   0.29721860    0.8017757
+#perlupper    0.6528813 0.1643316 0.7221644 0.6185908 0.4050535 0.2097267 0.1249727 0.4505609 1.0000000 0.32989451   0.63747997    0.4211002
+#perllower    0.1794458 0.5413309 0.3074593 0.4060138 0.1806594 0.5616254 0.5502511 0.5243181 0.3298945 1.00000000   0.07275307    0.4479274
+#Scratchupper 0.5452907 0.1509880 0.4383591 0.3285129 0.3202610 0.1693274 0.1336754 0.2972186 0.6374800 0.07275307   1.00000000    0.6199330
+#Scratchlower 0.3956803 0.8121212 0.4290080 0.6159914 0.2806996 0.8421509 0.8302615 0.8017757 0.4211002 0.44792740   0.61993302    1.0000000
+#ScratchUpper is closest to PerlUpper, ScratchLower and Cupper
+#ScratchLower is closest to Javalower, Clower, PHPUpper, PHPlower
  
 nameless_dist <- dist(t(nameless)) #default uses the Euclidean distance
 plot(hclust(nameless_dist)) #default complete linkage
