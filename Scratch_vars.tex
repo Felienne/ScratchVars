@@ -61,8 +61,9 @@ We start by investigating the distribution of the lengths of variable and functi
 Next, we focus on popularity of single-letter names such as $i$ and $x$ as variable and function names.
 
 To augment the previous study of Beniamini et al.~\cite{Beniamini} we focus on Scratch-specific features in naming identifiers.
-In particular, we aim at understanding to what extent spaces within identifiers (e.g., variable \emph{max i}), digits as identifiers (e.g., variable 6) and parameters inserted the middle of the procedure name (\todo{Give an example}).
-Those features are missing from the main-stream programming languages: if they will prove to be popular among the Scratch developers, one could advocate that they should be integrated in the main-stream programming languages as well.
+In particular, we aim at understanding to what extent spaces within identifiers (e.g., variable \emph{max i}), digits as identifiers (e.g., variable 6) and parameters inserted in between the parameters. For example instead of printing the first $n$ letters from a string $s$ with a function called printnof(s), in Scratch you can define a function called ``say $n$ characters from text $s$", as shown in Figure \ref{fig:functions}.
+
+Those features are not common in the main-stream programming languages: if they prove to be popular among the Scratch developers, one could argue that they are useful for novice programmers, and maybe even advocate that they should be integrated in the main-stream programming languages as well, if only to ease the transition from block-based languages into textual languages.
 
 \todo{More questions: analysis of the peak value of 5, what is the most recurrent name? Is it expected or justified?}
 \todo{More questions: variable length based on category of the Scratch program: game animation, ....}
@@ -131,7 +132,7 @@ Scratch also allows users to create their own blocks, called procedures. They ca
 
 \begin{figure}
   \begin{center}
-  \includegraphics[width=\columnwidth]{fig/functions.png}
+  \includegraphics[width=\columnwidth]{fig/functions2.png}
   \caption{Scratch code to define and invoke a procedure}
   \label{fig:functions}
   \end{center}
