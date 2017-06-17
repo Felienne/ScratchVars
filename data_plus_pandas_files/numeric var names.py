@@ -16,7 +16,7 @@ df = pd.read_csv('output/all_variables_with_arguments.csv')
 
 df = df[(df['vartype'] == 'int') | (df['vartype'] == 'float')]
 
-
+df.to_csv('output/all numeric variables.csv')
 
 
 pivot = pd.pivot_table(df, values='projectid', index='varname', aggfunc=lambda x: len(x.unique()))
