@@ -23,7 +23,7 @@ df.to_csv('output/projects with text arguments.csv')
 
 #count the number of unique projects in which a length occures
 
-pivot = pd.pivot_table(df, values='projectid', index='textArguments', aggfunc=lambda x: len(x.unique()))
+pivot = pd.pivot_table(df, values='projectid', index='textArguments', aggfunc='count')
 pivot = pivot.sort_values(by=('projectid'), ascending=False)
 
 print pivot

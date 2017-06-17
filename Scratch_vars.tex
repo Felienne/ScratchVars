@@ -65,10 +65,6 @@ In particular, we aim at understanding to what extent spaces within identifiers 
 
 Those features are not common in the main-stream programming languages: if they prove to be popular among the Scratch developers, one could argue that they are useful for novice programmers, and maybe even advocate that they should be integrated in the main-stream programming languages as well, if only to ease the transition from block-based languages into textual languages.
 
-\todo{More questions: analysis of the peak value of 5, what is the most recurrent name? Is it expected or justified?}
-\todo{More questions: variable length based on category of the Scratch program: game animation, ....}
-\todo{More questions: variable length in relation to Dr. Scratch CT}
- 
 \section{Background and motivation}
 Naming identifiers in software code has been studied extensively in the past decades~\cite{AmanASK15,AnquetilL98,AvidanF17,Beniamini,ButlerWYS10,CaprileT00,HofmeisterSH17,LawrieMFB07,LunguK13,ScannielloR13,TakangGM96,TramontanaRS14}. 
 In practice, identifiers constitute a major part of the source code: e.g., Dei{\ss}enb{\"o}ck and Pizka found that in Eclipse 3.0M7 which is tantamount to 2 MLoC, 33\% of the tokens and 72\% of characters correspond to identifiers~\cite{Deissenbock}. 
@@ -142,9 +138,7 @@ Scratch also allows users to create their own blocks, called procedures. They ca
 \section{Research design and dataset}
 \subsection{Overall design}
 As our goal is to compare the naming practices among the Scratch-developers with those of the developers in the mainstream programming languages we start by partially replicating the recent work of Beniamini et al. on the use of single-letter variables in Java, C, PHP, Perl and JavaScript~\cite{Beniamini}. 
-In terms of the classification of Shull et al.~\cite{Shull2008} we perform a dependent replication of the studies summarized in Figures 1 and 2 of the original work by Beniamini et al.~\cite{Beniamini}.  
- Inherently, the programming language is the only factor we vary when compared to the original study.
-However, as Scratch programs are not available on GitHub that has been used in the study of Beniamini et al., \todo{Felienne, is this true?} we also had to change the source of the data.
+In terms of the classification of Shull et al.~\cite{Shull2008} we perform a dependent replication of the studies summarized in Figures 1 and 2 of the original work by Beniamini et al.~\cite{Beniamini}.  Inherently, the programming language is the only factor we vary when compared to the original study. However, Scratch programs are not available on GitHub, so we gather those from the Scratch public repository. In this repository, Scratch users can share there programs, and just like on GitHub projects can be viewed and ``remixed", which is, like a fork on GitHub, creating a linked copy of a project for further development. More specifically, we use the dataset previously scraped and processed by Aivaloglou and Hermans~\cite{Aivaloglou2016HowKC}.
 
 Next, we perform a conceptual replication of the study of the single-letter variable types of Beniamini et al.~\cite{Beniamini}. 
 While the original study has conducted a survey to understand the type-related user perceptions (``what type would you consider for a variable called ...?'') we focus on the types as defined in the program. Scratch is meant for people in their first steps of learning how to program, such as school-age students. In this early level, it is not expected they have established perceptions on data types of single-letters variables. In the replicated study however, 30\% of survey respondents claim a 10-years experience in programming, while  23\% have programming knowledge in six different languages or more. 
@@ -319,7 +313,6 @@ As can be seen in Figure \ref{fig:functions}, Scratch allows users to insert tex
 		\label{fig:labels}
 	\end{center}
 \end{figure} 
-\todo{Felienne and Alexander: one problem with the analysis and figure here: it differentiates between "y:" and " y:" starting with the space, and "Y:" in the capital form. maybe we need to group them together? because the difference is not visible to the reader on the graph and it looks as some patterns are repeated }
 
 
 
