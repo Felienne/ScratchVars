@@ -118,22 +118,23 @@ for (i in c(1:r)) {
 	cat(".")
 }
 
-wilcox.test(v1,v2,alternative="l")
+
 v<- c(v1,v2)
 d <- data.frame(v, lbl)
-res <- npar.t.test(d$v~d$lbl, data=d, alternative="l")
+res <- npar.t.test(d$v~d$lbl, data=d)
 res$Analysis
 
+wilcox.test(v1,v2,alternative="l")
 
 #	Wilcoxon rank sum test with continuity correction
 #
 #data:  v1 and v2
-#W = 306063624946, p-value < 2.2e-16
+#W = 41405985150, p-value < 2.2e-16
 #alternative hypothesis: true location shift is less than 0
 
 # res$Analysis
 #       Effect Estimator Lower Upper        T p.Value
-#1 p(proc,var)     0.109     0 0.109 -1039.98       0
+#1 p(proc,var)    0.003 0.003 0.004 -548.367       0
 ######################
 icpc2017characters <- read.csv(paste(root,"sophiko-icpc-2017/extract_variables/result-files/char-use.dat",sep=""),header=TRUE)
 scratchcharacters <- read.csv(paste(root,"data_plus_pandas_files/output/distributions\ of\ one\ letter\ chars_upper\ and\ lower.csv",sep=""),header=TRUE)
