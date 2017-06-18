@@ -202,6 +202,7 @@ Scratch also allows users to create their own blocks, called procedures. They ca
 
 \section{Research design and dataset}
 \subsection{Overall design}
+\label{sec:design}
 As our goal is to compare the naming practices among the Scratch-developers with those of the developers in the mainstream programming languages we start by partially replicating the recent work of Beniamini et al. on the use of single-letter variables in Java, C, PHP, Perl and JavaScript~\cite{Beniamini}. 
 In terms of the classification of Shull et al.~\cite{Shull2008} we perform a dependent replication of the studies summarized in Fig.~1 and 2 of the original work~\cite{Beniamini}.  
 Inherently, the programming language is the only factor we vary when compared to the original study. 
@@ -211,11 +212,22 @@ We report on the results of these replications in Sections~\ref{res:var:length} 
 Similarly, we perform another dependent replication of the same studies by considering procedure names rather than variable names in Scratch (Section~\ref{res:proc}).
 
 Next, we perform a conceptual replication of the study of the single-letter variable types of Beniamini et al.~\cite{Beniamini}. 
-While the original study has conducted a survey to understand the type-related user perceptions (``what type would you consider for a variable called ...?'') we focus on the types as defined in the program. 
-Scratch is meant for individuals in their first steps of learning how to program, such as school-age students. 
-In this early level, we do not expect them to have established clear perceptions on data types of single-letters variables. 
+While the original study has conducted a survey to understand the type-related user perceptions (``what type would you consider for a variable called ...?'') we focus on the types as used in the program. 
+We opt for types as being used as opposed to as being perceived due to limited programming experience of the intended Scratch programmers.
+Indeed, Scratch is meant for individuals in their first steps of learning how to program, such as school-age students and we do not expect them to have established  perceptions on data types of single-letters variables. 
 As opposed to our work, in the original study however, 30\% of survey respondents claim a 10-years experience in programming, while  23\% have programming knowledge in six different languages or more~\cite{Beniamini}. 
+Furthermore, we study types as used as opposed to types as defined, since Scratch does not have a concept of an explicit variable type.
+However, we can deduce the variable types from assignments involving those variables. 
+For example, the two variables in Fig.~\ref{fig:types} represent a string and an integer respectively. 
 Results of this conceptual replication are presented in Section~\ref{res:types}.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=5cm]{fig/types}
+		\caption{Two variables, one of type string and one of type integer}
+		\label{fig:types}
+	\end{center}
+\end{figure} 
 
 Finally, in Section~\ref{res:Scratch:specific} we report on the ways Scratch developers employ Scratch-specific naming practices such as spaces in variable names, numeric values as variables and the use of textual labels in between parameters.
 
@@ -372,7 +384,7 @@ In the same manner as the variable names, we consider single-letter names for th
 We could not revisit Observation~\ref{single-letter-vars:similarity} since data on single-letter procedure names in the mainstream languages is not available.
 Fig.~\ref{fig:one_letter_occurrence_procedures} shows the number of occurrences for each alphabetic letter. 
 We see that $i$ is no longer among the most commonly used letters rejecting Observation~\ref{single-letter-vars:i}.
-The top used single-letter name is $a$, the first letter in the alphabet, which may explain its popularity.
+The top used single-letter name is $a$, the first letter in the alphabet, which might explain its popularity.
 The uppercase letters are used more often than the lowercase letters (629 vs. 503), rejecting Observations~\ref{single-letter-vars:upercase:lowercase}.
 Sometimes the uppercase letter's frequency exceeds the one of the lowercase, e.g., in the case of $r$. 
 
@@ -388,19 +400,18 @@ Sometimes the uppercase letter's frequency exceeds the one of the lowercase, e.g
 %Types analysis
 \subsubsection{Types}
 \label{res:types}
-Beniamini et al.~\cite{Beniamini} also explored the types of one letter variables, by performing a questionnaire among experienced developers. One area of investigation in the survey is the data type which developers would associate to the alphabetic letters. They observe that some letters are highly associated by developers with the type which starts with these letters. For example char for $c$ and string for $s$. Integer data type is a common association for many other letters. and for generic letter names such as $x$, $y$ and $z$ there seems a balance between integer and float associations. 
+In the original paper of Beniamini et al.~\cite{Beniamini} the authors observe that some letters are highly associated by developers with the type if its name which starts with these letters: e.g., char for $c$ and string for $s$. 
+Integer data type is a common association for many other letters.
+Letter names such as $x$, $y$ and $z$ are commonly associated with numbers and there seems to be a balance between integer and float associations. 
+As explained in Section~\ref{sec:design} we conduct a conceptual replication by considering types as used as opposed to types as perceived.
 
-This lead to the idea to explore types of one letter variables in the context of our dataset too. While Scratch variables have no types, we can deduce their type from assignment statement which we also have in the dataset. For example, the two variables in Figure \ref{fig:types} represent a string and an integer respectively. With this process we can compare our results to the types of Beniamini et al.~\cite{Beniamini}. 
-Figure \ref{fig:one_letter_type} shows the distribution of variables of one letter in the corpus.We observe that the integer data type is massively common among single-letter variables in Scratch. One surprising observation is the nearly complete absence of string data type. For the observations of Beniamine et. al., we notice that the letter $c$ has a noticeable use of char data type which starts with `c'. However it does not construct a majority and this association is not observed in other similar letters. 
+%With this process we can compare our results to the types of Beniamini et al.~\cite{Beniamini}. 
+
+Fig.~\ref{fig:one_letter_type} shows the distribution of single-letter variables with the types inferred. \todo{Stopped here, food time}
+We observe that the integer data type is massively common among single-letter variables in Scratch. One surprising observation is the nearly complete absence of string data type. For the observations of Beniamine et. al., we notice that the letter $c$ has a noticeable use of char data type which starts with `c'. However it does not construct a majority and this association is not observed in other similar letters. 
 
 
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=5cm]{fig/types}
-		\caption{Two variables, one of type string and one of type integer}
-		\label{fig:types}
-	\end{center}
-\end{figure} 
+
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\columnwidth]{fig/singleletter_type_occurrences}
