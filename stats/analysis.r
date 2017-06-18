@@ -6,6 +6,7 @@ setwd(paste(root,"stats/",sep=""))
 #comparing distribution of the variable names' length
 icpc2017varlens <- read.csv(paste(root,"sophiko-icpc-2017/extract_variables/result-files/var-len.dat",sep=""),header=TRUE,sep="\t")
 scratchvarlens <- read.csv(paste(root,"data_plus_pandas_files/output/distributions\ of\ lengths_percentage.csv",sep=""),header=TRUE)
+scratchproclens <- read.csv(paste(root,"data_plus_pandas_files/output/distributions\ of\ lengths\ of\ functions_percentage.csv",sep=""),header=TRUE)
 
 lbl <- c()
 v <- c()
@@ -96,6 +97,44 @@ for (i in 1:length(names)){
 #"scratch" ->  "Java" 
 #}
 
+######################
+
+lbl <- c()
+v1 <- c()
+v2 <- c()
+
+
+r <- nrow(scratchvarlens)
+for (i in c(1:r)) {
+	lbl <- c(rep("var", scratchvarlens[i,2]), lbl)
+	v1 <- c(rep(scratchvarlens[i,1], scratchvarlens[i,2]), v1)
+	cat(".")
+}
+cat("^")
+r <- nrow(scratchproclens)
+for (i in c(1:r)) {
+	lbl <- c(rep("proc", scratchproclens[i,2]), lbl)
+	v2 <- c(rep(scratchproclens[i,1], scratchproclens[i,2]), v2)
+	cat(".")
+}
+
+wilcox.test(v1,v2,alternative="l")
+v<- c(v1,v2)
+d <- data.frame(v, lbl)
+res <- npar.t.test(d$v~d$lbl, data=d, alternative="l")
+res$Analysis
+
+
+#	Wilcoxon rank sum test with continuity correction
+#
+#data:  v1 and v2
+#W = 306063624946, p-value < 2.2e-16
+#alternative hypothesis: true location shift is less than 0
+
+# res$Analysis
+#       Effect Estimator Lower Upper        T p.Value
+#1 p(proc,var)     0.109     0 0.109 -1039.98       0
+######################
 icpc2017characters <- read.csv(paste(root,"sophiko-icpc-2017/extract_variables/result-files/char-use.dat",sep=""),header=TRUE)
 scratchcharacters <- read.csv(paste(root,"data_plus_pandas_files/output/distributions\ of\ one\ letter\ chars_upper\ and\ lower.csv",sep=""),header=TRUE)
 #scratchaz <- subset(scratchcharacters, grepl("[a-z]",ch))
@@ -138,6 +177,13 @@ cosine(as.matrix(nameless))
  
 nameless_dist <- dist(t(nameless)) #default uses the Euclidean distance
 plot(hclust(nameless_dist)) #default complete linkage
-# suggests that scratch is similar to the upper cases 
+# suggests that scratch upper case is similar to other upper cases and lower case to Java lower case
  
 plot(hclust(dist(t(nameless), method="euc"), method="ward"))
+
+rowMeans(cosine(as.matrix(nameless)))
+#      Cupper       Clower      JSupper      JSlower    Javaupper    Javalower     PHPupper     PHPlower    perlupper    perllower Scratchupper Scratchlower 
+#   0.5357842    0.6095861    0.5934282    0.6738178    0.4205335    0.6180853    0.5667251    0.6815401    0.4780630    0.4251399    0.3928166    0.6247208 
+sort(rowMeans(cosine(as.matrix(nameless))))
+#Scratchupper    Javaupper    perllower    perlupper       Cupper     PHPupper      JSupper       Clower    Javalower Scratchlower      JSlower     PHPlower 
+#   0.3928166    0.4205335    0.4251399    0.4780630    0.5357842    0.5667251    0.5934282    0.6095861    0.6180853    0.6247208    0.6738178    0.6815401 

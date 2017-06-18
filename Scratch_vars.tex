@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{framed}
+\usepackage{enumitem}
 
 \newcommand{\todo}[1]{ \textbf{#1} }
 \newcommand{\quotes}[1]{\textit{``#1''}}
@@ -90,7 +91,7 @@ First, it is important for the Scratch community itself as bad naming practices 
 Second, it is important for researchers. Software engineering researchers can learn how to support novice programmers, taking their first steps in programming.
 Researchers on software engineering education can obtain insights in how to define naming guidelines for educational materials, and analyzing the differences between Scratch and textual languages can help in supporting the transition from visual languages to textual ones~\cite{Dann,Matsuzawa}. 
 
-We start by a \textbf{general discussion of naming practices} in Scratch and analyze the previously published collection of 250,000 Scratch projects~\cite{Aivaloglou2016HowKC}. 
+We start by a \textbf{general discussion of naming practices} in Scratch and analyze the previously published collection of 250000 Scratch projects~\cite{Aivaloglou2016HowKC}. 
 We replicate two studies from a recent paper by Beniamini et al.~\cite{Beniamini}.
 Similarly to Beniamini et al. we investigate the distribution of the lengths of variable names and study popularity of single-letter variable names such as $i$ and $x$.
 As opposed to Beniamini et al. that focused on variable naming in five mainstream programming languages we focus on Scratch.
@@ -117,12 +118,13 @@ Investigating the use of these Scratch specific naming patterns is interesting t
  The usage of textual string between parameters appears as not so common, however textual patterns used imply an inference from textual languages, e.g., by using brackets. 
 \end{framed}
 
-\section{Background}
+\section{Related work}
 Naming identifiers in software code has been studied extensively in the past decades~\cite{AmanASK15,AnquetilL98,AvidanF17,Beniamini,ButlerWYS10,CaprileT00,HofmeisterSH17,LawrieMFB07,LunguK13,ScannielloR13,TakangGM96,Teasley,TramontanaRS14}. 
 In practice, identifiers constitute a major part of the source code: e.g., Dei{\ss}enb{\"o}ck and Pizka found that in Eclipse 3.0M7 which is tantamount to 2 MLoC, 33\% of the tokens and 72\% of characters correspond to identifiers~\cite{Deissenbock}. 
 
 For a human to read that code, it is crucial to understand what the identifier means, and deduce what the code does. 
-With no surprise, several studies have investigated the link between identifier naming and code readability/comprehension~\cite{AvidanF17,HofmeisterSH17,LawrieMFB07,TakangGM96,Teasley} or identifier naming and externally observable aspects of the software development process that are expected to be affected by comprehension such as change-proneness~\cite{AmanASK15}, quality~\cite{ButlerWYS10,LunguK13} and presence of faults~\cite{ScannielloR13,TramontanaRS14}. 
+With no surprise, several studies have investigated the link between identifier naming and code readability/comprehension~\cite{AvidanF17,HofmeisterSH17,LawrieMFB07,TakangGM96,Teasley} or identifier naming and externally observable aspects of the software development process that are expected to be affected by comprehension such as change-proneness~\cite{AmanASK15}, quality~\cite{ButlerWYS10,LunguK13} and presence of faults~\cite{ScannielloR13,TramontanaRS14}.
+Caprile and Tonella~\cite{CaprileTonella} have explicitly addressed naming of functions, while Caracciolo et al. observed that most method names tend to consist of several words but rarely more than five words~\cite{Caracciolo}.
 %The comprehension is not a target in its own; the true reason is that better comprehension lets the developers perform maintenance tasks more effectively and efficiently.
 %But what is a good naming approach? 
 %It is out of this paper's scope to explore the various recommendations of good identifier naming. 
@@ -201,36 +203,60 @@ Scratch also allows users to create their own blocks, called procedures. They ca
 \section{Research design and dataset}
 \subsection{Overall design}
 As our goal is to compare the naming practices among the Scratch-developers with those of the developers in the mainstream programming languages we start by partially replicating the recent work of Beniamini et al. on the use of single-letter variables in Java, C, PHP, Perl and JavaScript~\cite{Beniamini}. 
-In terms of the classification of Shull et al.~\cite{Shull2008} we perform a dependent replication of the studies summarized in Figures 1 and 2 of the original work by Beniamini et al.~\cite{Beniamini}.  Inherently, the programming language is the only factor we vary when compared to the original study. However, Scratch programs are not available on GitHub, so we gather those from the Scratch public repository. In this repository, Scratch users can share there programs, and just like on GitHub projects can be viewed and ``remixed", which is, like a fork on GitHub, creating a linked copy of a project for further development. More specifically, we use the dataset previously scraped and processed by Aivaloglou and Hermans~\cite{Aivaloglou2016HowKC}.
+In terms of the classification of Shull et al.~\cite{Shull2008} we perform a dependent replication of the studies summarized in Fig.~1 and 2 of the original work~\cite{Beniamini}.  
+Inherently, the programming language is the only factor we vary when compared to the original study. 
+However, Scratch programs are not available on GitHub, so we use the dataset previously scraped and processed by Aivaloglou and Hermans~\cite{Aivaloglou2016HowKC}. 
+We report on the results of these replications in Sections~\ref{res:var:length} and \ref{res:var:names}.
+
+Similarly, we perform another dependent replication of the same studies by considering procedure names rather than variable names in Scratch (Section~\ref{res:proc}).
 
 Next, we perform a conceptual replication of the study of the single-letter variable types of Beniamini et al.~\cite{Beniamini}. 
-While the original study has conducted a survey to understand the type-related user perceptions (``what type would you consider for a variable called ...?'') we focus on the types as defined in the program. Scratch is meant for people in their first steps of learning how to program, such as school-age students. In this early level, it is not expected they have established perceptions on data types of single-letters variables. In the replicated study however, 30\% of survey respondents claim a 10-years experience in programming, while  23\% have programming knowledge in six different languages or more. 
+While the original study has conducted a survey to understand the type-related user perceptions (``what type would you consider for a variable called ...?'') we focus on the types as defined in the program. 
+Scratch is meant for individuals in their first steps of learning how to program, such as school-age students. 
+In this early level, we do not expect them to have established clear perceptions on data types of single-letters variables. 
+As opposed to our work, in the original study however, 30\% of survey respondents claim a 10-years experience in programming, while  23\% have programming knowledge in six different languages or more~\cite{Beniamini}. 
+Results of this conceptual replication are presented in Section~\ref{res:types}.
 
-Finally, to augment this study we also investigate the ways Scratch developers can benefit from Scratch-specific naming practices such as spaces in variable names, numeric values as variables and the use of textual labels in between parameters.
+Finally, in Section~\ref{res:Scratch:specific} we report on the ways Scratch developers employ Scratch-specific naming practices such as spaces in variable names, numeric values as variables and the use of textual labels in between parameters.
 
 \subsection{Dataset}
-For this paper we use the dataset created by Aivaloglou and Hermans~\cite{Aivaloglou2016HowKC}, consisting of 250.000 Scratch projects scraped from the Scratch website in March 2016. From this dataset, we have selected the projects that use variables or procedures, together this are 73.473 projects (29\%) of Aivaloglou and Hermans's original dataset. Variable use is more common that procedure use. In total 69.045 projects (27.6\%) use variables, while 17.605 use procedures (7.0\%). We used Python to process the original dataset and generate the graphs in this paper. The code we used is available at \url{https://github.com/Felienne/ScratchVars}.
+For this paper we use the dataset created by Aivaloglou and Hermans~\cite{Aivaloglou2016HowKC}, consisting of 250000 Scratch projects scraped from the Scratch website in March 2016. 
+From this dataset, we have selected the projects that use variables or procedures, tantamount to 73473 projects of 29\% of the Aivaloglou and Hermans's original dataset. 
+Variables are used more often than procedures: 69045 projects (27.6\%) use variables, while 17605 use procedures (7\%). 
+We used Python to process the original dataset and generate the graphs in this paper. 
+The code we used is available at \url{https://github.com/Felienne/ScratchVars}.
 
 \subsection{Data analysis}
 \label{sec:da}
-To augment the visual comparison of the variable name data derived from Scratch as well as the programming languages considered by Beniamini et al.~\cite{Beniamini}, we conduct statistical analysis. 
-
-Understanding differences in variable name lengths requires comparison of multiple distributions, traditionally performed as a two-step process consisting of (1) testing a global null hypothesis, that can be intuitively formulated as ``all distributions are the same'', using ANOVA or its non-parametric counterpart, the Kruskal-Wallis test, and (2) performing multiple pairwise comparisons of different distributions, testing specific subhypotheses such as ``distributions 2 and 4 are the same''. 
+%To augment the visual comparison of the data we conduct statistical analysis. 
+Understanding differences in variable name lengths occurring between different programming languages requires comparison of multiple distributions. 
+Such a comparison is traditionally performed as a two-step process consisting of (1) testing a global null hypothesis, that can be intuitively formulated as ``all distributions are the same'', using ANOVA or its non-parametric counterpart, the Kruskal-Wallis test, and (2) performing multiple pairwise comparisons of different distributions, testing specific subhypotheses such as ``distributions 2 and 4 are the same''. 
 However, it has been observed that such a two-step approach can result in inconsistencies when either the global null hypothesis is rejected but none of the pairwise subhypotheses is rejected or vice versa~\cite{Gabriel}. 
 Moreover, it has been suggested that the Wilcoxon-Mann-Whitney test, commonly used for subhypothesis testing, is not robust to unequal population variances, especially in the unequal sample size case~\cite{Zimmerman:Zumbo}
 Therefore, one-step approaches have been sought.
-We opt for one such approach, the $\widetilde{\mathbf{T}}$-procedure of Konietschke et al.~\cite{Konietschke:Hothorn:Brunner}. 
+We opt for one such approach, the $\widetilde{\mathbf{T}}$-procedure of Konietschke et al.~\cite{Konietschke:Hothorn:Brunner,Konietschke:nparcomp}. 
 This procedure is robust against unequal population variances, respects transitivity, and has been successfully applied in empirical software engineering~\cite{VasilescuSGM14,VasilescuCS14,YuWYW16}.
 In particular, we use the Tukey (all-pairs) contrasts to compare all distributions pairwise.
 
-Furthermore, to understand differences and similarities between the distributions of single-letter variable names in different languages we represent each programming language as a 26-dimensional vector with the dimensions corresponding to `a', ..., `z', and apply hierarchical clustering. \todo{why hierarchical?}
+To understand differences and similarities between the distributions of single-letter variable names in different languages we represent each programming language as a 26-dimensional vector with the dimensions corresponding to `a', ..., `z'.
+To eliminate sensitivity in the ways the distance matrix is computed we first calculate the cosine similarity between vectors and compare the mean similarity of a language to the remaining languages in the dataset, and then perform hierarchical clustering based  on the Euclidean distance.
+
+When comparing distributions of variable name lengths with the procedure name lengths, the $\widetilde{\mathbf{T}}$-procedure is not applicable.
+Hence, we perform the Mann-Whitney-Wilcoxon test together with the two-sample test for the nonparametric Behrens-Fisher problem, i.e., test for
+$H_0: p = 1/2$, where $p$ denotes the relative effect of the two independent samples~\cite{Neubert,Konietschke:nparcomp}.
+
+\todo{something about how we analyze Scratch-specific things}
 
  \section{Results}
-This section presents an overview of our analysis of variable and procedure name use in our previously published Scratch dataset~\cite{Aivaloglou2016HowKC}.
+This section presents an overview of our analysis of variable and procedure name use in the previously published Scratch dataset~\cite{Aivaloglou2016HowKC}.
 
-\subsection{Variable name length}
-The original study of Beniamini et al.~\cite{Beniamini} has concluded that the single-letter variable names ``are approximately as common as other short lengths except in PHP'' and that  ``in C, Java, and Perl they make up 9–20\% of the names.'' 
-Figure~\ref{fig:distribution_of_lengths} shows the distribution of lengths in the Scratch corpus. A closer look at the data reveals that the single-letter variables constitute ca. 4.9\% of all the names used in the program, i.e., less than the 9-20\% observed by Beniamini et al.
+\subsection{Replication studies}
+We start by reporting on the results of the replication studies.
+
+\subsubsection{Variable name length}
+\label{res:var:length}
+The original study of Beniamini et al.~\cite{Beniamini} has concluded that the single-letter variable names ``are approximately as common as other short lengths except in PHP'' and that  ``in C, Java, and Perl they make up 9--20\% of the names.'' 
+Fig.~\ref{fig:distribution_of_lengths} shows the distribution of lengths in the Scratch corpus. A closer look at the data reveals that the single-letter variables constitute ca. 4.9\% of all the variable names, i.e., less than the 9--20\% observed by Beniamini et al.
 
 \begin{figure}[tb]
 	\begin{center}
@@ -239,27 +265,29 @@ Figure~\ref{fig:distribution_of_lengths} shows the distribution of lengths in th
 		\label{fig:distribution_of_lengths}
 	\end{center}
 \end{figure} 
-\begin{figure}[tb]
-	\begin{center}
-		\includegraphics[width=\columnwidth]{fig/funcname_length_occurrence}
-		\caption{The distribution of procedure's name length in Scratch projects}
-		\label{fig:distribution_of_lengths_func}
-	\end{center}
-\end{figure} 
 
-Compared to mainstream languages, single-letter variables seem to be less common in Scratch, and the maximum length value for the variable names (250 characters) is the largest by a significant margin. These observations lead us to wonder whether overall the variable names in Scratch tend to be longer than in other programming languages.
+
+Compared to mainstream languages, single-letter variables seem to be less common in Scratch, and the maximum length value for the variable names (250 characters) is the largest by a significant margin. 
+These observations lead us to wonder whether overall the variable names in Scratch tend to be longer than in other programming languages.
 To this end we apply the $\widetilde{\mathbf{T}}$-procedure described in Section~\ref{sec:da}. 
 Statistical analysis reveals that indeed, variable names in Scratch tend to be longer than in the mainstream languages.
 Moreover, variable names in Java tend to be longer than those in PHP, variable names in  PHP than those in C, variable names in C than those in JavaScript and finally variable names in JavaScript longer than those in Perl. In all cases $p$-values have been too small to be computed precisely.
 
 We conclude that single-letter variable names are less common in Scratch than in other programming languages and that overall Scratch variables have longer names than variables in other programming languages.
 
-\subsection{Single-letter variable names}
+\subsubsection{Single-letter variable names}
+\label{res:var:names}
 Further we investigate the case of single-letter variable names. For the previously studied programming languages, the authors in~\cite{Beniamini} highlight the following observations about the single-letter usage: 
 
-\begin{enumerate}
-\item The most commonly occurring single-letter variable name is $i$.The authors attribute this to $i$ being commonly used as a loop counter. In Scratch loops are performed using predefined blocks, which is different than the studied textual language. As figure shows, the majority of these blocks do not require a variable to control the loop iterations. As a result, we expect the usage of the variable name $i$ to be less common in Scratch. \label{single-letter-vars:i}
-\item Apart from the popularity of $i$ the distribution is language-dependent. Since Scratch is quite different from the mainstream programming languages considered by Beniamini et al., we expect the distribution of the single-letter variable names to be different from the distributions in these languages. Hence, we expect the \emph{similarity} between Scratch and the languages considered by Beniamini et al. to be lower than the \emph{similarity} between the languages considered by Beniamini et al. \label{single-letter-vars:similarity}
+\begin{enumerate}[label=\emph{\alph*})]
+\item The most commonly occurring single-letter variable name is $i$.
+The authors attribute this to $i$ being commonly used as a loop counter. 
+As opposed to the studied mainstream languages, loops are performed in Scratch using predefined blocks. 
+As illustrated on Fig.~\ref{fig:loop_Scratchblocks} the majority of these blocks do not require a variable to control the loop iterations. 
+Hence, we expect the usage of the variable name $i$ to be less common in Scratch. \label{single-letter-vars:i}
+\item Apart from the popularity of $i$ the distribution is language-dependent. 
+Since Scratch is quite different from the mainstream programming languages considered by Beniamini et al., we expect the distribution of the single-letter variable names to be different from the distributions in these languages. 
+Hence, we expect the \emph{similarity} between Scratch and the languages considered by Beniamini et al. to be lower than the \emph{similarity} between the languages considered by Beniamini et al. \label{single-letter-vars:similarity}
 \item Finally, they observed that the lower case letters are used more frequently than the upper case letters. Since this is also the case for regular text in most natural languages as well, we expect the Scratch programs to follow the same pattern. \label{single-letter-vars:upercase:lowercase}
 \end{enumerate}
 
@@ -278,12 +306,14 @@ Further we investigate the case of single-letter variable names. For the previou
 		\label{fig:one_letter_occurrence}
 	\end{center}
 \end{figure} 
-Figure \ref{fig:one_letter_occurrence} shows the distribution of variables of one letter, in upper and lower case, in the Scratch corpus. 
-Inspecting the data we observe that similarly to the previous study $i$ is the most commonly occurring variable. Hence, we conclude that Observation~\ref{single-letter-vars:i} above also holds for Scratch. Furthermore, we observe that $x$ and $y$ are extremely popular in Scratch. This can be explained by noting that $x$ and $y$ represent the coordinates of the sprite object on the stage, which is the are where all the scripts are executed. Hence, they are the basis of moving the object in the 2-D stage. Scratch default blocks often use $x$ and $y$ as shown in \figurename{~\ref{fig:xy_Scratchblocks}}. It seems that Scratch users are inspired by the Scratch language to name their own variables. 
-
-\todo{From Alaaeddin: the following paragraph is the most ambiguous for me. It's is not clear to me if observation 2 and 3 are validated or negated. two analyses are done here to compare Scratch to other programming language: based on length distribution and based on single-letter patterns. upper and lower should be considered. I do not know exactly the outcome of these analyses }
-\\
-\todo{TODO-To be revised: Secondly, we observe that the distribution of single-letter variables in Scratch is indeed different than the studied languages by Beniamini \textit{et. al}.~\cite{Beniamini}. The use of lower case is prevalent among the single-letter Scratch variables. We further analyze the similarity between Scratch and the mainstream languages for the single-letter pattern. We use \todo{the method} as detailed in Section~\ref{sec:da}. Figure~\ref{label} shows the result of the analysis. It indicates that Scratch pattern of single-letter variables is highly similar to the pattern of single-letters in Perl.}
+Fig.~\ref{fig:one_letter_occurrence} shows the distribution of variables of one letter, in upper and lower case, in the Scratch corpus. 
+Inspecting the data we observe that similarly to the previous study $i$ is the most commonly occurring variable. 
+Hence, we conclude that \emph{contradicting our expectations} Observation~\ref{single-letter-vars:i} above also holds for Scratch. 
+Furthermore, we observe that $x$ and $y$ are extremely popular in Scratch. 
+This can be explained by noting that $x$ and $y$ represent the coordinates of the sprite object on the stage, which is the are where all the scripts are executed. 
+Hence, they are the basis of moving the object in the 2-D stage. 
+In fact, Scratch default blocks often use $x$ and $y$ as shown in \figurename{~\ref{fig:xy_Scratchblocks}}. 
+It seems that Scratch users are inspired by the Scratch language to name their own variables. 
 
 \begin{figure}[h]
 	\begin{center}
@@ -293,18 +323,72 @@ Inspecting the data we observe that similarly to the previous study $i$ is the m
 	\end{center}
 \end{figure} 
 
+%\todo{From Alaaeddin: the following paragraph is the most ambiguous for me. It's is not clear to me if observation 2 and 3 are validated or negated. two analyses are done here to compare Scratch to other programming language: based on length distribution and based on single-letter patterns. upper and lower should be considered. I do not know exactly the outcome of these analyses }
+%\\
+%\todo{TODO-To be revised: Secondly, we observe that the distribution of single-letter variables in Scratch is indeed different than the studied languages by Beniamini \textit{et. al}.~\cite{Beniamini}. The use of lower case is prevalent among the single-letter Scratch variables. We further analyze the similarity between Scratch and the mainstream languages for the single-letter pattern. We use \todo{the method} as detailed in Section~\ref{sec:da}. Figure~\ref{label} shows the result of the analysis. It indicates that Scratch pattern of single-letter variables is highly similar to the pattern of single-letters in Perl.}
 
-\begin{figure}[h]
+Next we study the similarity of Scratch to the mainstream programming languages in terms of frequency distribution of single-letter variable names.
+Hence, we compare the mean cosine similarity of the twelve distributions (five mainstream programming languages plus Scratch, considered for the
+uppercase and the lowercase letters).
+The mean cosine similarity shows that the Scratch usage of the uppercase letters in the single-letter variable names is the most dissimilar among the
+twelve distributions (0.39), while the way lowercase letters are used in Scratch quite similarly to the way letters are used in the mainstream programming languages (0.62).
+Hence, we claim that our expectation based on the Observation~\ref{single-letter-vars:similarity} has been confirmed for the uppercase letters and  rejected for the lowercase letters. 
+Closer look at Fig.~\ref{fig:similarity_single_letter} shows that the usage of single uppercase letters is similar to the pattern found in Perl, for the lowercase---to the pattern found in Java.
+
+Finally, Fig.~\ref{fig:one_letter_occurrence} clearly shows that the lowercase letters are much more often used as variable names than the uppercase letters, providing support for Observation~\ref{single-letter-vars:upercase:lowercase}.
+
+\begin{figure}[tb]
 	\begin{center}
 		\includegraphics[width=\columnwidth]{fig/cluster_single_letter}
-		\caption{A hierarchical diagram of Scratch compared to other programming languages for the single-letter pattern}
+		\caption{A cluster dendrogram of Scratch compared to other programming languages for the single-letter pattern}
 		\label{fig:similarity_single_letter}
 	\end{center}
 \end{figure} 
 
 
+\subsubsection {Procedure names}
+\label{res:proc}
+\begin{figure}[tb]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{fig/funcname_length_occurrence}
+		\caption{The distribution of procedure's name length in Scratch projects}
+		\label{fig:distribution_of_lengths_func}
+	\end{center}
+\end{figure} 
+
+Going beyond the study of Beniamini, we additionally consider the naming of procedures in Scratch. 
+For a detailed explanation of procedures in Scratch see Section~\ref{sec:Scratch_func} and Fig.~\ref{fig:procedures}).  
+
+Figure~\ref{fig:distribution_of_lengths_func} shows the distribution of procedures name length in the Scratch dataset. 
+By inspecting this figure we observe that the procedure names tend to be longer compared to Scratch variable names. 
+Indeed, the two-sample test for the nonparametric Behrens-Fisher problem estimates the relative effect of the two samples (procedure name lengths vs. variable name lengths) as $0.109$ (with the $p$-value being too small to be computed precisely), i.e., it indicates that the procedure names' lengths tends to be larger than the lengths of the variable names. 
+This observation is confirmed by the Mann-Whitney-Wilcoxon test (the $p$-value is too small to be computed precisely).
+Short names are not common, even less common than short names of variables: single-letter names compose less than 1\% of the extracted names, less than 4.9\% observed for Scratch variables and 9--20\% in C, Java and Perl~\cite{Beniamini}. 
+The maximum length for a procedure name is 250 characters, which is the same as the maximum length for the variable names. 
+We suspect this exact match is caused by a language constraint that was imposed in a previous versions of Scratch. 
+Current version of Scratch, however, allows for names longer than 250 characters. 
+
+In the same manner as the variable names, we consider single-letter names for the procedures and revisit Observations~\ref{single-letter-vars:i} and \ref{single-letter-vars:upercase:lowercase}. 
+We could not revisit Observation~\ref{single-letter-vars:similarity} since data on single-letter procedure names in the mainstream languages is not available.
+Fig.~\ref{fig:one_letter_occurrence_procedures} shows the number of occurrences for each alphabetic letter. 
+We see that $i$ is no longer among the most commonly used letters rejecting Observation~\ref{single-letter-vars:i}.
+The top used single-letter name is $a$, the first letter in the alphabet, which may explain its popularity.
+The uppercase letters are used more often than the lowercase letters (629 vs. 503), rejecting Observations~\ref{single-letter-vars:upercase:lowercase}.
+Sometimes the uppercase letter's frequency exceeds the one of the lowercase, e.g., in the case of $r$. 
+
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{fig/funcname_singleletter-occurrences}
+		\caption{A histogram of single-letter procedures occurrences in Scratch projects}
+		\label{fig:one_letter_occurrence_procedures}
+	\end{center}
+\end{figure} 
+
 %Types analysis
-\emph{\textbf{Types}}: Beniamini et al.~\cite{Beniamini} also explored the types of one letter variables, by performing a questionnaire among experienced developers. One area of investigation in the survey is the data type which developers would associate to the alphabetic letters. They observe that some letters are highly associated by developers with the type which starts with these letters. For example char for $c$ and string for $s$. Integer data type is a common association for many other letters. and for generic letter names such as $x$, $y$ and $z$ there seems a balance between integer and float associations. 
+\subsubsection{Types}
+\label{res:types}
+Beniamini et al.~\cite{Beniamini} also explored the types of one letter variables, by performing a questionnaire among experienced developers. One area of investigation in the survey is the data type which developers would associate to the alphabetic letters. They observe that some letters are highly associated by developers with the type which starts with these letters. For example char for $c$ and string for $s$. Integer data type is a common association for many other letters. and for generic letter names such as $x$, $y$ and $z$ there seems a balance between integer and float associations. 
 
 This lead to the idea to explore types of one letter variables in the context of our dataset too. While Scratch variables have no types, we can deduce their type from assignment statement which we also have in the dataset. For example, the two variables in Figure \ref{fig:types} represent a string and an integer respectively. With this process we can compare our results to the types of Beniamini et al.~\cite{Beniamini}. 
 Figure \ref{fig:one_letter_type} shows the distribution of variables of one letter in the corpus.We observe that the integer data type is massively common among single-letter variables in Scratch. One surprising observation is the nearly complete absence of string data type. For the observations of Beniamine et. al., we notice that the letter $c$ has a noticeable use of char data type which starts with `c'. However it does not construct a majority and this association is not observed in other similar letters. 
@@ -325,21 +409,9 @@ Figure \ref{fig:one_letter_type} shows the distribution of variables of one lett
 	\end{center}
 \end{figure} 
 
-\subsection {Procedure names}
-Going beyond the study of Beniamini, we additionally consider the naming length of procedures in Scratch. For a detailed explanation of procedures in Scratch see Section~\ref{sec:Scratch_func} and Figure~\ref{fig:procedures}).  Figure~\ref{fig:distribution_of_lengths_func} shows the distribution of procedures name length in the Scratch dataset. By inspecting this figure we observe that the procedure names tend to be longer compared to Scratch variable names. Short names are not common, even less common than short names of variables, with single-letter names composing less than 1\% of the extracted names. The maximum length for a procedure name is 250 characters, which is the same as the maximum length for the variable names. We suspect this exact match is caused by a language constraint that was imposed in a previous versions of Scratch. Current version, however, allows for names longer than 250 characters. 
-In the same manner as the variable names, we investigate the distribution of single-letter names for the procedures. Figure~\ref{fig:one_letter_occurrence_procedures} shows the number of occurrences for each alphabetic letter. From that figure, we observe that capital letters are more common compared to Scratch variable names, sometimes exceeding the lower letter's occurrences such as in the case of $r$. The top used single-letter name is $a$, the first letter in the alphabet, which may indicate its popularity.
-
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=\columnwidth]{fig/funcname_singleletter-occurrences}
-		\caption{A histogram of single-letter procedures occurrences in Scratch projects}
-		\label{fig:one_letter_occurrence_procedures}
-	\end{center}
-\end{figure} 
-
-\subsection{Scratch specific constructs}
-In this section we analyze the occurrence on naming practices that are allowed in Scratch, but not is most mainstream textual languages.
+\subsection{Scratch-specific constructs}
+\label{res:Scratch:specific}
+In this section we analyze the occurrence of naming practices that are allowed in Scratch, but are missing from or are not common in most mainstream textual languages.
 
 \subsubsection{Use of spaces in variable names}
 For reasons of convenience, most textual programming languages so not allow for spaces in variable names. FORTRAN ignored spaces, so technically you could use a space, however that would mean that `apples' and `app les' would refer to the same variable. Apart from SQL and some Scheme implementations, spaces in variable names are not commonly allowed. Scratch does allow users to use spaces in variable names and their use is quite common even. About 30.000 projects use one or more variables with a space in it, versus 60.000 that use only space-free variable names. Figure \ref{fig:number_of_spaces} shows the distribution of spaces in variable names. We have found that many introductory Scratch programming materials \todo{reference} demonstrate the use of space-free variables, and that children---and adults---that already have programming experience deem the use of spaces in variables as non-natural\todo{reference}, even though arguable `number of apples' is more natural that `nApples'.

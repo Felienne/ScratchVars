@@ -109,7 +109,7 @@ R.~Davis, Y.~Kafai, V.~Vasudevan, and E.~Lee, ``The education arcade: Crafting,
 \bibitem{Dann}
 \BIBentryALTinterwordspacing
 W.~Dann, D.~Cosgrove, D.~Slater, D.~Culyba, and S.~Cooper, ``Mediated transfer:
-  Alice 3 to java,'' in \emph{Proceedings of the 43rd ACM Technical Symposium
+  Alice 3 to {J}ava,'' in \emph{Proceedings of the 43rd ACM Technical Symposium
   on Computer Science Education}, ser. SIGCSE '12.\hskip 1em plus 0.5em minus
   0.4em\relax New York, NY, USA: ACM, 2012, pp. 141--146. [Online]. Available:
   \url{http://doi.acm.org/10.1145/2157136.2157180}
@@ -157,14 +157,23 @@ B.~E. Teasley, ``The effects of naming style and expertise on program
 F.~Dei{\ss}enb{\"o}ck and M.~Pizka, ``Concise and consistent naming [software
   system identifier naming],'' in \emph{IWPC}, May 2005, pp. 97--106.
 
+\bibitem{CaprileTonella}
+B.~Caprile and P.~Tonella, ``Nomen est omen: analyzing the language of function
+  identifiers,'' in \emph{WCRE}, Oct 1999, pp. 112--122.
+
+\bibitem{Caracciolo}
+A.~Caracciolo, A.~Chis, B.~Spasojevi\'{c}, and M.~Lungu, ``Pangea: A workbench
+  for statically analyzing multi-language software corpora,'' in \emph{SCAM},
+  Sept 2014, pp. 71--76.
+
 \bibitem{ArnaoudovaPAG13}
-V.~Arnaoudova, M.~D. Penta, G.~Antoniol, and Y.~Gu{\'{e}}h{\'{e}}neuc, ``A new
-  family of software anti-patterns: Linguistic anti-patterns,'' in \emph{CSMR},
-  A.~Cleve, F.~Ricca, and M.~Cerioli, Eds.\hskip 1em plus 0.5em minus
-  0.4em\relax {IEEE}, 2013, pp. 187--196.
+V.~Arnaoudova, M.~{Di Penta}, G.~Antoniol, and Y.~Gu{\'{e}}h{\'{e}}neuc, ``A
+  new family of software anti-patterns: Linguistic anti-patterns,'' in
+  \emph{CSMR}, A.~Cleve, F.~Ricca, and M.~Cerioli, Eds.\hskip 1em plus 0.5em
+  minus 0.4em\relax {IEEE}, 2013, pp. 187--196.
 
 \bibitem{ArnaoudovaPA16}
-V.~Arnaoudova, M.~D. Penta, and G.~Antoniol, ``Linguistic antipatterns: what
+V.~Arnaoudova, M.~{Di Penta}, and G.~Antoniol, ``Linguistic antipatterns: what
   they are and how developers perceive them,'' \emph{Empirical Software
   Engineering}, vol.~21, no.~1, pp. 104--158, 2016.
 
@@ -203,6 +212,12 @@ F.~Konietschke, L.~A. Hothorn, and E.~Brunner, ``Rank-based multiple test
   procedures and simultaneous confidence intervals,'' \emph{Electronic Journal
   of Statistics}, vol.~6, pp. 738--759, 2012.
 
+\bibitem{Konietschke:nparcomp}
+F.~Konietschke, M.~Placzek, F.~Schaarschmidt, and L.~Hothorn, ``nparcomp: An r
+  software package for nonparametric multiple comparisons and simultaneous
+  confidence intervals,'' \emph{Journal of Statistical Software}, vol.~64,
+  no.~9, pp. 1--17, 2015.
+
 \bibitem{VasilescuSGM14}
 B.~Vasilescu, A.~Serebrenik, M.~Goeminne, and T.~Mens, ``On the variation and
   specialisation of workload---{A} case study of the gnome ecosystem
@@ -219,6 +234,11 @@ Y.~Yu, H.~Wang, G.~Yin, and T.~Wang, ``Reviewer recommendation for
   pull-requests in github: What can we learn from code review and bug
   assignment?'' \emph{Information {\&} Software Technology}, vol.~74, pp.
   204--218, 2016.
+
+\bibitem{Neubert}
+K.~Neubert and E.~Brunner, ``A studentized permutation test for the
+  non-parametric {Behrens-Fisher} problem,'' \emph{Computational Statistics \&
+  Data Analysis}, vol.~51, no.~10, pp. 5192--5204, 2007.
 
 \bibitem{DBLP:conf/iwpc/2017}
 G.~Scanniello, D.~Lo, and A.~Serebrenik, Eds., \emph{ICPC}.\hskip 1em plus
