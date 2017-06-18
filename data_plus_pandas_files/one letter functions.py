@@ -17,6 +17,9 @@ def length(c):
 def lowerfunctionname(c):
   return str(c['name']).lower()
 
+def functionname(c):
+  return str(c['name'])
+
 def isLetter(c):
   funcname = c['functionname']
   return funcname.isalpha()
@@ -27,7 +30,7 @@ df = pd.read_csv('output/all_functions.csv')
 
 df['varlength'] = df.apply(length, axis=1)
 df.to_csv('output/all_functions.csv')
-df['functionname'] = df.apply(lowerfunctionname, axis=1)
+df['functionname'] = df.apply(functionname, axis=1)
 
 #filter the variables with length 1 
 df = df[(df['varlength'] == 1) ]

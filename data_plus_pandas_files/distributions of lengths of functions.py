@@ -16,7 +16,7 @@ import math
 # is obtained by summing column B of distributions of lengths of functions_percentage
 def getPercentage(c):
   occurrences = float(c['projectid'])
-  total = 549425
+  total = 61628
   return (occurrences/total)*100
 
 
@@ -27,7 +27,7 @@ print df
 
 #count the number of unique projects in which a length occures
 
-pivot = pd.pivot_table(df, values='projectid', index='varlength', aggfunc='count')
+pivot = pd.pivot_table(df, values='projectid', index='varlength', aggfunc=lambda x: len(x.unique()))
 pivot['percentage'] = pivot.apply(getPercentage, axis=1)
 
 pivot.to_csv('output/distributions of lengths of functions_percentage.csv')
