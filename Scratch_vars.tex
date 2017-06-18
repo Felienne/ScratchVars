@@ -4,6 +4,9 @@
 \usepackage{url}
 \usepackage{framed}
 \usepackage{enumitem}
+\usepackage{varwidth}
+\usepackage{float}
+\usepackage{subcaption}
 
 \newcommand{\todo}[1]{ \textbf{#1} }
 \newcommand{\quotes}[1]{\textit{``#1''}}
@@ -340,8 +343,7 @@ It seems that Scratch users are inspired by the Scratch language to name their o
 %\todo{TODO-To be revised: Secondly, we observe that the distribution of single-letter variables in Scratch is indeed different than the studied languages by Beniamini \textit{et. al}.~\cite{Beniamini}. The use of lower case is prevalent among the single-letter Scratch variables. We further analyze the similarity between Scratch and the mainstream languages for the single-letter pattern. We use \todo{the method} as detailed in Section~\ref{sec:da}. Figure~\ref{label} shows the result of the analysis. It indicates that Scratch pattern of single-letter variables is highly similar to the pattern of single-letters in Perl.}
 
 Next we study the similarity of Scratch to the mainstream programming languages in terms of frequency distribution of single-letter variable names.
-Hence, we compare the mean cosine similarity of the twelve distributions (five mainstream programming languages plus Scratch, considered for the
-uppercase and the lowercase letters).
+Hence, we compare the mean cosine similarity of the twelve distributions (five mainstream programming languages plus Scratch, considered for the uppercase and the lowercase letters).
 The mean cosine similarity shows that the Scratch usage of the uppercase letters in the single-letter variable names is the most dissimilar among the
 twelve distributions (0.39), while the way lowercase letters are used in Scratch quite similarly to the way letters are used in the mainstream programming languages (0.62).
 Hence, we claim that our expectation based on the Observation~\ref{single-letter-vars:similarity} has been confirmed for the uppercase letters and  rejected for the lowercase letters. 
@@ -379,7 +381,13 @@ Short names are not common, even less common than short names of variables: sing
 The maximum length for a procedure name is 250 characters, which is the same as the maximum length for the variable names. 
 We suspect this exact match is caused by a language constraint that was imposed in a previous versions of Scratch. 
 Current version of Scratch, however, allows for names longer than 250 characters. 
-
+\begin{figure}[!b]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{fig/singleletter_type_occurrences}
+		\caption{Inferred types for variables of one letter}
+		\label{fig:one_letter_type}
+	\end{center}
+\end{figure} 
 In the same manner as the variable names, we consider single-letter names for the procedures and revisit Observations~\ref{single-letter-vars:i} and \ref{single-letter-vars:upercase:lowercase}. 
 We could not revisit Observation~\ref{single-letter-vars:similarity} since data on single-letter procedure names in the mainstream languages is not available.
 Fig.~\ref{fig:one_letter_occurrence_procedures} shows the number of occurrences for each alphabetic letter. 
@@ -389,7 +397,7 @@ The uppercase letters are used more often than the lowercase letters (629 vs. 50
 Sometimes the uppercase letter's frequency exceeds the one of the lowercase, e.g., in the case of $r$. 
 
 
-\begin{figure}[h]
+\begin{figure}
 	\begin{center}
 		\includegraphics[width=\columnwidth]{fig/funcname_singleletter-occurrences}
 		\caption{A histogram of single-letter procedures occurrences in Scratch projects}
@@ -400,6 +408,7 @@ Sometimes the uppercase letter's frequency exceeds the one of the lowercase, e.g
 %Types analysis
 \subsubsection{Types}
 \label{res:types}
+
 In the original paper of Beniamini et al.~\cite{Beniamini} the authors observe that some letters are highly associated by developers with the type if its name which starts with these letters: e.g., char for $c$ and string for $s$. 
 Integer data type is a common association for many other letters.
 Letter names such as $x$, $y$ and $z$ are commonly interpreted as coordinates and there seems to be a balance between integer and float associations. 
@@ -414,29 +423,21 @@ Another disagreement with the original study pertains to the string data type: w
 While we can confirm the observation of Beniamini et al. that $c$ is used to represent characters, this is not the main usage of $c$ and no such association could be observed for floats, lists or strings.
 Finally, presence of floats as types for $x$, $y$ and to lesser extent $z$ seems to support their interpretation as coordinates suggested by Beniamini et al.~\cite{Beniamini}.
 
-
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=\columnwidth]{fig/singleletter_type_occurrences}
-		\caption{Inferred types for variables of one letter}
-		\label{fig:one_letter_type}
-	\end{center}
-\end{figure} 
-
 \subsection{Scratch-specific constructs}
 \label{res:Scratch:specific}
 In this section we analyze the occurrence of naming practices that are allowed in Scratch, but are missing from or are not common in most mainstream textual languages.
-
+\begin{figure}[!b]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{fig/numeric_as_vars_occurrences}
+		\caption{The most popular numeric values used as variable names}
+		\label{fig:numeric}
+	\end{center}
+\end{figure} 
 \subsubsection{Use of spaces in variable names}
 For reasons of convenience, most textual programming languages do not allow for spaces in variable names. 
 FORTRAN ignored spaces, so technically one could use a space, however that would mean that `apples' and `app les' refer to the same variable. 
 Other languages supporting spaces in variable names are SQL and some Scheme implementations. 
 Even languages targeting data analysts rather than software developers recommend spaces to be avoided~\cite{Bochud}.
-
-We observe that about 30000 projects use one or more variables with a space in it, as opposed to 60000 that use only space-free variable names. 
-Fig.~\ref{fig:number_of_spaces} shows that mostly one space is present in a variable name. 
-We have found that many introductory Scratch programming materials \todo{reference} demonstrate the use of space-free variables, and that children---and adults---that already have programming experience deem the use of spaces in variables as non-natural\todo{reference}, even though arguable `number of apples' is more natural that `nApples'.
-
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\columnwidth]{fig/spaces_varname_occurrences}
@@ -445,33 +446,28 @@ We have found that many introductory Scratch programming materials \todo{referen
 	\end{center}
 \end{figure} 
 
-\subsubsection{Use of Numeric Variable Names}
-In addition to spaces in variable names, Scratch even allows the use of numbers and even floating point numbers as variables. We found 718 projects with integer variable names and 19 with floating point names. While their use is rare, we manually examined some projects and numbers are used in interesting and clever ways. 
-The most popular numeric values used as variable names include small natural numbers (1--12) and 360 likely to represent 360$^\circ$ (cf. Fig.~\ref{fig:numeric}).
-		
-There seem to be two main uses of numeric variable names. First of all, some variables with numeric names represent constants, as shown in Fig.~\ref{fig:constants}. This seems to indicate the Scratch users prefer to drag in a constant rather than repeatedly typing it.
+We observe that about 30000 projects use one or more variables with a space in it, as opposed to 60000 that use only space-free variable names. 
+Fig.~\ref{fig:number_of_spaces} shows that mostly one space is present in a variable name. 
 
-\begin{figure}
+\begin{figure}[!b]
 	\begin{center}
 		\includegraphics[width=\columnwidth]{fig/constants}
 		\caption{Numeric variable used as a constant}
 		\label{fig:constants}
 	\end{center}
-\end{figure} 
+\end{figure} 	
 
-A second use is the use of integer variables as simple list structures. For example, one of the projects we analyzed is a tic-tac-toe game. In that project, the Scratch user defined nine variables named from 1 to 9. Each variable represents one of the nine boxes. Scratch supports lists, so the user here could have also used a list of 9 items, however, they did not. Maybe because they were nor familiar with the concept of lists, or maybe they thought this would be easier for the user to memorize the game logic.  
+\subsubsection{Use of Numeric Variable Names}
+In addition to spaces in variable names, Scratch even allows the use of numbers and even floating point numbers as variables. We found 718 projects with integer variable names and 19 with floating point names. While their use is rare, we manually examined some projects and numbers are used in interesting and clever ways. 
 
-\todo{Maybe add the screenshot (thanks Alaaeedin) Not sure if we need it, lets see}
+The most popular numeric values used as variable names include small natural numbers (1--12) and 360 likely to represent 360$^\circ$ (cf. Fig.~\ref{fig:numeric}).
 
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=\columnwidth]{fig/numeric_as_vars_occurrences}
-		\caption{The most popular numeric values used as variable names}
-		\label{fig:numeric}
-	\end{center}
-\end{figure} 
+There seem to be two main uses of numeric variable names. First of all, some variables with numeric names represent constants, as shown in Fig.~\ref{fig:constants}. This seems to indicate the Scratch users prefer to drag in a constant rather than repeatedly typing it.
+
+A second use is the use of integer variables as simple list structures. For example, one of the projects we analyzed is a tic-tac-toe game (See Fig.~\ref{"fig:tictactoe_example"}). In that project, the Scratch user defined nine variables named from 1 to 9. Each variable represents one of the nine boxes. Scratch supports lists, so the user here could have also used a list of 9 items, however, they did not. Maybe because they were not familiar with the concept of lists, or maybe they thought this would be easier for the user to memorize the game logic.  
 
 \subsubsection{Use of Textual Labels between Parameters}
+
 Scratch is influenced by the SmallTalk family of languages and this is visible form the fact that Scratch allows users to insert textual labels in between parameters in order to make procedures more readable, as can be seen in Fig.~\ref{fig:procedures}.
 This practice seems particular idiomatic to Scratch, since normal Scratch blocks use a similar syntax, e.g., in the ``say ... for ... seconds" block. 
 
@@ -488,7 +484,26 @@ The use of space as a separator could indicate that Scratch users feel room betw
 		\label{fig:labels}
 	\end{center}
 \end{figure} 
-
+\begin{figure*}[!h]
+	\centering
+	\begin{subfigure}{.5\columnwidth}
+		\includegraphics[width=\columnwidth]{fig/tic_1}%
+%		\caption{cap a}%
+%		\label{subfiga}%
+	\end{subfigure}\hfil%
+	\begin{subfigure}{.5\columnwidth}
+		\includegraphics[width=\columnwidth]{fig/tic_2}%
+%		\caption{cap b}%
+%		\label{subfigb}%
+	\end{subfigure}\hfil%
+	\begin{subfigure}{.5\columnwidth}
+		\includegraphics[width=\columnwidth]{fig/tic_3}%
+%		\caption{cap c}%
+%		\label{subfigc}%
+	\end{subfigure}%
+\caption{A Tic-Tac-Toe program in Scratch uses numeric variables to represent the boxes to be checked by the player}
+\label{"fig:tictactoe_example"}
+\end{figure*}
 
 
  \section{Discussion}
@@ -535,6 +550,7 @@ This paper gives rise to a number of directions for future work. Firstly, Beniam
 % http://mirror.ctan.org/biblio/bibtex/contrib/doc/
 % The IEEEtran BibTeX style support page is at:
 % http://www.michaelshell.org/tex/ieeetran/bibtex/
+
 \bibliographystyle{IEEEtran}
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliography{paper}
