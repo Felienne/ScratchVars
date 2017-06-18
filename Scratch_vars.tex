@@ -402,14 +402,17 @@ Sometimes the uppercase letter's frequency exceeds the one of the lowercase, e.g
 \label{res:types}
 In the original paper of Beniamini et al.~\cite{Beniamini} the authors observe that some letters are highly associated by developers with the type if its name which starts with these letters: e.g., char for $c$ and string for $s$. 
 Integer data type is a common association for many other letters.
-Letter names such as $x$, $y$ and $z$ are commonly associated with numbers and there seems to be a balance between integer and float associations. 
+Letter names such as $x$, $y$ and $z$ are commonly interpreted as coordinates and there seems to be a balance between integer and float associations. 
 As explained in Section~\ref{sec:design} we conduct a conceptual replication by considering types as used as opposed to types as perceived.
 
 %With this process we can compare our results to the types of Beniamini et al.~\cite{Beniamini}. 
 
-Fig.~\ref{fig:one_letter_type} shows the distribution of single-letter variables with the types inferred. \todo{Stopped here, food time}
-We observe that the integer data type is massively common among single-letter variables in Scratch. One surprising observation is the nearly complete absence of string data type. For the observations of Beniamine et. al., we notice that the letter $c$ has a noticeable use of char data type which starts with `c'. However it does not construct a majority and this association is not observed in other similar letters. 
-
+Fig.~\ref{fig:one_letter_type} shows the distribution of single-letter variables with the types inferred. 
+Similarly to the observations of Beniamini et al. every letter can represent an integer variable.
+As opposed to the observations of Beniamini et al. we see that the types associated with individual letters are much less diverse in Scratch: the integer data type is dominating every single letter.
+Another disagreement with the original study pertains to the string data type: while in the mainstream programming languages strings are commonly associated with $s$ and less frequently with many other letters, the strings are almost completely absent in the Scratch data set.
+While we can confirm the observation of Beniamini et al. that $c$ is used to represent characters, this is not the main usage of $c$ and no such association could be observed for floats, lists or strings.
+Finally, presence of floats as types for $x$, $y$ and to lesser extent $z$ seems to support their interpretation as coordinates suggested by Beniamini et al.~\cite{Beniamini}.
 
 
 \begin{figure}
@@ -425,7 +428,14 @@ We observe that the integer data type is massively common among single-letter va
 In this section we analyze the occurrence of naming practices that are allowed in Scratch, but are missing from or are not common in most mainstream textual languages.
 
 \subsubsection{Use of spaces in variable names}
-For reasons of convenience, most textual programming languages so not allow for spaces in variable names. FORTRAN ignored spaces, so technically you could use a space, however that would mean that `apples' and `app les' would refer to the same variable. Apart from SQL and some Scheme implementations, spaces in variable names are not commonly allowed. Scratch does allow users to use spaces in variable names and their use is quite common even. About 30.000 projects use one or more variables with a space in it, versus 60.000 that use only space-free variable names. Figure \ref{fig:number_of_spaces} shows the distribution of spaces in variable names. We have found that many introductory Scratch programming materials \todo{reference} demonstrate the use of space-free variables, and that children---and adults---that already have programming experience deem the use of spaces in variables as non-natural\todo{reference}, even though arguable `number of apples' is more natural that `nApples'.
+For reasons of convenience, most textual programming languages do not allow for spaces in variable names. 
+FORTRAN ignored spaces, so technically one could use a space, however that would mean that `apples' and `app les' refer to the same variable. 
+Other languages supporting spaces in variable names are SQL and some Scheme implementations. 
+Even languages targeting data analysts rather than software developers recommend spaces to be avoided~\cite{Bochud}.
+
+We observe that about 30000 projects use one or more variables with a space in it, as opposed to 60000 that use only space-free variable names. 
+Fig.~\ref{fig:number_of_spaces} shows that mostly one space is present in a variable name. 
+We have found that many introductory Scratch programming materials \todo{reference} demonstrate the use of space-free variables, and that children---and adults---that already have programming experience deem the use of spaces in variables as non-natural\todo{reference}, even though arguable `number of apples' is more natural that `nApples'.
 
 \begin{figure}
 	\begin{center}
@@ -437,8 +447,9 @@ For reasons of convenience, most textual programming languages so not allow for 
 
 \subsubsection{Use of Numeric Variable Names}
 In addition to spaces in variable names, Scratch even allows the use of numbers and even floating point numbers as variables. We found 718 projects with integer variable names and 19 with floating point names. While their use is rare, we manually examined some projects and numbers are used in interesting and clever ways. 
-
-There seem to be two main uses of numeric variable names. The first one is constants, as shown in Figure \ref{fig:constants}. This seems to indicate the Scratch users prefer dragging a contant in, over repeatedly typing the value in. 
+The most popular numeric values used as variable names include small natural numbers (1--12) and 360 likely to represent 360$^\circ$ (cf. Fig.~\ref{fig:numeric}).
+		
+There seem to be two main uses of numeric variable names. First of all, some variables with numeric names represent constants, as shown in Fig.~\ref{fig:constants}. This seems to indicate the Scratch users prefer to drag in a constant rather than repeatedly typing it.
 
 \begin{figure}
 	\begin{center}
@@ -448,7 +459,7 @@ There seem to be two main uses of numeric variable names. The first one is const
 	\end{center}
 \end{figure} 
 
-A second use is the use of integer variables as simple list structures. For example, one of the projects we analyzed is a tic-tac-toe game. In that project, the Scratch user defined nine variables named from 1 to 9. Each variable represents one of the nine boxes. Scratch supports lists, so the user here could have also used a list of 9 items, however, they did not. Maybe because they were nor familiar with the procedure of lists, or maybe they thought this would be easier for the user to memorize the game logic.  
+A second use is the use of integer variables as simple list structures. For example, one of the projects we analyzed is a tic-tac-toe game. In that project, the Scratch user defined nine variables named from 1 to 9. Each variable represents one of the nine boxes. Scratch supports lists, so the user here could have also used a list of 9 items, however, they did not. Maybe because they were nor familiar with the concept of lists, or maybe they thought this would be easier for the user to memorize the game logic.  
 
 \todo{Maybe add the screenshot (thanks Alaaeedin) Not sure if we need it, lets see}
 
@@ -461,11 +472,14 @@ A second use is the use of integer variables as simple list structures. For exam
 \end{figure} 
 
 \subsubsection{Use of Textual Labels between Parameters}
-Scratch is influenced by the SmallTalk family of languages and this is visible form the fact that Scratch allows users to insert textual labels in between parameters in order to make procedures more readable, as can be seen in Figure \ref{fig:procedures}.
+Scratch is influenced by the SmallTalk family of languages and this is visible form the fact that Scratch allows users to insert textual labels in between parameters in order to make procedures more readable, as can be seen in Fig.~\ref{fig:procedures}.
+This practice seems particular idiomatic to Scratch, since normal Scratch blocks use a similar syntax, e.g., in the ``say ... for ... seconds" block. 
 
-This practice seems particular idiomatic to Scratch, since normal Scratch blocks use a similar syntax, for example in the ``say ... for ... seconds" block. 
-
-In total 4,415 projects use textual labels, so their use is not that common. We do however find some interesting patterns. Figure \ref{fig:labels} shows the most commonly used labels. Here we see some patterns common in textual languages, like the use of labels for the names of the parameters `x:' and `y:'. Furthermore we see the use of `:' at the end of many patterns, which could come from the users being inspired by Scratch default blocks, which use the colon as shown in Figure~\ref{fig:xy_Scratchblocks}. Finally the use of the space (char-space in Figure~\ref{fig:labels}) is interesting, since Scratch already leaves some room between the parameters, also when a space is not used. The use of space as a separator could indicate that Scratch users feel room between variables is currently too small.
+In total 4415 projects use textual labels, so their use is relatively uncommon. We do however find some interesting patterns. 
+Fig.~\ref{fig:labels} shows the most commonly used labels. Here we see some patterns common in textual languages, like the use of labels for the names of the parameters `x:' and `y:'. 
+Furthermore we see the use of `:' at the end of many patterns, which could come from the users being inspired by Scratch default blocks, which use the colon as shown in Fig.~\ref{fig:xy_Scratchblocks}. 
+Finally the use of the space (char-space in Fig.~\ref{fig:labels}) is interesting, since Scratch already leaves some room between the parameters, also when a space is not used. 
+The use of space as a separator could indicate that Scratch users feel room between variables is currently too small.
 
 \begin{figure}
 	\begin{center}
