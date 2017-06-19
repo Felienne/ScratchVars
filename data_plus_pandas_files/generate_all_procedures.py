@@ -44,7 +44,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 df = pd.read_csv(dir_path+'/input/code.csv', names = list(range(0,23)))#, nrows = 20000)
 
 
-s = df[(df[7] == 'procdef') | (df[7] == 'call')] #get all rows that have procedure blocks
+s = df[(df[7] == 'procDef') | (df[7] == 'call')] #get all rows that have procedure blocks
 
 # now save the block and block and varname for subsequent processing
 

@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import math
 
 
-df = pd.read_csv('all_variables_with_arguments.csv')
+df = pd.read_csv('output/all_variables_with_arguments.csv')
 
 print df
  
@@ -23,7 +23,7 @@ pivot = pd.pivot_table(df, values='projectid', index='vartype', aggfunc=lambda x
 
 print pivot
 
-pivot.to_csv('distributions of vartypes.csv')
+pivot.to_csv('output/distributions of vartypes.csv')
 
 
 pivot.plot.bar(alpha=0.5)

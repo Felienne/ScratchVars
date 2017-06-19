@@ -15,6 +15,11 @@ def isLetter(c):
   funcname = c['varname']
   return funcname.isalpha()
 
+def mergeNameType(c):
+  varname = c['varname']
+  datatype = c['datatype']
+  return varname + "---" + datatype
+
 
 df = pd.read_csv('output/all_variables_with_arguments.csv')
 
@@ -29,15 +34,9 @@ df['isLetter'] = df.apply(isLetter, axis=1)
 #and filter on it 
 df = df[(df['isLetter'] == True) ]
 
-#count the number of unique projects in which a varname occurs plus their datatype
-
-pivot = pd.pivot_table(df, values='projectid', index=['varname'], columns=['datatype'], aggfunc=lambda x: len(x.unique()))
-
-print pivot
-
-pivot.to_csv('output/distributions of datatype of one letter chars.csv')
-
-pivot.plot(kind='bar', stacked=True)
+# now and a new field for name plus datatype (so we count double occurrences double) 
+#and filter on it 
+df['mergeNameType'] = df.apply(mergeNameType, axis=1)
 
 
 
