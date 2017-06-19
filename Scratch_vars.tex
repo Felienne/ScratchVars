@@ -260,7 +260,7 @@ When comparing distributions of variable name lengths with the procedure name le
 Hence, we perform the Mann-Whitney-Wilcoxon test together with the two-sample test for the nonparametric Behrens-Fisher problem, i.e., test for
 $H_0: p = 1/2$, where $p$ denotes the relative effect of the two independent samples~\cite{Neubert,Konietschke:nparcomp}.
 
-\todo{something about how we analyze Scratch-specific things}
+%\todo{something about how we analyze Scratch-specific things}
 
  \section{Results}
 This section presents an overview of our analysis of variable and procedure name use in the previously published Scratch dataset~\cite{Aivaloglou2016HowKC}.
@@ -375,7 +375,7 @@ For a detailed explanation of procedures in Scratch see Section~\ref{sec:Scratch
 
 Figure~\ref{fig:distribution_of_lengths_func} shows the distribution of procedures name length in the Scratch dataset. 
 By inspecting this figure we observe that the procedure names tend to be longer compared to Scratch variable names. 
-Indeed, the two-sample test for the nonparametric Behrens-Fisher problem estimates the relative effect of the two samples (procedure name lengths vs. variable name lengths) as $0.003$ (with the $p$-value being too small to be computed precisely), i.e., it indicates that the procedure names' lengths tends to be larger than the lengths of the variable names. 
+Indeed, the two-sample test for the nonparametric Behrens-Fisher problem estimates the relative effect of the two samples (procedure name lengths vs. variable name lengths) as $0.149$ (with the $p$-value being too small to be computed precisely), i.e., it indicates that the procedure names' lengths tends to be larger than the lengths of the variable names. 
 This observation is confirmed by the Mann-Whitney-Wilcoxon test (the $p$-value is too small to be computed precisely).
 Short names are not common, even less common than short names of variables: single-letter names compose less than 1\% of the extracted names, less than 4.9\% observed for Scratch variables and 9--20\% in C, Java and Perl~\cite{Beniamini}. 
 The maximum length for a procedure name is 250 characters, which is the same as the maximum length for the variable names. 
@@ -394,7 +394,7 @@ We could not revisit Observation~\ref{single-letter-vars:similarity} since data 
 Fig.~\ref{fig:one_letter_occurrence_procedures} shows the number of occurrences for each alphabetic letter. 
 We see that $i$ is no longer among the most commonly used letters rejecting Observation~\ref{single-letter-vars:i}.
 The top used single-letter name is $a$, the first letter in the alphabet, which might explain its popularity.
-The uppercase letters are used more often than the lowercase letters (in 267 vs. 218 projects \todo{AS. Felienne are these projects?}), rejecting Observations~\ref{single-letter-vars:upercase:lowercase}.
+The uppercase letters are used more often than the lowercase letters (in 267 vs. 218 projects), rejecting Observations~\ref{single-letter-vars:upercase:lowercase}.
 Sometimes the uppercase letter's frequency exceeds the one of the lowercase, e.g., in the case of $r$. 
 
 
