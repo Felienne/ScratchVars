@@ -37,21 +37,21 @@ res <- mctp(d$v~d$lbl, data=d, type="Tukey", asy.method="fisher")
 res$Analysis
 
 #               Estimator  Lower  Upper Statistic p.Value
-#Java - C           0.172  0.171  0.173   574.753       0
-#JS - C            -0.077 -0.077 -0.076  -299.847       0
-#perl - C          -0.081 -0.082 -0.080  -224.469       0
-#PHP - C            0.116  0.115  0.116   587.192       0
-#scratch - C        0.338  0.337  0.340   478.670       0
-#JS - Java         -0.248 -0.249 -0.248  -769.643       0
-#perl - Java       -0.253 -0.254 -0.252  -614.944       0
-#PHP - Java        -0.056 -0.057 -0.055  -203.349       0
-#scratch - Java     0.167  0.165  0.168   238.205       0
-#perl - JS         -0.005 -0.006 -0.004   -12.891       0
-#PHP - JS           0.192  0.192  0.193   797.206       0
-#scratch - JS       0.415  0.413  0.417   577.336       0
-#PHP - perl         0.197  0.196  0.198   557.770       0
-#scratch - perl     0.420  0.418  0.422   539.481       0
-#scratch - PHP      0.223  0.221  0.224   323.676       0
+#Java - C           0.190  0.189  0.191   581.035       0
+#JS - C            -0.077 -0.077 -0.076  -278.928       0
+#perl - C          -0.088 -0.089 -0.087  -226.516       0
+#PHP - C            0.122  0.122  0.123   567.042       0
+#scratch - C        0.234  0.232  0.235   394.418       0
+#JS - Java         -0.267 -0.268 -0.266  -759.737       0
+#perl - Java       -0.278 -0.280 -0.277  -618.628       0
+#PHP - Java        -0.068 -0.069 -0.067  -224.780       0
+#scratch - Java     0.044  0.042  0.045    70.802       0
+#perl - JS         -0.012 -0.013 -0.011   -29.672       0
+#PHP - JS           0.199  0.198  0.200   769.479       0
+#scratch - JS       0.310  0.309  0.312   516.336       0
+#PHP - perl         0.211  0.210  0.212   551.758       0
+#scratch - perl     0.322  0.320  0.324   476.859       0
+#scratch - PHP      0.111  0.110  0.113   192.089       0
 
 
 
@@ -135,12 +135,12 @@ vioplot(v1,v2,names=c("vars", "proc"), col="gold")
 #
 #data:  v1 and v2
 #v1: variables v2: procedures
-#W = 5733475281, p-value = 1.175e-15
+#W = 3649383972, p-value < 2.2e-16
 #alternative hypothesis: true location shift is less than 0
 
 # res$Analysis
 #       Effect Estimator Lower Upper        T p.Value
-#1 p(proc,var)    0.78 0.778 0.783 163.845       0
+#1 p(proc,var)    0.149 0.148 0.151 -296.593       0
 ######################
 icpc2017characters <- read.csv(paste(root,"sophiko-icpc-2017/extract_variables/result-files/char-use.dat",sep=""),header=TRUE)
 scratchcharacters <- read.csv(paste(root,"data_plus_pandas_files/output/distributions\ of\ one\ letter\ chars_upper\ and\ lower.csv",sep=""),header=TRUE)
