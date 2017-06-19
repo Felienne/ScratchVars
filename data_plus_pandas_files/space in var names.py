@@ -15,7 +15,7 @@ import math
 df = pd.read_csv('output/all_variables_with_arguments.csv')
 
 
-
+df = df[(df['number_of_spaces'] > 0) & (df['number_of_spaces'] < 7)]
 
 #count the number of unique projects in which a length occures
 
