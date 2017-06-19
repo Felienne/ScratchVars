@@ -32,7 +32,7 @@ pivot['percentage'] = pivot.apply(getPercentage, axis=1)
 
 pivot.to_csv('output/distributions of lengths of functions_percentage.csv')
 
-dfpivot = pd.read_csv('output/distributions of lengths of functions_percentage.csv')
+
 
 
 print dfpivot
