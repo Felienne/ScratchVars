@@ -55,6 +55,7 @@ res$Analysis
 
 
 
+
 # X < Y if Upper < 0 and X > Y if Lower > 0
 # The loops below produce two sets of edges for the T-graph
 # Copy paste them into digraph.py and generete the T-graph from Python
@@ -126,6 +127,9 @@ res <- npar.t.test(d$v~d$lbl, data=d)
 res$Analysis
 
 wilcox.test(v1,v2,alternative="l")
+
+library(vioplot)
+vioplot(v1,v2,names=c("vars", "proc"), col="gold")
 
 #	Wilcoxon rank sum test with continuity correction
 #
