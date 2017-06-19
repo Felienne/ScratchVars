@@ -37,21 +37,22 @@ res <- mctp(d$v~d$lbl, data=d, type="Tukey", asy.method="fisher")
 res$Analysis
 
 #               Estimator  Lower  Upper Statistic p.Value
-#Java - C           0.191  0.190  0.192   585.138       0
-#JS - C            -0.077 -0.078 -0.076  -280.612       0
-#perl - C          -0.089 -0.090 -0.088  -227.084       0
-#PHP - C            0.123  0.123  0.124   571.295       0
-#scratch - C        0.212  0.211  0.213   842.946       0
-#JS - Java         -0.268 -0.269 -0.267  -766.611       0
-#perl - Java       -0.280 -0.281 -0.279  -623.981       0
-#PHP - Java        -0.068 -0.069 -0.067  -225.660       0
-#scratch - Java     0.021  0.020  0.022    65.337       0
-#perl - JS         -0.012 -0.013 -0.011   -29.535       0
-#PHP - JS           0.200  0.200  0.201   783.570       0
-#scratch - JS       0.289  0.288  0.290  1011.954       0
-#PHP - perl         0.212  0.211  0.213   556.088       0
-#scratch - perl     0.301  0.300  0.302   753.143       0
-#scratch - PHP      0.089  0.088  0.089   412.693       0
+#Java - C           0.172  0.171  0.173   574.753       0
+#JS - C            -0.077 -0.077 -0.076  -299.847       0
+#perl - C          -0.081 -0.082 -0.080  -224.469       0
+#PHP - C            0.116  0.115  0.116   587.192       0
+#scratch - C        0.338  0.337  0.340   478.670       0
+#JS - Java         -0.248 -0.249 -0.248  -769.643       0
+#perl - Java       -0.253 -0.254 -0.252  -614.944       0
+#PHP - Java        -0.056 -0.057 -0.055  -203.349       0
+#scratch - Java     0.167  0.165  0.168   238.205       0
+#perl - JS         -0.005 -0.006 -0.004   -12.891       0
+#PHP - JS           0.192  0.192  0.193   797.206       0
+#scratch - JS       0.415  0.413  0.417   577.336       0
+#PHP - perl         0.197  0.196  0.198   557.770       0
+#scratch - perl     0.420  0.418  0.422   539.481       0
+#scratch - PHP      0.223  0.221  0.224   323.676       0
+
 
 
 # X < Y if Upper < 0 and X > Y if Lower > 0
@@ -129,12 +130,13 @@ wilcox.test(v1,v2,alternative="l")
 #	Wilcoxon rank sum test with continuity correction
 #
 #data:  v1 and v2
-#W = 41405985150, p-value < 2.2e-16
+#v1: variables v2: procedures
+#W = 5733475281, p-value = 1.175e-15
 #alternative hypothesis: true location shift is less than 0
 
 # res$Analysis
 #       Effect Estimator Lower Upper        T p.Value
-#1 p(proc,var)    0.003 0.003 0.004 -548.367       0
+#1 p(proc,var)    0.78 0.778 0.783 163.845       0
 ######################
 icpc2017characters <- read.csv(paste(root,"sophiko-icpc-2017/extract_variables/result-files/char-use.dat",sep=""),header=TRUE)
 scratchcharacters <- read.csv(paste(root,"data_plus_pandas_files/output/distributions\ of\ one\ letter\ chars_upper\ and\ lower.csv",sep=""),header=TRUE)
