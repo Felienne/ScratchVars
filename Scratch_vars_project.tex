@@ -22,15 +22,22 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Author1}
-\IEEEauthorblockA{Uni1\\
-Address1\\
-Email: email1.com}
+\author{\IEEEauthorblockN{Alaaeddin Swidan}
+\IEEEauthorblockA{Delft University of Technology\\
+The Netherlands\\
+Email: alaaeddin.swidan@tudelft.nl}
 \and
-\IEEEauthorblockN{Author2}
-\IEEEauthorblockA{Uni2\\
-	Address2\\
-	Email: email2.com}}
+\IEEEauthorblockN{Alexander	Serebrenik}
+\IEEEauthorblockA{Eindhoven University of Technology\\
+	The Netherlands\\
+	Email: a.serebrenik@tue.nl}
+\and
+\IEEEauthorblockN{Felienne Hermans}
+\IEEEauthorblockA{Delft University of Technology\\
+	The Netherlands\\
+	Email: f.f.j.hermans@tudelft.nl}
+}
+
 % make the title area
 \maketitle
 
@@ -44,7 +51,7 @@ A recent study analyzed the use of variable names in five popular programming la
 In this paper, we analyze variables in Scratch, a popular block-based visual language which focuses on teaching children programming. We start by replicating the above single-letter study for Scratch. 
 We augment this study by analyzing single-letter procedure names, as well as by investigating the use of Scratch specific naming patterns: spaces in variable names and textual labels in procedure definitions and calls.
 
-The results of our analysis show that Scratch users often prefer longer identifier names --variable names range between 4 and 10 characters in length, while procedure names have longer names. For the single letter variables, the most recurring names are x, y and i. Single letter procedures are less popular, but show more tendency to be in upper case. \todo{this can be improved, Ala, lets discuss tomorrow}
+The results of our analysis show that Scratch users often prefer longer identifier names --variable names range between 4 and 10 characters in length, while procedure names have longer names. For the single letter variables, the most recurring names are x, y and i. Single letter procedures are less popular, but show more tendency to be in upper case.
 
 Concerning Scratch specific features, 44\% of the unique variable names in the dataset and 34\% of the projects in the dataset include at least one space. The usage of textual string between parameters appears as not common, however textual patterns used imply an influence from textual languages, for example by using brackets. 
 
@@ -344,7 +351,7 @@ Hence, we expect the \emph{similarity} between Scratch and the languages conside
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=\columnwidth]{fig/loops_in_Scratch}
+		\includegraphics[scale=0.5]{fig/loops_in_Scratch}
 		\caption{Scratch blocks that are used to repeat specific actions}
 		\label{fig:loop_Scratchblocks}
 	\end{center}
@@ -367,7 +374,7 @@ We conclude that Scratch users seem to be inspired by the Scratch language in na
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=\columnwidth]{fig/builtinblocks_xy}
+		\includegraphics[scale=0.5]{fig/builtinblocks_xy}
 		\caption{Some Scratch blocks that use x and y characters}
 		\label{fig:xy_Scratchblocks}
 	\end{center}
@@ -479,7 +486,7 @@ We conclude that Scratch users prefer natural language naming of a variable: the
 
 \begin{figure}[!b]
 	\begin{center}
-		\includegraphics[width=\columnwidth]{fig/constants}
+		\includegraphics[scale=0.5]{fig/constants}
 		\caption{Numeric variable used as a constant}
 		\label{fig:constants}
 	\end{center}
@@ -490,9 +497,9 @@ In addition to spaces in variable names, Scratch even allows the use of numbers 
 
 The most popular numeric values used as variable names include small natural numbers (1--12) and 360 likely to represent 360$^\circ$ (cf. Figure~\ref{fig:numeric}).
 
-There seem to be two main uses of numeric variable names. First of all, some variables with numeric names represent constants, as shown in Figure~\ref{fig:constants}. This seems to indicate the Scratch users prefer to drag in a constant rather than repeatedly typing it.
+There seem to be two main uses of numeric variable names. First, some variables with numeric names represent constants, as shown in Figure~\ref{fig:constants}. This seems to indicate the Scratch users prefer to drag in a constant rather than repeatedly typing it.
 
-A second use is the use of integer variables as simple list structures. For example, one of the projects we analyzed is a tic-tac-toe game (See Figure~\ref{"fig:tictactoe_example"}). In that project, the Scratch user defined nine variables named from 1 to 9. Each variable represents one of the nine boxes. Scratch supports lists, so the user here could have also used a list of 9 items, however, they did not. Maybe because they were not familiar with the concept of lists, or maybe they thought this would be easier for the user to memorize the game logic.  
+A second use is the use of integer variables as simple list structures. For example, one of the projects we analyzed is a tic-tac-toe game. In that project, the Scratch user defined nine variables named from 1 to 9. Each variable represents one of the nine boxes. Scratch supports lists, so the user here could have also used a list of 9 items, however, they did not. Maybe because they were not familiar with the concept of lists, or maybe they thought this would be easier for the user to memorize the game logic.  
 
 \subsubsection{Use of Textual Labels between Parameters}
 Scratch is influenced by the SmallTalk family of languages which is visible form the fact that Scratch allows users to insert textual labels in between parameters in order to make procedures more readable, as can be seen in Figure~\ref{fig:procedures}.
@@ -505,40 +512,15 @@ Finally the use of the space (char-space in Figure~\ref{fig:labels}) is interest
 The use of space as a separator could indicate that Scratch users feel room between variables is currently too small.
 \todo{ready the part about )}
 
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=\columnwidth]{fig/project/labels_in_procedures}
-		\caption{The most used textual labels in between parameters of procedures}
-		\label{fig:labels}
-	\end{center}
-\end{figure} 
-\begin{figure*}[!h]
-	\centering
-	\begin{subfigure}{.5\columnwidth}
-		\includegraphics[width=\columnwidth]{fig/tic_1}%
-	\end{subfigure}\hfil%
-	\begin{subfigure}{.5\columnwidth}
-		\includegraphics[width=\columnwidth]{fig/tic_2}%
-	\end{subfigure}\hfil%
-	\begin{subfigure}{.5\columnwidth}
-		\includegraphics[width=\columnwidth]{fig/tic_3}%
-	\end{subfigure}%
-\caption{A Tic-Tac-Toe program in Scratch uses numeric variables to represent the boxes to be checked by the player}
-\label{"fig:tictactoe_example"}
-\end{figure*}
-
-
- \section{Discussion}
-\subsection{Threats to validity}
-
+\section{Threats to Validity}
 As any empirical study our work is subject to series of threats to validity.
 Construct validity of our study might be threatened by the operationalization of the notion of a type. 
-Due to lack of explicit type declarations in Scratch our approach inferred the type by inspecting the value assigned or manipulated with when the variable is accessed. To be representative for a project, our method considered and counted the different types encountered for the same variable within that project. For example if a variable called ``score" was set to ``empty" at first, and then set to 0 in a different script, we count the variable twice: one for string and one for integers. The same can be applied to textual languages with less strict type systems such as PHP. While the method can be considered simple, it assures that data types encountered by Scratch users are represented in the data, and forms a good proxy to compare it to the perceptions of professional developers. It is possible that these data types do not reflect precisely the perception of users. This threat will be addressed in future work by surveying students in our running Scratch MOOC. 
+Due to lack of explicit type declarations in Scratch our approach inferred the type by inspecting the value assigned or manipulated with when the variable is accessed. To be representative for a project, our method considered and counted the different types encountered for the same variable within that project. For example if a variable called ``score" was set to ``empty" at first, and then set to 0 in a different script, we count the variable twice: one for string and one for integers. The same can be applied to textual languages with less strict type systems such as PHP. While the method can be considered simple, it assures that data types encountered by Scratch users are represented in the data, and forms a good proxy to compare it to the perceptions of professional developers. It is possible that these data types do not reflect precisely the perception of users. This threat will be addressed in future work by surveying students in our running Scratch MOOC.
 
-Furthermore, one threat to validity concerns the generalizations that can be made based on the study for the Scratch users.  However, we used a large dataset which comprises around 1\% of all 23 million currently shared Scratch projects. It could be that the dataset does not reflect the users trend for identifier naming. However, the Scratch community represent novice programmers whose major part is school students and young children --based on the previous Scratch statistics. For these types of users, it is difficult to imaging they have an established tendency without prior guidance and education. 
+Furthermore, one threat to validity concerns the generalizations that can be made based on the study for the Scratch users.  However, we used a large dataset which comprises around 1\% of all 23 million currently shared Scratch projects. It could be that the dataset does not reflect the users trend for identifier naming. However, the Scratch community represent novice programmers whose major part is school students and young children --based on the previous Scratch statistics. For these types of users, it is difficult to imaging they have an established tendency without prior guidance and education. \\
 \todo{to be continued}
 
-\subsection{Naming in Scratch}
+\textbf{Naming in Scratch}
 \todo{needs to be improved, Felienne can do this tomorrow}
 We only considered naming features of Scratch that require the user to input textual values. For example the name of the sprites can also be considered as an identifier. However, Scratch assigns default names to sprites once they are created, and the user may opt not to change it. Default names can be considered as a bad naming practice, but it is out of the scope of this paper.\\
 
