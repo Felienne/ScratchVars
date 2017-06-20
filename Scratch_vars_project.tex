@@ -88,8 +88,6 @@ Moreover, the overall popularity of Scratch is witnessed by Scratch being curren
   \end{center}
 \end{figure} 
 
-In Scratch too, we see that programming materials do not focus on naming. For example, the SCH does not mention naming \todo{Felienne, add ref and double check}
-
 \begin{figure}[tb]
 	\begin{center}
 		\includegraphics[width=\columnwidth]{fig/Scratch_users}
@@ -106,8 +104,7 @@ In Scratch too, we see that programming materials do not focus on naming. For ex
 %Remixing is common in the Scratch community (\todo{I think there are some papers on this}). 
 %Therefore bad naming habits in Scratch programs could actually harm understandability.
 
-We believe that there are several reasons why understanding the naming practices in the Scratch community is important.
-First, it is important for the Scratch community itself as bad naming practices can easily propagate from one program to another through `remixing'~\cite{Hill:Monroy-Hernandez,Davis:Kafai:Vasudevan:Lee}, code sharing practice similar to GitHub forking.
+Scratch programming materials too do not focus on naming. For example, the Creative Computing Learner Workbook created by the ScratchEd group at Harvard does not explain how to select good names for procedures and variables \footnote{\url{http://scratched.gse.harvard.edu/guide/files/CreativeComputing20140820_LearnerWorkbook.pdf}} It is therefore interesting to explore the naming habits of Scratch users. And there are other reasons why understanding the naming practices in the Scratch community is important. First, it is important for the Scratch community itself as bad naming practices can easily propagate from one program to another through `remixing'~\cite{Hill:Monroy-Hernandez,Davis:Kafai:Vasudevan:Lee}, code sharing practice similar to GitHub forking.
 Second, it is important for researchers. Software engineering researchers can learn how to support novice programmers, taking their first steps in programming. As shown in Figure~\ref{fig:Scratch_users}, 51\% of Scratch users are aged between 10 and 15 at the time of registration according to the statistics provided by Scratch\footnote{\url{https://Scratch.mit.edu/statistics/}}. Therefore, researchers on software engineering education can obtain insights in how to define naming guidelines for educational materials, and analyzing the differences between Scratch and textual languages can help in supporting the transition from visual languages to textual ones~\cite{Dann,Matsuzawa}. 
 
 We start by a \textbf{general discussion of naming practices} in Scratch and analyze the previously published collection of 250,000 Scratch projects~\cite{Aivaloglou2016HowKC}. 
@@ -125,11 +122,9 @@ The usage of single uppercase letters is similar to the pattern found in Perl, f
 
 \todo{"range between 4 and 14 characters" -> not true, 1 also exists? discuss tomorrow.}\todo{yes, but they still ``tend'' to rand between 4 and 14, no ideas where do the numbers come from. Better: ``50\% of the variables have length between 5 and 11 characters''? Q1: 5, Q3: 11. }
 
-\todo{in the next paragraph, first explain the features, then explain we measure them (Felienne can do this)}\todo{don't we explain them already?}
-Next we focus on \textbf{Scratch-specific features in naming identifiers}.
-In particular, we aim at understanding to what extent spaces within identifiers (e.g., variable \emph{max i}), numbers as variables (e.g., a variable named \emph{6}) and textual labels used between the parameters. 
-For example instead of printing the first $n$ letters from a string $s$ with a procedure called ``printnof($n$,$s$)'', in Scratch one can define a procedure called ``say $n$ characters from text $s$", as shown in Figure \ref{fig:procedures}. 
-This feature exists in some textual languages too (most notable in SmallTalk) but is not common in most mainstream languages. 
+
+Next we focus on \textbf{Scratch-specific features in naming identifiers}. Scratch supports a number of les commonly used naming features, for example spaces may be used in names e.g., a variable \emph{max i} and integers and even floating point numbers can be used as variable names e.g., a variable named \emph{6} or \emph{3.14159}. Finally, Scratch allows for textual labels in between parameters. For example a method for printing the first $n$ letters from a string $s$ could be called ``printnof($n$,$s$)'' in a textual language. Scratch allows for this too, however, one can also define a procedure called ``say $n$ characters from text $s$", as shown in Figure \ref{fig:procedures}. 
+This feature does exist in textual languages too---most notable in SmallTalk---but is not commonly found in most mainstream languages. 
 
 Investigating the use of these Scratch-specific naming patterns is interesting to understand their role in novice programming. If they are popular among Scratch users, this might be because they ease novice programming, and that means one could even advocate that these features should be integrated in the mainstream programming languages, if only to ease the transition from block-based languages into textual languages.
 
@@ -270,15 +265,9 @@ To determine the type of single letter variables, we perform type inference on t
 We perform standard data type conversion of the value and decide the type accordingly. \todo{The previous sentence is not clear.}
 If the variable is accessed multiple times in a project with different data types, for example first as a string and then as an integer, both data types are counted.
 
-\todo{Felienne needs to read this part below to check when it is not 10pm :-)}
-For the procedure names, we follow a similar approach to the extraction of variable names. 
-We extract the blocks used to call a particular procedure. 
-We then extract the name of the procedure. 
-Each procedure name is counted once per project. 
-We note here that Scratch allows the user to create multiple procedures with the same exact name in the same sprite. 
-It is not clear to us why the language would support such a feature. 
-We argue however that counting the procedure name once per project is an indication of the naming patterns used, and fits the needs of this study.  
-For the Scratch-specific features: presence of spaces and numbers as variables are detected from the extracted variable names, while textual patterns in procedure names are detected from the extracted procedures' names.
+For the procedure names, we follow a similar approach to the extraction of variable names. We extract the blocks used to call a particular procedure and then extract the name of the procedure, and count the number of projects in which a procedure name occurs. 
+
+We note here that Scratch allows the user to create multiple procedures with the same exact name in the same sprite. It is not clear to us why the language would support such a feature.  We argue however that counting the procedure names once per project is an indication of the naming patterns used, and fits the needs of this study. For the presence of spaces in and numbers as variables we simply analyze the previously extracted variable names, while textual patterns in procedure names are detected from the extracted procedures' names.
 We provide the Python code, input and output files for verification and replication purposes on a GitHub repository\footnote{\url{https://github.com/Felienne/ScratchVars}}.
 
 \subsection{Data Analysis}
@@ -462,6 +451,7 @@ Finally, the presence of floats as types for $x$, $y$ and to lesser extent $z$ s
 \subsection{Scratch-specific Constructs}
 \label{res:Scratch:specific}
 In this section we analyze the occurrence of naming practices that are allowed in Scratch, but are missing from or are not common in most mainstream textual languages.
+
 \begin{figure}[!b]
 	\begin{center}
 		\includegraphics[width=\columnwidth]{fig/project/numeric}

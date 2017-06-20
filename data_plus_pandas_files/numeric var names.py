@@ -12,9 +12,14 @@ import matplotlib.pyplot as plt
 import math
 
 
+
 df = pd.read_csv('output/all_variables_with_arguments.csv')
 
 df = df[(df['vartype'] == 'int') | (df['vartype'] == 'float')]
+
+
+df = df[(df['varname'] != '+1')]
+
 
 df.to_csv('output/all numeric variables.csv')
 
