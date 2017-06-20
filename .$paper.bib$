@@ -1,0 +1,551 @@
+% Encoding: UTF-8
+
+@inproceedings{Beniamini,
+  author    = {Gal Beniamini and
+               Sarah Gingichashvili and
+               Alon Klein{-}Orbach and
+               Dror G. Feitelson},
+  title     = {Meaningful identifier names: the case of single-letter variables},
+  booktitle = {ICPC},
+  pages     = {45--54},
+  year      = {2017},
+  crossref  = {DBLP:conf/iwpc/2017},
+}
+
+@inproceedings{AmanASK15,
+  author    = {Hirohisa Aman and
+               Sousuke Amasaki and
+               Takashi Sasaki and
+               Minoru Kawahara},
+  title     = {Empirical Analysis of Change-Proneness in Methods Having Local Variables
+               with Long Names and Comments},
+  booktitle = {ESEM},
+  pages     = {50--53},
+  year      = {2015},
+  crossref  = {DBLP:conf/esem/2015},
+}
+
+@inproceedings{AvidanF17,
+  author    = {Eran Avidan and
+               Dror G. Feitelson},
+  title     = {Effects of variable names on comprehension an empirical study},
+  booktitle = {ICPC},
+  pages     = {55--65},
+  year      = {2017},
+  crossref  = {DBLP:conf/iwpc/2017},
+}
+
+@inproceedings{HofmeisterSH17,
+  author    = {Johannes Hofmeister and
+               Janet Siegmund and
+               Daniel V. Holt},
+  title     = {Shorter identifier names take longer to comprehend},
+  booktitle = {SANER},
+  pages     = {217--227},
+  year      = {2017},
+  crossref  = {DBLP:conf/wcre/2017},
+}
+@inproceedings{AnquetilL98,
+  author    = {Nicolas Anquetil and
+               Timothy C. Lethbridge},
+  title     = {Assessing the relevance of identifier names in a legacy software system},
+  booktitle = {CASCON},
+  pages     = {4},
+  year      = {1998},
+  crossref  = {DBLP:conf/cascon/1998},
+}
+
+@inproceedings{CaprileT00,
+  author    = {Bruno Caprile and
+               Paolo Tonella},
+  title     = {Restructuring Program Identifier Names},
+  booktitle = {ICSM},
+  pages     = {97--107},
+  year      = {2000},
+  crossref  = {DBLP:conf/icsm/2000},
+}
+
+@inproceedings{ButlerWYS10,
+  author    = {Simon Butler and
+               Michel Wermelinger and
+               Yijun Yu and
+               Helen Sharp},
+  title     = {Exploring the Influence of Identifier Names on Code Quality: An Empirical
+               Study},
+  booktitle = {CSMR},
+  year      = {2010},
+  crossref  = {DBLP:conf/csmr/2010},
+}
+
+@inproceedings{ScannielloR13,
+  author    = {Giuseppe Scanniello and
+               Michele Risi},
+  title     = {Dealing with Faults in Source Code: Abbreviated vs. Full-Word Identifier
+               Names},
+  booktitle = {ICSM},
+  pages     = {190--199},
+  year      = {2013},
+  crossref  = {DBLP:conf/icsm/2013},
+ }
+
+@inproceedings{TramontanaRS14,
+  author    = {Porfirio Tramontana and
+               Michele Risi and
+               Giuseppe Scanniello},
+  title     = {Studying abbreviated vs. full-word identifier names when dealing with
+               faults: an external replication},
+  booktitle = {ESEM},
+  pages     = {64:1},
+  year      = {2014},
+  crossref  = {DBLP:conf/esem/2014},
+}
+
+@inproceedings{LunguK13,
+  author    = {Mircea Lungu and
+               Jan Kurs},
+  title     = {On planning an evaluation of the impact of identifier names on the
+               readability and quality of smalltalk programs},
+  booktitle = {Workshop on User Evaluations for Software Engineering
+               Researchers},
+  pages     = {13--15},
+  year      = {2013},
+  crossref  = {DBLP:conf/icse/2013user},
+}
+
+@inproceedings{ArnaoudovaPAG13,
+  author    = {Venera Arnaoudova and
+               Massimiliano {Di Penta} and
+               Giuliano Antoniol and
+               Yann{-}Ga{\"{e}}l Gu{\'{e}}h{\'{e}}neuc},
+  title     = {A New Family of Software Anti-patterns: Linguistic Anti-patterns},
+  booktitle = {CSMR},
+  pages     = {187--196},
+  year      = {2013},
+  crossref  = {DBLP:conf/csmr/2013},
+}
+@ARTICLE{Konietschke:Hothorn:Brunner,
+  author       = {Konietschke, Frank and Hothorn, Ludwig A. and Brunner, Edgar},
+  title        = {Rank-based multiple test procedures and simultaneous confidence intervals},
+  journal      = {Electronic Journal of Statistics},
+  volume       = {6},
+  issn         = {1935-7524},
+  pages        = {738--759},
+  year         = {2012},
+}
+
+@ARTICLE{Zimmerman:Zumbo,
+  author       = {Zimmerman, Donald W. and Zumbo, Bruno D.},
+  title        = {Parametric alternatives to the {S}tudent t test under violation of normality and homogeneity of variance},
+  journal      = {Perceptual and Motor Skills},
+  year         = {1992},
+  volume       = {74},
+  number       = {3(1)},
+  pages        = {835--844},
+}
+
+@ARTICLE{Gabriel,
+  author       = {Gabriel, K. R.},
+  journal      = {The Annals Mathematical Statistics},
+  pages        = {224--250},
+  title        = {{Simultaneous test procedures---some theory of multiple comparisons}},
+  volume       = {40},
+  number       = {1},
+  year         = {1969},
+}
+
+
+@article{VasilescuSGM14,
+  author    = {Bogdan Vasilescu and
+               Alexander Serebrenik and
+               Mathieu Goeminne and
+               Tom Mens},
+  title     = {On the variation and specialisation of workload---{A} case study of
+               the Gnome ecosystem community},
+  journal   = {Empirical Software Engineering},
+  volume    = {19},
+  number    = {4},
+  pages     = {955--1008},
+  year      = {2014},
+}
+
+@article{VasilescuCS14,
+  author    = {Bogdan Vasilescu and
+               Andrea Capiluppi and
+               Alexander Serebrenik},
+  title     = {Gender, Representation and Online Participation: {A} Quantitative
+               Study},
+  journal   = {Interacting with Computers},
+  volume    = {26},
+  number    = {5},
+  pages     = {488--511},
+  year      = {2014},
+}
+
+@article{YuWYW16,
+  author    = {Yue Yu and
+               Huaimin Wang and
+               Gang Yin and
+               Tao Wang},
+  title     = {Reviewer recommendation for pull-requests in GitHub: What can we learn
+               from code review and bug assignment?},
+  journal   = {Information {\&} Software Technology},
+  volume    = {74},
+  pages     = {204--218},
+  year      = {2016},
+}
+
+@book{brennan_creative_2014,
+	title = {{CREATIVE} {COMPUTING}},
+	publisher = {Harvard Graduate School of Education},
+	author = {Brennan, Karen and Balch, Christian and Chung, Michelle},
+	year = {2014}
+}
+@proceedings{DBLP:conf/esem/2015,
+  title     = {ESEM},
+  publisher = {{IEEE}},
+  year      = {2015},
+  isbn      = {978-1-4673-7899-4},
+}
+@proceedings{DBLP:conf/iwpc/2017,
+  editor    = {Giuseppe Scanniello and
+               David Lo and
+               Alexander Serebrenik},
+  title     = {ICPC},
+  publisher = {{IEEE} / {ACM}},
+  year      = {2017},
+  isbn      = {978-1-5386-0535-6},
+}
+@proceedings{DBLP:conf/wcre/2017,
+  editor    = {Martin Pinzger and
+               Gabriele Bavota and
+               Andrian Marcus},
+  title     = {SANER},
+  publisher = {{IEEE} },
+  year      = {2017},
+  isbn      = {978-1-5090-5501-2},
+}
+
+@article{TakangGM96,
+  author    = {Armstrong A. Takang and
+               Penny A. Grubb and
+               Robert D. Macredie},
+  title     = {The effects of comments and identifier names on program comprehensibility:
+               an experimental investigation},
+  journal   = {J. Prog. Lang.},
+  volume    = {4},
+  number    = {3},
+  pages     = {143--167},
+  year      = {1996},
+ } 
+@proceedings{DBLP:conf/cascon/1998,
+  editor    = {Stephen A. MacKay and
+               J. Howard Johnson},
+  title     = {CASCON},
+  publisher = {{IBM}},
+  year      = {1998},
+ }
+@proceedings{DBLP:conf/icsm/2000,
+  title     = {ICSM},
+  publisher = {{IEEE}},
+  year      = {2000},
+   isbn      = {0-7695-0753-0},
+}
+
+@article{LawrieMFB07,
+  author    = {Dawn Lawrie and
+               Christopher Morrell and
+               Henry Feild and
+               David Binkley},
+  title     = {Effective identifier names for comprehension and memory},
+  journal   = {{ISSE}},
+  volume    = {3},
+  number    = {4},
+  pages     = {303--318},
+  year      = {2007},
+}
+@proceedings{DBLP:conf/csmr/2010,
+  editor    = {Rafael Capilla and
+               Rudolf Ferenc and
+               Juan C. Due{\~{n}}as},
+  title     = {CSMR},
+  publisher = {{IEEE} },
+  year      = {2010},
+   isbn      = {978-0-7695-4321-5},
+}
+@proceedings{DBLP:conf/icsm/2013,
+  title     = {ICSM},
+  publisher = {{IEEE} },
+  year      = {2013},
+  isbn      = {978-0-7695-4981-1},
+}
+@proceedings{DBLP:conf/esem/2014,
+  editor    = {Maurizio Morisio and
+               Tore Dyb{\aa} and
+               Marco Torchiano},
+  title     = {ESEM},
+  publisher = {{ACM}},
+  year      = {2014},
+   isbn      = {978-1-4503-2774-9},
+}
+@proceedings{DBLP:conf/icse/2013user,
+  title     = {Workshop on User Evaluations for Software Engineering
+               Researchers},
+  publisher = {{IEEE} },
+  year      = {2013},
+  isbn      = {978-1-4673-6433-1},
+}
+
+@inbook{Kato2016,
+author="Kato, Toshiyasu
+and Kambayashi, Yasushi
+and Kodama, Yasushi",
+editor="Uskov, Vladimir L.
+and Howlett, Robert J.
+and Jain, Lakhmi C.",
+title="Data Mining of Students' Behaviors in Programming Exercises",
+booktitle="Smart Education and e-Learning 2016",
+year="2016",
+publisher="Springer",
+address="Cham",
+pages="121--133",
+isbn="978-3-319-39690-3",
+}
+
+@inbook{Rother,
+author="Kristian Rother",
+title="Cleaning Up Code",
+booktitle="Pro Python Best Practices",
+year="2017",
+publisher="Springer",
+pages="195--212",
+}
+
+@article{SaezLopez,
+title = "Visual programming languages integrated across the curriculum in elementary school: A two year case study using Scratch in five schools ",
+journal = "Computers \& Education ",
+volume = "97",
+number = "",
+pages = "129--141",
+year = "2016",
+note = "",
+issn = "0360-1315",
+author = "Jos\'{e}-Manuel S\'{a}ez-L\'{o}pez and Marcos Rom\'{a}n-Gonz\'{a}lez and Esteban V\'{a}zquez-Cano",
+}
+
+@INPROCEEDINGS{Deissenbock, 
+author={Dei{\ss}enb{\"o}ck, Florian and Pizka, Markus}, 
+booktitle={IWPC}, 
+title={Concise and consistent naming [software system identifier naming]}, 
+year={2005}, 
+pages={97--106}, 
+doi={10.1109/WPC.2005.14}, 
+ISSN={1092-8138}, 
+month={May},}
+
+@inproceedings{Aivaloglou2016HowKC,
+  title={How Kids Code and How We Know: An Exploratory Study on the Scratch Repository},
+  author={Efthimia Aivaloglou and Felienne Hermans},
+  booktitle={ICER},
+  year={2016}
+}
+
+@article{Shull2008,
+author="Shull, Forrest J.
+and Carver, Jeffrey C.
+and Vegas, Sira
+and Juristo, Natalia",
+title="The role of replications in Empirical Software Engineering",
+journal="Empirical Software Engineering",
+year="2008",
+volume="13",
+number="2",
+pages="211--218",
+issn="1573-7616"
+}
+
+@book{Raymond,
+  title={The New Hacker's Dictionary},
+  author={Raymond, Eric Steven},
+  isbn={9780262680929},
+  lccn={96003009},
+  url={https://books.google.be/books?id=g80P\_4v4QbIC},
+  year={1996},
+  pages = {198--199, 300--301},
+  publisher={MIT Press}
+}
+
+@article{Hill:Monroy-Hernandez,
+author = {Hill, Benjamin Mako and Monroy-Hern\'{a}ndez, Andr\'{e}s},
+title = {The Remixing Dilemma},
+journal = {American Behavioral Scientist},
+volume = {57},
+number = {5},
+pages = {643--663},
+year = {2013},
+doi = {10.1177/0002764212469359},
+}
+
+@inproceedings{Davis:Kafai:Vasudevan:Lee,
+ author = {Davis, Richard and Kafai, Yasmin and Vasudevan, Veena and Lee, Eunkyoung},
+ title = {The Education Arcade: Crafting, Remixing, and Playing with Controllers for Scratch Games},
+ booktitle = {International Conference on Interaction Design and Children},
+ year = {2013},
+ isbn = {978-1-4503-1918-8},
+ location = {New York, New York, USA},
+ pages = {439--442},
+ publisher = {ACM},
+} 
+
+@article{ArnaoudovaPA16,
+  author    = {Venera Arnaoudova and
+               Massimiliano {Di Penta} and
+               Giuliano Antoniol},
+  title     = {Linguistic antipatterns: what they are and how developers perceive
+               them},
+  journal   = {Empirical Software Engineering},
+  volume    = {21},
+  number    = {1},
+  pages     = {104--158},
+  year      = {2016},
+}
+@proceedings{DBLP:conf/csmr/2013,
+  editor    = {Anthony Cleve and
+               Filippo Ricca and
+               Maura Cerioli},
+  title     = {CSMR},
+  publisher = {{IEEE}},
+  year      = {2013},
+  isbn      = {978-1-4673-5833-0},
+}
+
+@inproceedings{Matsuzawa,
+ author = {Matsuzawa, Yoshiaki and Ohata, Takashi and Sugiura, Manabu and Sakai, Sanshiro},
+ title = {Language Migration in non-CS Introductory Programming Through Mutual Language Translation Environment},
+ booktitle = {SIGCSE},
+ year = {2015},
+ isbn = {978-1-4503-2966-8},
+ location = {Kansas City, Missouri, USA},
+ pages = {185--190},
+ publisher = {ACM},
+} 
+
+@inproceedings{Dann,
+ author = {Dann, Wanda and Cosgrove, Dennis and Slater, Don and Culyba, Dave and Cooper, Steve},
+ title = {Mediated Transfer: Alice 3 to {J}ava},
+ booktitle = {Proceedings of the 43rd ACM Technical Symposium on Computer Science Education},
+ series = {SIGCSE '12},
+ year = {2012},
+ isbn = {978-1-4503-1098-7},
+ location = {Raleigh, North Carolina, USA},
+ pages = {141--146},
+ numpages = {6},
+ url = {http://doi.acm.org/10.1145/2157136.2157180},
+ doi = {10.1145/2157136.2157180},
+ acmid = {2157180},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Alice, Java, mediated transfer},
+} 
+
+@INPROCEEDINGS{MoreonoRobles, 
+author={Jes\'{u} Moreno and Gregorio Robles}, 
+booktitle={Frontiers in Education Conference}, 
+title={Automatic detection of bad programming habits in scratch: A preliminary study}, 
+year={2014}, 
+pages={1--4}, 
+ISSN={0190-5848}, 
+month={Oct},}
+
+@article{vanZyl,
+author = {Sukie van Zyl and Elsa Mentz and Marietjie Havenga},
+title = {Lessons Learned from Teaching Scratch as an Introduction to Object-oriented Programming in Delphi},
+journal = {African Journal of Research in Mathematics, Science and Technology Education},
+volume = {20},
+number = {2},
+pages = {131--141},
+year = {2016},
+}
+
+@Article{Teasley,
+  author  = {Barbee E. Teasley},
+  title   = {The effects of naming style and expertise on program comprehension},
+  journal = {International Journal of Human-Computer Studies},
+  year    = {1994},
+  volume  = {40},
+  number  = {5},
+  pages   = {757--770},
+  issn    = {1071-5819},
+}
+
+@inproceedings{Glassman,
+ author = {Glassman, Elena L. and Fischer, Lyla and Scott, Jeremy and Miller, Robert C.},
+ title = {Foobaz: Variable Name Feedback for Student Code at Scale},
+ booktitle = {Annual ACM Symposium on User Interface Software \& Technology},
+ year = {2015},
+ isbn = {978-1-4503-3779-3},
+ pages = {609--617},
+ publisher = {ACM}
+}
+
+@article{Konietschke:nparcomp,
+   author = {Frank Konietschke and Marius Placzek and Frank Schaarschmidt and Ludwig Hothorn},
+   title = {nparcomp: An R Software Package for Nonparametric Multiple Comparisons and Simultaneous Confidence Intervals},
+   journal = {Journal of Statistical Software},
+   volume = {64},
+   number = {9},
+   year = {2015},
+   issn = {1548-7660},
+   pages = {1--17},
+}
+
+@article{Neubert,
+title = "A studentized permutation test for the non-parametric {Behrens-Fisher} problem",
+journal = "Computational Statistics \& Data Analysis",
+volume = "51",
+number = "10",
+pages = "5192--5204",
+year = "2007",
+note = "",
+issn = "0167-9473",
+author = "Karin Neubert and Edgar Brunner",
+}
+
+@INPROCEEDINGS{CaprileTonella, 
+author={Bruno Caprile and Paolo Tonella}, 
+booktitle={WCRE}, 
+title={Nomen est omen: analyzing the language of function identifiers}, 
+year={1999}, 
+pages={112--122},
+month={Oct},}
+
+@INPROCEEDINGS{Caracciolo, 
+author={Andrea Caracciolo and Andrei Chis and Boris Spasojevi\'{c} and Mircea Lungu}, 
+booktitle={SCAM}, 
+title={Pangea: A Workbench for Statically Analyzing Multi-language Software Corpora}, 
+year={2014}, 
+pages={71--76}, 
+month={Sept},}
+
+@inbook{Bochud,
+author="Bochud, Murielle",
+editor="Elston, Robert C.
+and Satagopan, Jaya M.
+and Sun, Shuying",
+title="Estimating Heritability from Nuclear Family and Pedigree Data",
+bookTitle="Statistical Human Genetics: Methods and Protocols",
+year="2012",
+publisher="Humana Press",
+pages="171--186",
+isbn="978-1-61779-555-8",
+}
+
+@InProceedings{hermans_aivaloglou,
+  author    = {Hermans, Felienne and Aivaloglou, Efthimia},
+  title     = {Teaching software engineering principles to K-12 students: a MOOC on scratch},
+  booktitle = {ICSE-SEET '17 Proceedings of the 39th International Conference on Software Engineering: Software Engineering and Education Track},
+  year      = {2017},
+  pages     = {13-22},
+  doi       = {10.1109/ICSE-SEET.2017.13},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
