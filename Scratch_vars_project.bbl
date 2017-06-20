@@ -35,8 +35,7 @@ E.~Avidan and D.~G. Feitelson, ``Effects of variable names on comprehension an
 \bibitem{Beniamini}
 G.~Beniamini, S.~Gingichashvili, A.~Klein{-}Orbach, and D.~G. Feitelson,
   ``Meaningful identifier names: the case of single-letter variables,'' in
-  \emph{ICPC}, G.~Scanniello, D.~Lo, and A.~Serebrenik, Eds.\hskip 1em plus
-  0.5em minus 0.4em\relax {IEEE} / {ACM}, 2017, pp. 45--54.
+  \emph{ICPC}, 2017, pp. 45--54.
 
 \bibitem{ButlerWYS10}
 S.~Butler, M.~Wermelinger, Y.~Yu, and H.~Sharp, ``Exploring the influence of
@@ -241,9 +240,5 @@ K.~Neubert and E.~Brunner, ``A studentized permutation test for the
 M.~Bochud, \emph{Estimating Heritability from Nuclear Family and Pedigree
   Data}.\hskip 1em plus 0.5em minus 0.4em\relax Humana Press, 2012, pp.
   171--186.
-
-\bibitem{DBLP:conf/iwpc/2017}
-G.~Scanniello, D.~Lo, and A.~Serebrenik, Eds., \emph{ICPC}.\hskip 1em plus
-  0.5em minus 0.4em\relax {IEEE} / {ACM}, 2017.
 
 \end{thebibliography}

@@ -1,5 +1,17 @@
 % Encoding: UTF-8
 
+@inproceedings{Beniamini,
+  author    = {Gal Beniamini and
+               Sarah Gingichashvili and
+               Alon Klein{-}Orbach and
+               Dror G. Feitelson},
+  title     = {Meaningful identifier names: the case of single-letter variables},
+  booktitle = {ICPC},
+  pages     = {45--54},
+  year      = {2017},
+  crossref  = {DBLP:conf/iwpc/2017},
+}
+
 @inproceedings{AmanASK15,
   author    = {Hirohisa Aman and
                Sousuke Amasaki and
@@ -110,14 +122,6 @@
   pages     = {187--196},
   year      = {2013},
   crossref  = {DBLP:conf/csmr/2013},
-}
-
-@InProceedings{Beniamini,
-  author    = {Gal Beniamini and Sarah Gingichashvili and Alon Klein{-}Orbach and Dror G. Feitelson},
-  title     = {Meaningful identifier names: the case of single-letter variables},
-  booktitle = {ICPC},
-  year      = {2017},
-  pages     = {45--54},
 }
 @ARTICLE{Konietschke:Hothorn:Brunner,
   author       = {Konietschke, Frank and Hothorn, Ludwig A. and Brunner, Edgar},
