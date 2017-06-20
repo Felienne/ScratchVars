@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2016/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Scratch_vars_project.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -7,23 +7,23 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: paper.bib
--- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+Database file #1: paper_final.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
 You've used 43 entries,
-            4039 wiz_defined-function locations,
-            1120 strings with 15984 characters,
-and the built_in function-call counts, 36580 in all, are:
-= -- 2911
+            4087 wiz_defined-function locations,
+            1129 strings with 15911 characters,
+and the built_in function-call counts, 36593 in all, are:
+= -- 2893
 > -- 879
 < -- 336
 + -- 473
 - -- 141
-* -- 1762
-:= -- 5261
+* -- 1747
+:= -- 5220
 add.period$ -- 101
 call.type$ -- 43
 change.case$ -- 53
@@ -32,20 +32,20 @@ cite$ -- 43
 duplicate$ -- 2566
 empty$ -- 3051
 format.name$ -- 186
-if$ -- 8533
+if$ -- 8644
 int.to.chr$ -- 0
 int.to.str$ -- 43
 missing$ -- 443
-newline$ -- 158
+newline$ -- 152
 num.names$ -- 58
-pop$ -- 1053
+pop$ -- 1056
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2816
+skip$ -- 2807
 stack$ -- 0
 substring$ -- 1926
-swap$ -- 2135
+swap$ -- 2132
 text.length$ -- 67
 text.prefix$ -- 0
 top$ -- 5
@@ -53,4 +53,4 @@ type$ -- 43
 warning$ -- 0
 while$ -- 195
 width$ -- 45
-write$ -- 444
+write$ -- 435
