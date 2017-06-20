@@ -64,7 +64,7 @@ Still, the impact of the variable name choice on code readability and maintainab
 %
 Furthermore, many computer science and programming curricula focus on the programming concepts and the syntax of the languages as opposed to practices in naming variables and identifiers. 
 Indeed, while ``meaningful variable names'' are advocated by some teachers~\cite{Kato2016, hermans_aivaloglou} and practitioners~\cite{Rother} neither the ACM Curriculum Guidelines for Undergraduate Programs in Computer Science\footnote{\url{http://www.acm.org/education/CS2013-final-report.pdf}} nor the Curriculum Guidelines for Undergraduate Degree Programs in Software Engineering\footnote{\url{http://www.acm.org/binaries/content/assets/education/se2014.pdf}} discuss this topic.
-In fact, standard metasyntactic variables used in syntax examples \todo{where, in 11?} are \quotes{foo} and \quotes{bar}~\cite{Raymond}.
+In fact, standard metasyntactic variables used in syntax examples \todo{where, in 11? no 11 explains that foo and bar are standard variable names in examples} are \quotes{foo} and \quotes{bar}~\cite{Raymond}.
 The names of these identifiers are meaningless, and to some extent, they represent a refusal to name, suggesting the learner that naming is less important %, or irrelevant, 
 to the programming task. 
 
@@ -112,13 +112,13 @@ Furthermore, while Beniamini et al. solely focused on the names of the variables
 \begin{framed}
 Variable names in Scratch range mostly between 4 and 10 characters, while procedure names tend to be longer and range between 4 and 14 characters. 
 For the single letter variables, the most commonly used names are $x$, $y$ and $i$, procedures---$a$, $y$ and $r$. 
-When compared to the other programming languages, we observe that single-letter variable names are less common in Scratch and that overall Scratch variables have longer names \todo{then?}
+When compared to the other programming languages, we observe that single-letter variable names are less common in Scratch and that overall Scratch variables have longer names \todo{then?}\todo{``when cmopared to other programming languages...''}
 The usage of single uppercase letters is similar to the pattern found in Perl, for the lowercase---to the pattern found in Java.
 \end{framed}
 
-\todo{"range between 4 and 14 characters" -> not true, 1 also exists? discuss tomorrow.}
+\todo{"range between 4 and 14 characters" -> not true, 1 also exists? discuss tomorrow.}\todo{yes, but they still ``tend'' to rand between 4 and 14, no ideas where do the numbers come from. Better: ``50\% of the variables have length between 5 and 11 characters''? Q1: 5, Q3: 11. }
 
-\todo{in the next paragraph, first explain the features, then explain we measure them (Felienne can do this)}
+\todo{in the next paragraph, first explain the features, then explain we measure them (Felienne can do this)}\todo{don't we explain them already?}
 Next we focus on \textbf{Scratch-specific features in naming identifiers}.
 In particular, we aim at understanding to what extent spaces within identifiers (e.g., variable \emph{max i}), numbers as variables (e.g., a variable named \emph{6}) and textual labels used between the parameters. 
 For example instead of printing the first $n$ letters from a string $s$ with a procedure called ``printnof($n$,$s$)'', in Scratch one can define a procedure called ``say $n$ characters from text $s$", as shown in Figure \ref{fig:procedures}. 
@@ -137,7 +137,7 @@ Naming identifiers in software code has been studied extensively in the past dec
 In practice, identifiers constitute a major part of the source code: e.g., Dei{\ss}enb{\"o}ck and Pizka found that in Eclipse 3.0M7 which is tantamount to 2 MLoC, 33\% of the tokens and 72\% of characters correspond to identifiers~\cite{Deissenbock}. 
 
 For a human reading code, it is crucial to the understanding of code to also understand what the identifiers mean. As such, several studies have investigated the link between identifier naming and code readability and comprehension~\cite{AvidanF17,HofmeisterSH17,LawrieMFB07,TakangGM96,Teasley} or identifier naming and externally observable aspects of the software development process that are expected to be affected by comprehension such as change-proneness~\cite{AmanASK15}, quality~\cite{ButlerWYS10,LunguK13} and presence of faults~\cite{ScannielloR13,TramontanaRS14}.
-Caprile and Tonella~\cite{CaprileTonella} have explicitly addressed naming of functions\todo{do we know what they found?}, while Caracciolo et al. observed that most method names tend to consist of several words but rarely more than five words~\cite{Caracciolo}.
+Caprile and Tonella~\cite{CaprileTonella} have observed that names of C functions consist of on average of 2.04--3.36 words, often verbs expressing action  \todo{do we know what they found?}\todo{fixed, check}, while Caracciolo et al. observed that most method names in Java and Smalltalk also tend to consist of several words but rarely more than five words~\cite{Caracciolo}.
 %The comprehension is not a target in its own; the true reason is that better comprehension lets the developers perform maintenance tasks more effectively and efficiently.
 %But what is a good naming approach? 
 %It is out of this paper's scope to explore the various recommendations of good identifier naming. 
@@ -296,7 +296,8 @@ $H_0: p = 1/2$, where $p$ denotes the relative effect of the two independent sam
 For spaces use in variables' names we do two things: (i) To understand how much popular spaces are among all the names, we extract the space count per unique variable name. (ii) To understand the trend of using spaces across the dataset (multiple projects and multiple users), we extract per project the maximum space count in found in the project's variables. For the textual patterns in procedure names, we count the occurrence of each of the extracted token. 
 
  \section{Results}
-This section presents an overview of our analysis of variable and procedure name use in the previously published Scratch dataset~\cite{Aivaloglou2016HowKC}. \todo{add mini description of the two parts?}
+This section presents an overview of our analysis of variable and procedure name use in the previously published Scratch dataset~\cite{Aivaloglou2016HowKC}. 
+We start by replicating studies of Beniamini et al.~\cite{Beniamini} and proceed with investigating Scratch-specific features.\todo{add mini description of the two parts?}\todo{fixed, check}
 
 \subsection{Replication Studies}
 Our first analyses are the replication studies regarding one letter variables.
@@ -542,6 +543,7 @@ Furthermore, one threat to validity concerns the generalizations that can be mad
 We only considered naming features of Scratch that require the user to input textual values. For example the name of the sprites can also be considered as an identifier. However, Scratch assigns default names to sprites once they are created, and the user may opt not to change it. Default names can be considered as a bad naming practice, but it is out of the scope of this paper.\\
 
 \section{Conclusion}
+\todo{to be updated}
 In this paper, we study naming patterns for variables and procedures in the Scratch programming language, a block-based programming language aimed at novice programmers. We use a previously released dataset consisting of 250,000 Scratch programs. 
 
 Our analysis shows that Scratch users most often use variable and procedure names between 4 and 10 characters in length. For the single letter variables, the most commonly used names are \emph{x}, \emph{y} and \emph{i}. Spaces in variable names, a feature relatively unique to Scratch are used in 20\% of projects have variables that include spaces in the name. The usage of textual string between parameters appears as not so common, however textual patterns used imply an inference from textual languages by using brackets for example. Finally, when compared to the other programming languages, Scratch variable length distribution, and the usage of single-letter seems to be most similar to Perl.
