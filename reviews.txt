@@ -1,0 +1,173 @@
+----------------------- REVIEW 1 ---------------------
+PAPER: 37
+TITLE: How do Scratch Programmers Name Variables and Procedures?
+AUTHORS: Alaaeddin Swidan, Alexander Serebrenik and Felienne Hermans
+
+
+----------- Overall evaluation -----------
+Summary: the authors present a statistical study of scratch
+  identifiers (variables and procedure names) and describe in
+  excruciating details the distributions and the lengths and counts
+  and even types of variables. Yet do I learn anything about variable
+  names longer than 1 character? No. Do we have a sound empirical
+  study of the scratch dataset? Yes. Does it ask or answer any
+  questions that we actually have? No.
+
+  Pros:
+
+  * Good excessive stats
+  * Interesting motivations
+  * Empirical study
+  
+  Cons:
+
+  * Oversold motivation results in the wrong evaluation
+  * Evaluation offers little.
+  * I can't say I learned much by the end, especially about naming or
+  readability
+  * Short data paper replication masquerades as full paper.
+  * Graphs and figures are dedicated to really unimportant questions.
+  
+  Readability!
+
+  Readability is a contentious issue in the community. Many do not
+  believe the semantics or the meaning are relevant to
+  readability. Try using a different term that is used such as
+  understandability. Typically readability is viewed as quick scanning
+  and navigating while understanding requires semantics.
+
+  If you're going to mention readability at all you should cite:
+  Buse et al., Posnett et al., and the readability work by 
+Scalabrino, S., Linares-Vásquez, M., Poshyvanyk, D. and Oliveto, R., 2016, May. Improving code readability models with textual features. In Program Comprehension (ICPC), 2016 IEEE 24th International Conference on (pp. 1-10). IEEE.
+
+  Intro:
+
+  The authors really pull on my heart strings discussing the need for
+  good variable naming. Good motivation.
+  
+  Boxes:
+
+  If you're going to use boxes to layout the results and highlight
+  important results you should not split them between columns and you
+  should keep the boxes short. Don't abuse the boxes!
+
+  The boxes in the intro are distracting and breaking the flow of the
+  paper.
+
+  Explanation needed:
+
+  "In terms of the classification of Shull et al. [33] we perform a
+  dependent replication of the studies summarized in Fig. 1 and ..."
+  What?
+
+  Is this the right use of the data?
+  
+  The focus here on variable length is not really interesting. It's
+  kind of the wrong question. It is a valid question in the face of
+  single letter variable names but it's not particularly effective.
+  Furthermore [5] was wrong about some of the languages they studied.
+  $a and %a are not single character variable names. They are quite
+  clearly different variables and 2 different variables. You're
+  following the leader, but the leader didn't know where they were
+  going.
+  
+  
+  If you cared about naming as stated in the motivation then you would
+  study the semantics and meanings of all variable names. Not just
+  type. Not just a bucket of characters.
+
+  The stats are so overdone for something visually verifiable with a
+  box plot.
+
+  I really dislike that you cite all this work that discusses words,
+  semantic units, and instead we're stuck with [5] done on
+  scratch. [5] didn't do the right thing either BTW.
+  But [5] did try to delve into semantics by a user study which was
+  not done in this paper. The user study is what got [5]
+  accepted. They sought to explain why something happens.
+
+  In essence the paper starts interesting and then gets irrelevant and
+  boring very quickly. These are not great questions to ask of the
+  dataset given the motivation of the authors. Is there anything
+  technically wrong with their work? Not that I can see, other than
+  overdoing it and going for complication over the obvious.
+
+  [31] was cited but not even investigated. How many numbers in the
+  alphabet were used? How many of your results are the cause of the
+  scratch IDE? Isn't this a more important question?
+
+  Sprite type:
+
+  Why is sprite not included. Sprite naming is discussed yet not
+  studied? Why is this overlooked?
+
+  Lack of semantic analysis:
+  
+  I'm really disappointed in the lack of real analysis beyond looking
+  at some common high frequency terms. Do I see a grammar or a
+  discussion of vocabulary? No, we just get these small observations
+  that are really that useful. Why do you think scratch naming would
+  be different from Java? Why? Show us.
+
+  Empirical Papers can be boring and we should accept that:
+  
+  I choose to accept this paper not because it was a good idea, or
+  that it is good. I accept it because it is a thorough empirical
+  paper that we can throw onto a pile and build up something later. I
+  think the authors took the wrong route and made something
+  uninteresting. It's essentially a data track paper.  I really do ask
+  the authors that they do something far more impactful and actually
+  study the variable naming and not its structure. I would've said the
+  same in a review of [5]. Good idea, but the expectation and evaluation
+  teaches us very little.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 37
+TITLE: How do Scratch Programmers Name Variables and Procedures?
+AUTHORS: Alaaeddin Swidan, Alexander Serebrenik and Felienne Hermans
+
+
+----------- Overall evaluation -----------
+This paper describes a study of identifiers for the Scratch programming language and in particular focuses on single letter variables. The goal of the paper is quite clear: to understand patterns in variable and procedure naming in Scratch. The paper shows that the usage of single letter lowercase letters is Scratch is similar to Java, while the usage of uppercase letters is similar to Perl. Surprisingly, given that Scratch does not use a variable for counter controlled loops, the variable i still has frequent use. The paper also investigates the use of single letters in naming procedures and the types assigned to different single letter variables. One of the most interesting parts of the paper was and investigation into the use of textual labels, where some of the most frequent labels include adding a colon to the end of the word, adding a close parenthesis, and adding a space. All of these labels point to the tendency that beginners have to mimic what they have seen elsewh!
+ ere. I believe that is a strong indication of the importance of providing examples that are good models for how identifiers should be named. This study shows empirical evidence that people tend to mimic examples when they are learning. 
+
+One of the biggest challenges I had with this work was answering the question, “So what?” The authors point to the difference in naming rules with Scratch, where it is acceptable to include spaces in the name, and raise the question of whether it will be a greater challenge to transition to more mainstream languages. I suspect that other differences will cause greater hurdles than new names rules, which simply must to be memorized and do not require different approaches to problem solving. Regardless, this is pure speculation on my part and on the part of the authors. Therefore, it bothers me that the authors added this type of unsubstantiated speculation to their abstract. By making it so prominent, I believe that it detracts from other ways of answering the “So what” question. For example, the importance of good models and by the extension the importance of modeling the kind of naming that programmers should strive for.  There is evidence for this from the study pr!
+ esented. As an aside, I think a study that looks at the biggest challenges that programmers have transitioning from block-based languages like Scratch to more mainstream programming languages would be a valuable research contribution. 
+
+Another unsubstantiated claim comes in the box on page 6 of the manuscript. Here, I suspect the authors had the data but did not include it. Given that it was presented as the take away message, the supporting data for the claim that single variables are less common in Scratch should be included.
+
+Apart from the above concerns the paper was generally well written, although the attached annotated version of the paper identifies opportunities for improvement. 
+
+There is one other more minor concern that that I have. This is with respect to the discussion around Figure 11. From my understanding of a dendrogram, the discussion mixes up upper and lower case results. If I am incorrect and the paper correctly explains the Figure, then the paper needs to explain how the figure supports the conclusions. Even if I am correct, explaining what interpretation of the Figure is needed to support the conclusions would be a nice addition.
+
+Finally, I would encourage the authors to include more analysis so that it is more obvious why it is so important to understand the usage of single letter variables. Beniamini et al. argued that there is a place of single letter variables and given a block based language the inclusion of x,y coordinates seems natural. However, the paper points out that the frequency of i is surprising since a counter variable is unneeded. The use of i should really be explored. Are Scratch programmers also using the variable as an index or is there no consistent use? Lack of constituency in the use of a single letter variable could have negative implications for comprehension where such names carry little information about their meaning. In addition, the frequent use of both lowercase and uppercase x and y probably needs further explanation. In particular do the same projects include both? If they do, this could have negative consequences for comprehension where the programmer has to keep tr!
+ ack of the different meaning of X vs. x.
+
+In summary, the paper presents a study of the use of single letter variables in the programming language Scratch. Although studying Scratch identifiers is new, the paper suffers from being too narrow. However, even within the narrow scope of the study, there are small additions that could be made that would greatly improve the impactfulness of the work.<This review contains an attachment, see the file
+review_2.pdf attached to this letter.>
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER: 37
+TITLE: How do Scratch Programmers Name Variables and Procedures?
+AUTHORS: Alaaeddin Swidan, Alexander Serebrenik and Felienne Hermans
+
+
+----------- Overall evaluation -----------
+The authors perform a replication & extension studying variable & procedure naming patterns in over 70,000 Scratch programs. By replicating a study by Beniamini, et al., they are able to compare to results from other programming languages.The authors observe that scratch programmers, in contrast to more mainstream text-based languages, write longer variable names & even longer procedure names than variable names.
+
+This is very nice work. A well-thought out study, nice discussion of implications of the results. Choice of statistical tests for analysis are well-justified. Expectations & contradictions clearly stated to ease interpretations of results. Figures support the results, and include nice concrete examples by way of explanation.
+
+An interesting follow-up study would be whether novice programmers, independent of programming language, tend to prefer longer names? Or, if we categorize programmers that favor shorter vs longer names, are there any emergent differences? Perhaps Libelist’s work in PPIG 2006 can shed light on this already:
+
+http://pages.cs.wisc.edu/~liblit/ppig-2006/
+
+Figure 12 would be so interesting to see for the other PLs — the Liblit paper above may help at least for Java. This paper should be at least added to the related work. The work by Einar Host on Java naming might also be relevant.
+
+
+Specific presentation suggestions:
+p 1. “suggesting TO? the learner that naming is less important?”
+p 2. outlined box has bad page break — maybe it’s too big?
+p 4. Figures described out of numeric order<This review contains an attachment, see the file
+review_3.pdf attached to this letter.>
