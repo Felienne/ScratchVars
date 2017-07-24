@@ -1,17 +1,5 @@
 % Encoding: UTF-8
 
-@inproceedings{Beniamini,
-  author    = {Gal Beniamini and
-               Sarah Gingichashvili and
-               Alon Klein{-}Orbach and
-               Dror G. Feitelson},
-  title     = {Meaningful identifier names: the case of single-letter variables},
-  booktitle = {ICPC},
-  pages     = {45--54},
-  year      = {2017},
-  crossref  = {DBLP:conf/iwpc/2017},
-}
-
 @inproceedings{AmanASK15,
   author    = {Hirohisa Aman and
                Sousuke Amasaki and
@@ -123,6 +111,14 @@
   year      = {2013},
   crossref  = {DBLP:conf/csmr/2013},
 }
+
+@InProceedings{Beniamini,
+  author    = {Gal Beniamini and Sarah Gingichashvili and Alon Klein{-}Orbach and Dror G. Feitelson},
+  title     = {Meaningful identifier names: the case of single-letter variables},
+  booktitle = {ICPC},
+  year      = {2017},
+  pages     = {45--54},
+}
 @ARTICLE{Konietschke:Hothorn:Brunner,
   author       = {Konietschke, Frank and Hothorn, Ludwig A. and Brunner, Edgar},
   title        = {Rank-based multiple test procedures and simultaneous confidence intervals},
@@ -160,7 +156,7 @@
                Mathieu Goeminne and
                Tom Mens},
   title     = {On the variation and specialisation of workload---{A} case study of
-               the Gnome ecosystem community},
+               the {G}nome ecosystem community},
   journal   = {Empirical Software Engineering},
   volume    = {19},
   number    = {4},
@@ -195,7 +191,7 @@
 }
 
 @book{brennan_creative_2014,
-	title = {{CREATIVE} {COMPUTING}},
+	title = {Creative Computing},
 	publisher = {Harvard Graduate School of Education},
 	author = {Brennan, Karen and Balch, Christian and Chung, Michelle},
 	year = {2014}
@@ -321,7 +317,7 @@ pages="195--212",
 }
 
 @article{SaezLopez,
-title = "Visual programming languages integrated across the curriculum in elementary school: A two year case study using Scratch in five schools ",
+title = "Visual programming languages integrated across the curriculum in elementary school: A two year case study using {S}cratch in five schools ",
 journal = "Computers \& Education ",
 volume = "97",
 number = "",
@@ -343,7 +339,7 @@ ISSN={1092-8138},
 month={May},}
 
 @inproceedings{Aivaloglou2016HowKC,
-  title={How Kids Code and How We Know: An Exploratory Study on the Scratch Repository},
+  title={How Kids Code and How We Know: An Exploratory Study on the {S}cratch Repository},
   author={Efthimia Aivaloglou and Felienne Hermans},
   booktitle={ICER},
   year={2016}
@@ -386,7 +382,7 @@ doi = {10.1177/0002764212469359},
 
 @inproceedings{Davis:Kafai:Vasudevan:Lee,
  author = {Davis, Richard and Kafai, Yasmin and Vasudevan, Veena and Lee, Eunkyoung},
- title = {The Education Arcade: Crafting, Remixing, and Playing with Controllers for Scratch Games},
+ title = {The Education Arcade: Crafting, Remixing, and Playing with Controllers for {S}cratch Games},
  booktitle = {International Conference on Interaction Design and Children},
  year = {2013},
  isbn = {978-1-4503-1918-8},
@@ -419,7 +415,7 @@ doi = {10.1177/0002764212469359},
 
 @inproceedings{Matsuzawa,
  author = {Matsuzawa, Yoshiaki and Ohata, Takashi and Sugiura, Manabu and Sakai, Sanshiro},
- title = {Language Migration in non-CS Introductory Programming Through Mutual Language Translation Environment},
+ title = {Language Migration in non-{CS} Introductory Programming Through Mutual Language Translation Environment},
  booktitle = {SIGCSE},
  year = {2015},
  isbn = {978-1-4503-2966-8},
@@ -447,7 +443,7 @@ doi = {10.1177/0002764212469359},
 @INPROCEEDINGS{MoreonoRobles, 
 author={Jes\'{u} Moreno and Gregorio Robles}, 
 booktitle={Frontiers in Education Conference}, 
-title={Automatic detection of bad programming habits in scratch: A preliminary study}, 
+title={Automatic detection of bad programming habits in {S}cratch: A preliminary study}, 
 year={2014}, 
 pages={1--4}, 
 ISSN={0190-5848}, 
@@ -455,7 +451,7 @@ month={Oct},}
 
 @article{vanZyl,
 author = {Sukie van Zyl and Elsa Mentz and Marietjie Havenga},
-title = {Lessons Learned from Teaching Scratch as an Introduction to Object-oriented Programming in Delphi},
+title = {Lessons Learned from Teaching {S}cratch as an Introduction to Object-oriented Programming in {D}elphi},
 journal = {African Journal of Research in Mathematics, Science and Technology Education},
 volume = {20},
 number = {2},
@@ -486,7 +482,7 @@ year = {2016},
 
 @article{Konietschke:nparcomp,
    author = {Frank Konietschke and Marius Placzek and Frank Schaarschmidt and Ludwig Hothorn},
-   title = {nparcomp: An R Software Package for Nonparametric Multiple Comparisons and Simultaneous Confidence Intervals},
+   title = {nparcomp: An {R} Software Package for Nonparametric Multiple Comparisons and Simultaneous Confidence Intervals},
    journal = {Journal of Statistical Software},
    volume = {64},
    number = {9},
@@ -538,7 +534,7 @@ isbn="978-1-61779-555-8",
 
 @InProceedings{hermans_aivaloglou,
   author    = {Hermans, Felienne and Aivaloglou, Efthimia},
-  title     = {Teaching software engineering principles to K-12 students: a MOOC on scratch},
+  title     = {Teaching software engineering principles to {K}-12 students: a {MOOC} on {S}cratch},
   booktitle = {ICSE-SEET '17 Proceedings of the 39th International Conference on Software Engineering: Software Engineering and Education Track},
   year      = {2017},
   pages     = {13-22},
