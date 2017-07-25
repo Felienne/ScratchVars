@@ -24,13 +24,11 @@
 \bibitem{AmanASK15}
 H.~Aman, S.~Amasaki, T.~Sasaki, and M.~Kawahara, ``Empirical analysis of
   change-proneness in methods having local variables with long names and
-  comments,'' in \emph{ESEM}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE},
-  2015, pp. 50--53.
+  comments,'' in \emph{ESEM}, 2015, pp. 50--53.
 
 \bibitem{AvidanF17}
 E.~Avidan and D.~G. Feitelson, ``Effects of variable names on comprehension an
-  empirical study,'' in \emph{ICPC}, G.~Scanniello, D.~Lo, and A.~Serebrenik,
-  Eds.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE} / {ACM}, 2017, pp. 55--65.
+  empirical study,'' in \emph{ICPC}, 2017, pp. 55--65.
 
 \bibitem{Beniamini}
 G.~Beniamini, S.~Gingichashvili, A.~Klein{-}Orbach, and D.~G. Feitelson,
@@ -39,33 +37,26 @@ G.~Beniamini, S.~Gingichashvili, A.~Klein{-}Orbach, and D.~G. Feitelson,
 
 \bibitem{ButlerWYS10}
 S.~Butler, M.~Wermelinger, Y.~Yu, and H.~Sharp, ``Exploring the influence of
-  identifier names on code quality: An empirical study,'' in \emph{CSMR},
-  R.~Capilla, R.~Ferenc, and J.~C. Due{\~{n}}as, Eds.\hskip 1em plus 0.5em
-  minus 0.4em\relax {IEEE}, 2010.
+  identifier names on code quality: An empirical study,'' in \emph{CSMR}, 2010.
 
 \bibitem{HofmeisterSH17}
 J.~Hofmeister, J.~Siegmund, and D.~V. Holt, ``Shorter identifier names take
-  longer to comprehend,'' in \emph{SANER}, M.~Pinzger, G.~Bavota, and
-  A.~Marcus, Eds.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, 2017, pp.
-  217--227.
+  longer to comprehend,'' in \emph{SANER}, 2017, pp. 217--227.
 
 \bibitem{LunguK13}
 M.~Lungu and J.~Kurs, ``On planning an evaluation of the impact of identifier
   names on the readability and quality of smalltalk programs,'' in
-  \emph{Workshop on User Evaluations for Software Engineering
-  Researchers}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, 2013, pp.
-  13--15.
+  \emph{Workshop on User Evaluations for Software Engineering Researchers},
+  2013, pp. 13--15.
 
 \bibitem{ScannielloR13}
 G.~Scanniello and M.~Risi, ``Dealing with faults in source code: Abbreviated
-  vs. full-word identifier names,'' in \emph{ICSM}.\hskip 1em plus 0.5em minus
-  0.4em\relax {IEEE}, 2013, pp. 190--199.
+  vs. full-word identifier names,'' in \emph{ICSM}, 2013, pp. 190--199.
 
 \bibitem{TramontanaRS14}
 P.~Tramontana, M.~Risi, and G.~Scanniello, ``Studying abbreviated vs. full-word
   identifier names when dealing with faults: an external replication,'' in
-  \emph{ESEM}, M.~Morisio, T.~Dyb{\aa}, and M.~Torchiano, Eds.\hskip 1em plus
-  0.5em minus 0.4em\relax {ACM}, 2014, p. 64:1.
+  \emph{ESEM}, 2014, p. 64:1.
 
 \bibitem{Kato2016}
 T.~Kato, Y.~Kambayashi, and Y.~Kodama, \emph{Data Mining of Students' Behaviors
@@ -74,9 +65,8 @@ T.~Kato, Y.~Kambayashi, and Y.~Kodama, \emph{Data Mining of Students' Behaviors
 
 \bibitem{hermans_aivaloglou}
 F.~Hermans and E.~Aivaloglou, ``Teaching software engineering principles to
-  {K}-12 students: a {MOOC} on {S}cratch,'' in \emph{ICSE-SEET '17 Proceedings
-  of the 39th International Conference on Software Engineering: Software
-  Engineering and Education Track}, 2017, pp. 13--22.
+  {K}-12 students: a {MOOC} on {S}cratch,'' in \emph{ICSE-SEET}, 2017, pp.
+  13--22.
 
 \bibitem{Rother}
 K.~Rother, \emph{Cleaning Up Code}.\hskip 1em plus 0.5em minus 0.4em\relax
@@ -108,6 +98,11 @@ R.~Davis, Y.~Kafai, V.~Vasudevan, and E.~Lee, ``The education arcade: Crafting,
   \emph{International Conference on Interaction Design and Children}.\hskip 1em
   plus 0.5em minus 0.4em\relax ACM, 2013, pp. 439--442.
 
+\bibitem{RastogiN16}
+A.~Rastogi and N.~Nagappan, ``Forking and the sustainability of the developer
+  community participation - an empirical investigation on outcomes and
+  reasons,'' in \emph{SANER}, 2016, pp. 102--111.
+
 \bibitem{Dann}
 W.~Dann, D.~Cosgrove, D.~Slater, D.~Culyba, and S.~Cooper, ``Mediated transfer:
   Alice 3 to {J}ava,'' in \emph{Proceedings of the 43rd ACM Technical Symposium
@@ -126,18 +121,25 @@ E.~Aivaloglou and F.~Hermans, ``How kids code and how we know: An exploratory
 
 \bibitem{AnquetilL98}
 N.~Anquetil and T.~C. Lethbridge, ``Assessing the relevance of identifier names
-  in a legacy software system,'' in \emph{CASCON}, S.~A. MacKay and J.~H.
-  Johnson, Eds.\hskip 1em plus 0.5em minus 0.4em\relax {IBM}, 1998, p.~4.
+  in a legacy software system,'' in \emph{CASCON}, 1998, p.~4.
+
+\bibitem{BuseW10}
+R.~P.~L. Buse and W.~Weimer, ``Learning a metric for code readability,''
+  \emph{{IEEE} Trans. Software Eng.}, vol.~36, no.~4, pp. 546--558, 2010.
 
 \bibitem{CaprileT00}
 B.~Caprile and P.~Tonella, ``Restructuring program identifier names,'' in
-  \emph{ICSM}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}, 2000, pp.
-  97--107.
+  \emph{ICSM}, 2000, pp. 97--107.
 
 \bibitem{LawrieMFB07}
 D.~Lawrie, C.~Morrell, H.~Feild, and D.~Binkley, ``Effective identifier names
   for comprehension and memory,'' \emph{{ISSE}}, vol.~3, no.~4, pp. 303--318,
   2007.
+
+\bibitem{ScalabrinoVPO16}
+S.~Scalabrino, M.~L. V{\'{a}}squez, D.~Poshyvanyk, and R.~Oliveto, ``Improving
+  code readability models with textual features,'' in \emph{ICPC}, 2016, pp.
+  1--10.
 
 \bibitem{TakangGM96}
 A.~A. Takang, P.~A. Grubb, and R.~D. Macredie, ``The effects of comments and
@@ -165,8 +167,7 @@ A.~Caracciolo, A.~Chis, B.~Spasojevi\'{c}, and M.~Lungu, ``Pangea: A workbench
 \bibitem{ArnaoudovaPAG13}
 V.~Arnaoudova, M.~{Di Penta}, G.~Antoniol, and Y.~Gu{\'{e}}h{\'{e}}neuc, ``A
   new family of software anti-patterns: Linguistic anti-patterns,'' in
-  \emph{CSMR}, A.~Cleve, F.~Ricca, and M.~Cerioli, Eds.\hskip 1em plus 0.5em
-  minus 0.4em\relax {IEEE}, 2013, pp. 187--196.
+  \emph{CSMR}, 2013, pp. 187--196.
 
 \bibitem{ArnaoudovaPA16}
 V.~Arnaoudova, M.~{Di Penta}, and G.~Antoniol, ``Linguistic antipatterns: what
@@ -174,11 +175,8 @@ V.~Arnaoudova, M.~{Di Penta}, and G.~Antoniol, ``Linguistic antipatterns: what
   Engineering}, vol.~21, no.~1, pp. 104--158, 2016.
 
 \bibitem{Host11}
-\BIBentryALTinterwordspacing
 E.~W. H{\o}st, ``Meaningful method names,'' Ph.D. dissertation, University of
-  Oslo, Norway, 2011. [Online]. Available:
-  \url{http://hdl.handle.net/10852/8842}
-\BIBentrySTDinterwordspacing
+  Oslo, Norway, 2011.
 
 \bibitem{Glassman}
 E.~L. Glassman, L.~Fischer, J.~Scott, and R.~C. Miller, ``Foobaz: Variable name
@@ -192,9 +190,9 @@ J.~Moreno and G.~Robles, ``Automatic detection of bad programming habits in
   Conference}, Oct 2014, pp. 1--4.
 
 \bibitem{kِolling_brown_altadmri_2015}
-M.~Kölling, N.~C.~C. Brown, and A.~Altadmri, ``Frame-based editing,''
-  \emph{Proceedings of the Workshop in Primary and Secondary Computing
-  Education on ZZZ - WiPSCE '15}, 2015.
+M.~K{\"{o}}lling, N.~C.~C. Brown, and A.~AlTadmri, ``Frame-based editing:
+  Easing the transition from blocks to text-based programming,'' in
+  \emph{WiPSCE}, 2015, pp. 29--38.
 
 \bibitem{brennan_creative_2014}
 K.~Brennan, C.~Balch, and M.~Chung, \emph{Creative Computing}.\hskip 1em plus
@@ -226,6 +224,11 @@ F.~Konietschke, M.~Placzek, F.~Schaarschmidt, and L.~Hothorn, ``nparcomp: An
   confidence intervals,'' \emph{Journal of Statistical Software}, vol.~64,
   no.~9, pp. 1--17, 2015.
 
+\bibitem{Dajsuren2013}
+Y.~Dajsuren, M.~G. van~den Brand, A.~Serebrenik, and S.~Roubtsov, ``Simulink
+  models are also software: Modularity assessment,'' in \emph{QoSA}, 2013, pp.
+  99--106.
+
 \bibitem{VasilescuSGM14}
 B.~Vasilescu, A.~Serebrenik, M.~Goeminne, and T.~Mens, ``On the variation and
   specialisation of workload---{A} case study of the {G}nome ecosystem
@@ -243,6 +246,11 @@ Y.~Yu, H.~Wang, G.~Yin, and T.~Wang, ``Reviewer recommendation for
   assignment?'' \emph{Information {\&} Software Technology}, vol.~74, pp.
   204--218, 2016.
 
+\bibitem{Jongeling2017}
+R.~Jongeling, P.~Sarkar, S.~Datta, and A.~Serebrenik, ``On negative results
+  when using sentiment analysis tools for software engineering research,''
+  \emph{Empirical Software Engineering}, Jan 2017.
+
 \bibitem{Neubert}
 K.~Neubert and E.~Brunner, ``A studentized permutation test for the
   non-parametric {Behrens-Fisher} problem,'' \emph{Computational Statistics \&
@@ -252,5 +260,16 @@ K.~Neubert and E.~Brunner, ``A studentized permutation test for the
 M.~Bochud, \emph{Estimating Heritability from Nuclear Family and Pedigree
   Data}.\hskip 1em plus 0.5em minus 0.4em\relax Humana Press, 2012, pp.
   171--186.
+
+\bibitem{RoblesMAH17}
+G.~Robles, J.~Moreno{-}Le{\'{o}}n, E.~Aivaloglou, and F.~Hermans, ``Software
+  clones in scratch projects: on the presence of copy-and-paste in
+  computational thinking learning,'' in \emph{{IWSC}}, 2017, pp. 31--37.
+
+\bibitem{Moreno-LeonRHR17}
+J.~Moreno{-}Le{\'{o}}n, M.~Rom{\'{a}}n{-}Gonz{\'{a}}lez, C.~Harteveld, and
+  G.~Robles, ``On the automatic assessment of computational thinking skills:
+  {A} comparison with human experts,'' in \emph{CHI. Extended Abstracts}, 2017,
+  pp. 2788--2795.
 
 \end{thebibliography}
