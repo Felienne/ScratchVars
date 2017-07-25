@@ -164,8 +164,8 @@ colnames(forLambdaLower) <- icpc2017characters$ch
 library(rapport)
 lambda.test(icpc2017characters,1)
 
-library(lsa)
-cosine(as.matrix(nameless))
+#library(lsa)
+#cosine(as.matrix(nameless))
 #                Cupper    Clower   JSupper   JSlower Javaupper Javalower  PHPupper  PHPlower perlupper  perllower Scratchupper Scratchlower
 #Cupper       1.0000000 0.3611283 0.8412634 0.7173503 0.6803331 0.3109723 0.2205311 0.5245342 0.6528813 0.17944583   0.54529066    0.3956803
 #Clower       0.3611283 1.0000000 0.4464655 0.7136214 0.2934833 0.9804554 0.9498817 0.9012264 0.1643316 0.54133089   0.15098804    0.8121212
@@ -194,3 +194,10 @@ rowMeans(cosine(as.matrix(nameless)))
 sort(rowMeans(cosine(as.matrix(nameless))))
 #Scratchupper    Javaupper    perllower    perlupper       Cupper     PHPupper      JSupper       Clower    Javalower Scratchlower      JSlower     PHPlower 
 #   0.3928166    0.4205335    0.4251399    0.4780630    0.5357842    0.5667251    0.5934282    0.6095861    0.6180853    0.6247208    0.6738178    0.6815401 
+
+d <- dist(t(nameless), method="euc")
+sort(rowMeans(as.matrix(d)))
+#    PHPupper    perlupper     PHPlower       Cupper Scratchupper    Javaupper      JSupper    perllower Scratchlower    Javalower       Clower      JSlower 
+#    36458.75     36712.25     36860.97     36867.50     36915.12     37076.95     39840.97     40147.06     44572.57     46706.21    108840.15    146156.68 
+
+plot(hclust(d, method="ward"), labels=c("C upper", "C lower", "JS upper", "JS lower", "Java upper", "Java lower", "PHP upper", "PHP lower", "Perl upper", "Perl lower", "Scratch upper", "Scratch lower"))
