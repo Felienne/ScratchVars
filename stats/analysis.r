@@ -200,4 +200,5 @@ sort(rowMeans(as.matrix(d)))
 #    PHPupper    perlupper     PHPlower       Cupper Scratchupper    Javaupper      JSupper    perllower Scratchlower    Javalower       Clower      JSlower 
 #    36458.75     36712.25     36860.97     36867.50     36915.12     37076.95     39840.97     40147.06     44572.57     46706.21    108840.15    146156.68 
 
-plot(hclust(d, method="ward"), labels=c("C upper", "C lower", "JS upper", "JS lower", "Java upper", "Java lower", "PHP upper", "PHP lower", "Perl upper", "Perl lower", "Scratch upper", "Scratch lower"))
+pdf("SampleGraph.pdf"
+plot(hclust(d, method="ward"), labels=c("C upper", "C lower", "JS upper", "JS lower", "Java upper", "Java lower", "PHP upper", "PHP lower", "Perl upper", "Perl lower", "Scratch upper", "Scratch lower"), sub="", xlab="")
