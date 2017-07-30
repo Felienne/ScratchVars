@@ -282,7 +282,7 @@ When comparing distributions of variable name lengths with the procedure name le
 Hence, we perform the Mann-Whitney-Wilcoxon test together with the two-sample test for the nonparametric Behrens-Fisher problem, i.e., test for
 $H_0: p = 1/2$, where $p$ denotes the relative effect of the two independent samples~\cite{Konietschke:nparcomp,Neubert}.
 
-For spaces use in variables' names we do two things: (i) To understand how much popular spaces are among all the names, we extract the space count per unique variable name. (ii) To understand the trend of using spaces across the dataset (multiple projects and multiple users), we extract per project the maximum space count found in the project's variables. For the textual patterns in procedure names, we count the occurrence of each of the extracted token. 
+For space usage in variables' names we do two things: (i) To understand how much popular spaces are among all the names, we extract the space count per unique variable name. (ii) To understand the trend of using spaces across the dataset (multiple projects and multiple users), we extract per project the maximum space count found in the project's variables. For the textual patterns in procedure names, we count the occurrence of each of the extracted token. 
 
  \section{Results}
 This section presents an overview of our analysis of variable and procedure name used in the previously published Scratch dataset~\cite{Aivaloglou2016HowKC}. 
@@ -339,11 +339,9 @@ Hence, we expect the \emph{similarity} between Scratch and the languages conside
 		\label{fig:one_letter_occurrence}
 	\end{center}
 \end{figure} 
-Figure~\ref{fig:one_letter_occurrence} shows the distribution of variables of one letter, in upper and lower case, in the Scratch dataset. 
-Inspecting the data we observe that similarly to the previous study $i$ is the most commonly occurring variable. 
+Figure~\ref{fig:one_letter_occurrence} shows the distribution of variables of one letter, in upper and lower case, in the Scratch dataset. Note that one Scratch project may contain both the upper and lowercase version of one variable, and they will refer to a different variable. Inspecting the data we observe that similarly to the previous study $i$ is the most commonly occurring variable. 
 Hence, we conclude that \emph{contradicting our expectations} \emph{Observation}~\ref{single-letter-vars:i} above also holds for Scratch.
-Furthermore, we observe that $x$ and $y$ are extremely popular in Scratch. 
-This can be explained by the fact that $x$ and $y$ represent the coordinates of the sprites on the stage. They thus form the basis of moving sprites in the 2-D stage. There seems to be an agreement on this use among the developers of textual languages studied in Beniamini et. al. When they were surveyed about variable name interpretations, $x$ and $y$ were commonly interpreted as ``coordinates". In addition, built-in Scratch blocks often use $x$ and $y$ as shown in \figurename{~\ref{fig:xy_Scratchblocks}}. 
+Furthermore, we observe that $x$ and $y$ are extremely popular in Scratch. This can be explained by the fact that $x$ and $y$ represent the coordinates of the sprites on the stage, and when reading the position of a sprite, Scratch developers access the built-in $x$ and $y$ properties. As such, they form the basis of moving sprites in the 2-D stage. There seems to be an agreement on this use among the developers of textual languages studied in Beniamini et. al. When they were surveyed about variable name interpretations, $x$ and $y$ were commonly interpreted as ``coordinates". In addition, built-in Scratch blocks often use $x$ and $y$ as shown in \figurename{~\ref{fig:xy_Scratchblocks}}. 
 We conclude that Scratch programmers seem to be inspired by the Scratch language in naming variables.  
 
 \begin{figure}[tb]
@@ -426,7 +424,7 @@ As explained in Section~\ref{sec:design} we conduct a conceptual replication by 
 %With this process we can compare our results to the types of Beniamini et al.~\cite{Beniamini}. 
 Figure~\ref{fig:one_letter_type} shows the distribution of single-letter variables with the types inferred. 
 The majority of single-letter variables are encountered as integers in the Scratch dataset. This partially agrees with their \emph{Observation} of integers being common for many letters, however, the data types  are less diverse in Scratch compared to the five programming languages considered.
-One \emph{Observation} that contradicts \emph{Observation}s in the original study is related to the string data type. While string data type in the five programming languages studied is commonly associated with $s$ and less frequently with many other letters, the strings are almost completely absent in the Scratch dataset apart from $i$. This is also observed in the other data types where no noticeable usage could be observed for floats, lists or strings. The only exception to some extent is the variable $c$ where we observe some usage linked with the \emph{char} data type. 
+One \emph{Observation} that contradicts \emph{Observation}s in the original study is related to the string data type. While string data type in the five programming languages studied is commonly associated with $s$ and less frequently with many other letters, the strings are almost completely absent in the Scratch dataset apart from $i$. This is also observed for the other data types where no noticeable usage could be observed for floats, lists or strings. The only exception to some extent is the variable $c$ where we observe some usage linked with the \emph{char} data type. 
 Floats as types for $x$, $y$ and to lesser extent $z$ seem to support the \emph{Observation} that these single-letters variables are perceived as coordinates as suggested by Beniamini et al.~\cite{Beniamini}.
 
 \subsection{Scratch-specific Constructs}
@@ -434,7 +432,7 @@ Floats as types for $x$, $y$ and to lesser extent $z$ seem to support the \emph{
 In this section we analyze the occurrence of naming practices that are allowed in Scratch, but are missing from or are not common in most mainstream textual languages.
 \subsubsection{Spaces in Variable Names}
 Most textual programming languages do not allow spaces in variable names. 
-FORTRAN ignored spaces, so one could use a space; however, that would mean that `apples' and `app les' refer to the same variable. Other languages supporting spaces in variable names are SQL and some Scheme implementations. 
+FORTRAN ignores spaces, this spaces could be used in variable names. However it does mean that `apples' and `app les' refer to the same variable. Other languages supporting spaces in variable names are SQL and some Scheme implementations. 
 Even languages targeting data analysts rather than software developers recommend spaces be avoided~\cite{Bochud}.
 \begin{figure}[tb]
 	\begin{center}
