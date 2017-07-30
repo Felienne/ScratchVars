@@ -105,9 +105,8 @@ A.~Rastogi and N.~Nagappan, ``Forking and the sustainability of the developer
 
 \bibitem{Dann}
 W.~Dann, D.~Cosgrove, D.~Slater, D.~Culyba, and S.~Cooper, ``Mediated transfer:
-  Alice 3 to {J}ava,'' in \emph{Proceedings of the 43rd ACM Technical Symposium
-  on Computer Science Education}, ser. SIGCSE '12.\hskip 1em plus 0.5em minus
-  0.4em\relax New York, NY, USA: ACM, 2012, pp. 141--146.
+  Alice 3 to {J}ava,'' in \emph{SIGCSE}.\hskip 1em plus 0.5em minus 0.4em\relax
+  ACM, 2012, pp. 141--146.
 
 \bibitem{Matsuzawa}
 Y.~Matsuzawa, T.~Ohata, M.~Sugiura, and S.~Sakai, ``Language migration in
@@ -225,7 +224,7 @@ F.~Konietschke, M.~Placzek, F.~Schaarschmidt, and L.~Hothorn, ``nparcomp: An
   no.~9, pp. 1--17, 2015.
 
 \bibitem{Dajsuren2013}
-Y.~Dajsuren, M.~G. van~den Brand, A.~Serebrenik, and S.~Roubtsov, ``Simulink
+Y.~Dajsuren, M.~G.~J. van~den Brand, A.~Serebrenik, and S.~Roubtsov, ``Simulink
   models are also software: Modularity assessment,'' in \emph{QoSA}, 2013, pp.
   99--106.
 
@@ -243,13 +242,17 @@ B.~Vasilescu, A.~Capiluppi, and A.~Serebrenik, ``Gender, representation and
 \bibitem{YuWYW16}
 Y.~Yu, H.~Wang, G.~Yin, and T.~Wang, ``Reviewer recommendation for
   pull-requests in github: What can we learn from code review and bug
-  assignment?'' \emph{Information {\&} Software Technology}, vol.~74, pp.
-  204--218, 2016.
+  assignment?'' \emph{Inf. {\&} Softw. Technology}, vol.~74, pp. 204--218,
+  2016.
 
 \bibitem{Jongeling2017}
 R.~Jongeling, P.~Sarkar, S.~Datta, and A.~Serebrenik, ``On negative results
   when using sentiment analysis tools for software engineering research,''
   \emph{Empirical Software Engineering}, Jan 2017.
+
+\bibitem{Wesel}
+P.~van Wesel, B.~Lin, G.~Robles, and A.~Serebrenik, ``Reviewing career paths of
+  the openstack developers,'' in \emph{ICSME}, 2017.
 
 \bibitem{Neubert}
 K.~Neubert and E.~Brunner, ``A studentized permutation test for the
